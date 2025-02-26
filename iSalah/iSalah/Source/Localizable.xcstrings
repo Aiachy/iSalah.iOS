@@ -1,0 +1,72 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "•" : {
+
+    },
+    "Add Item" : {
+
+    },
+    "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?" : {
+
+    },
+    "Could you please specify your gender so that we can provide you with personalized content and religious information? This information will help us organize special recommendations for your hijab, prayers and other religious practices." : {
+
+    },
+    "Current Location" : {
+
+    },
+    "Find Location" : {
+
+    },
+    "Guidance Compass" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Item at %@" : {
+
+    },
+    "No locations found" : {
+
+    },
+    "Popular Locations" : {
+
+    },
+    "Ready" : {
+
+    },
+    "Search Country, City or District" : {
+
+    },
+    "Search for any country, city or district" : {
+
+    },
+    "Searching locations..." : {
+
+    },
+    "Select an item" : {
+
+    },
+    "Try searching for a different location" : {
+
+    },
+    "Type to search" : {
+
+    },
+    "With You Every Step of the Way" : {
+
+    },
+    "Your Personal Experience" : {
+
+    },
+    "Your smart assistant that makes yourIslamic life easier is now ready.It is specially designed for all your needs,from prayer times to Quran readings, from prayer reminders to qibla compass." : {
+
+    }
+  },
+  "version" : "1.0"
+}
