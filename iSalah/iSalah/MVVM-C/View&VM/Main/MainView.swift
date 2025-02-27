@@ -17,11 +17,48 @@ struct MainView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            BackgroundView()
+            ScrollView(.vertical) {
+                VStack {
+                    headerView
+                    TodayPrayView(IslamicPrayerData.prayers.randomElement()!)
+                        .padding(.top)
+                    Rectangle()
+                        .frame(height: dh(0.08))
+                        .opacity(0)
+                }
+            }
+        }
+        .environmentObject(salah)
     }
 }
 
 #Preview {
     MainView()
         .environmentObject(mockSalah)
+}
+
+//MARK: Header
+private extension MainView {
+    
+    var headerView: some View {
+        VStack(spacing: -5) {
+            MainHeaderView($vm.isHidingHeader, navToCompass: vm.navigationToCompass)
+            if !vm.isHidingHeader {
+                EventAndTimeView()
+                PrayerCountdownView()
+                    .padding(.bottom)
+                mosqueView
+                MosqueCallTimerView()
+            }
+        }
+    }
+    
+    var mosqueView: some View {
+        ImageHandler.getMassive(salah, image: [.mosque1, .mosque2].randomElement() ?? .mosque1)
+            .scaledToFit()
+            .frame(width: size9)
+    }
+    
 }

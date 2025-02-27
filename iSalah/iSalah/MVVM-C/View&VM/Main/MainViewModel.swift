@@ -9,10 +9,23 @@ import Foundation
 
 class MainViewModel: ObservableObject {
     
+    @Published var isHidingHeader: Bool
     let coordinator: GeneralCoordinatorPresenter
     
-    init(coordinator: GeneralCoordinatorPresenter) {
+    init(isHidingHeader: Bool = false,
+         coordinator: GeneralCoordinatorPresenter) {
+        self.isHidingHeader = isHidingHeader
         self.coordinator = coordinator
     }
+    
+}
+
+extension MainViewModel {
+    
+    func navigationToCompass() {
+        coordinator.navigate(to: .compass)
+    }
+    
+    
     
 }

@@ -24,5 +24,23 @@ struct FontHandler {
         
         return Font.custom(FontHelper.Dubai.regular.rawValue, size: FontHelper.Size.m.rawValue)
     }
+    
+    static func setNewYorkFont(weight: FontHelper.newYork? = nil, size: FontHelper.Size? = nil) -> Font {
+        
+        if let weight = weight, let size = size {
+            return Font.custom(weight.rawValue, size: size.rawValue)
+        }
+        
+        if let weight = weight {
+            return Font.custom(weight.rawValue, size: FontHelper.Size.m.rawValue)
+        }
+        
+        if let size = size {
+            return Font.custom(FontHelper.newYork.regular.rawValue, size: size.rawValue)
+        }
+        
+        return Font.custom(FontHelper.newYork.regular.rawValue, size: FontHelper.Size.m.rawValue)
+        
+    }
  
 }

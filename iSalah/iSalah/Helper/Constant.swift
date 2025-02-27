@@ -9,7 +9,10 @@ import UIKit
 
 //MARK: KEY
 let onboardingFinishedKey = "onboardingFinished"
+let userIDKey = "firebase_user_id"
 
 //MARK: Size
 let uiWidth = UIScreen.main.bounds.width
 let uiHeight = UIScreen.main.bounds.height
+
+let size9 = uiWidth * 0.9

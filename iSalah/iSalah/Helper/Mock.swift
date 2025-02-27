@@ -6,5 +6,15 @@
 //
 
 import Foundation
+import CoreLocation
 
-let mockSalah = iSalahState()
+let civrilLocation = LocationSuggestion(
+    country: "Turkey",
+    city: "Denizli",
+    district: "Çivril",
+    coordinate: CLLocationCoordinate2D(latitude: 38.3019, longitude: 29.7387)
+)
+
+let user: UserModel = .init(location: civrilLocation)
+
+let mockSalah: iSalahState = .init(user: user)

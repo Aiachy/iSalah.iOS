@@ -12,7 +12,6 @@ class OnboardingViewModel: ObservableObject {
     
     @Published var isOnbActive: Bool
     @Published var isLocationSheetActive: Bool
-    @Published var currentOnb: Int
     @Published var selectedModelId: Int
     
     var cancelBag = Set<AnyCancellable>()
@@ -20,12 +19,10 @@ class OnboardingViewModel: ObservableObject {
     
     init(isOnbActive: Bool = false,
          isLocationSheetActive: Bool = false,
-         currentOnb: Int = 0,
          selectedModelId: Int = 0,
          coordinator: GeneralCoordinatorPresenter) {
         self.isOnbActive = isOnbActive
         self.isLocationSheetActive = isLocationSheetActive
-        self.currentOnb = currentOnb
         self.selectedModelId = selectedModelId
         
         self.coordinator = coordinator

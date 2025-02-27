@@ -14,6 +14,9 @@ private protocol GeneralProtocol {
 enum GeneralCoordinators {
     case onboarding
     case main
+    case settings
+    
+    case compass
 }
 //MARK: Presenter
 class GeneralCoordinatorPresenter: ObservableObject, GeneralProtocol {
@@ -46,9 +49,19 @@ struct GeneralCoordinator: View {
                 OnboardingView(coordinator)
             case .main:
                 MainView(coordinator)
+            case .settings:
+                EmptyView()
+                
+            case .compass:
+                EmptyView()
             }
         }
-        .ignoresSafeArea(.keyboard)
+        .overlay(alignment: .bottom, content: {
+//            if coordinator.currentView == .main || coordinator.currentView == .settings {
+                tabBarView
+//            }
+        })
+        .ignoresSafeArea()
         .environmentObject(salah)
     }
 }
@@ -56,4 +69,55 @@ struct GeneralCoordinator: View {
 #Preview {
     GeneralCoordinator()
         .environmentObject(mockSalah)
+}
+
+private extension GeneralCoordinator {
+    
+    var tabBarView: some View {
+        ZStack {
+            ColorHandler.getColor(salah, for: .islamicAlt)
+            HStack {
+                Button {
+                    coordinator.navigate(to: .main)
+                } label: {
+                    ZStack {
+                        tabBarButtonView
+                        ImageHandler.getIcon(salah, image: .main)
+                            .scaledToFit()
+                            .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                            .frame(width: dw(0.1))
+                    }
+                        
+                }
+                
+                Button {
+                    coordinator.navigate(to: .settings)
+                } label: {
+                    ZStack {
+                        tabBarButtonView
+                        ImageHandler.getIcon(salah, image: .settings)
+                            .scaledToFit()
+                            .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                            .frame(width: dw(0.1))
+                    }
+                }
+
+                
+            }
+        }
+        .frame(height: dh(0.08))
+    }
+    
+    var tabBarButtonView: some View {
+      
+        ZStack {
+            Circle()
+                .fill(ColorHandler.getColor(salah, for: .islamicAlt))
+            Circle()
+                .stroke(ColorHandler.getColor(salah, for: .gold))
+        }
+        .frame(width: dw(0.1))
+
+    }
+    
 }

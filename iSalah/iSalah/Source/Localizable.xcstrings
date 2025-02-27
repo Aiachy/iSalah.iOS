@@ -4,6 +4,19 @@
     "" : {
 
     },
+    ":" : {
+
+    },
+    "%@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@"
+          }
+        }
+      }
+    },
     "•" : {
 
     },
@@ -25,16 +38,19 @@
     "Guidance Compass" : {
 
     },
-    "Hello, World!" : {
+    "Item at %@" : {
 
     },
-    "Item at %@" : {
+    "Meal: %@" : {
 
     },
     "No locations found" : {
 
     },
     "Popular Locations" : {
+
+    },
+    "Reading: %@" : {
 
     },
     "Ready" : {
@@ -50,6 +66,12 @@
 
     },
     "Select an item" : {
+
+    },
+    "Share" : {
+
+    },
+    "Today Pray" : {
 
     },
     "Try searching for a different location" : {
