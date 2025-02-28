@@ -95,15 +95,15 @@ final class FirebaseAuthManager {
     }
     
     // Create user document in Firestore with ID as document ID
-    private func createUserInFirestore(userID: String) -> AnyPublisher<Void, Error> {
-        return Future<Void, Error> { [weak self] promise in
+    private func createUserInFirestore(userID: String) -> AnyPublisher<String, Error> {
+        return Future<String, Error> { [weak self] promise in
             guard let self = self else {
                 promise(.failure(NSError(domain: "FirebaseAuthManager", code: -1, userInfo: [NSLocalizedDescriptionKey: "Self is nil"])))
                 return
             }
             
             // Check if user document already exists
-            self.db.collection("users").document(userID).getDocument { document, error in
+            self.db.collection(dbKeyUsers).document(userID).getDocument { document, error in
                 if let error = error {
                     promise(.failure(error))
                     return
@@ -111,22 +111,20 @@ final class FirebaseAuthManager {
                 
                 // If document exists, no need to create it again
                 if let document = document, document.exists {
-                    promise(.success(()))
+                    promise(.success((userID)))
                     return
                 }
                 
                 // Create new user document
                 let userData: [String: Any] = [
-                    "id": userID,
-                    "createdAt": FieldValue.serverTimestamp(),
-                    "lastLogin": FieldValue.serverTimestamp()
+                    "id": userID
                 ]
                 
-                self.db.collection("users").document(userID).setData(userData) { error in
+                self.db.collection(dbKeyUsers).document(userID).setData(userData) { error in
                     if let error = error {
                         promise(.failure(error))
                     } else {
-                        promise(.success(()))
+                        promise(.success((userID)))
                     }
                 }
             }
@@ -135,7 +133,7 @@ final class FirebaseAuthManager {
     
     // Validate that user exists in Firestore and update last login time
     private func validateFirestoreUser(userID: String) {
-        db.collection("users").document(userID).getDocument { [weak self] document, error in
+        db.collection(dbKeyUsers).document(userID).getDocument { [weak self] document, error in
             guard let self = self else { return }
             
             if let error = error {
@@ -145,7 +143,7 @@ final class FirebaseAuthManager {
             
             if let document = document, document.exists {
                 // Update last login time
-                self.db.collection("users").document(userID).updateData([
+                self.db.collection(dbKeyUsers).document(userID).updateData([
                     "lastLogin": FieldValue.serverTimestamp()
                 ])
             } else {

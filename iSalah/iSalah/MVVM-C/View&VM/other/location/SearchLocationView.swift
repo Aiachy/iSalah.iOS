@@ -229,10 +229,12 @@ extension SearchLocationView {
                 let userLocation = LocationSuggestion(
                     country: country,
                     city: city,
-                    district: location.district,
+                    district: location.district ?? "",
                     coordinate: location.coordinate
                 )
                 result(userLocation)
+                salah.user.location = userLocation
+                NotificationManager.shared.updateLocation(userLocation)
                 dismiss()
             }
         }) {
@@ -266,6 +268,8 @@ extension SearchLocationView {
     func locationRow(_ location: LocationSuggestion) -> some View {
         Button(action: {
             result(location)
+            salah.user.location = location
+            NotificationManager.shared.updateLocation(location)
             dismiss()
         }) {
             HStack {
@@ -275,12 +279,12 @@ extension SearchLocationView {
                             .font(FontHandler.setDubaiFont(weight: .medium, size: .m))
                             .foregroundColor(ColorHandler.getColor(salah, for: .light))
                         
-                        if let district = location.district, !district.isEmpty {
+                        if  !location.district.isEmpty {
                             Text("•")
                                 .font(FontHandler.setDubaiFont(weight: .regular, size: .s))
                                 .foregroundColor(ColorHandler.getColor(salah, for: .light).opacity(0.7))
                             
-                            Text(district)
+                            Text( location.district)
                                 .font(FontHandler.setDubaiFont(weight: .regular, size: .s))
                                 .foregroundColor(ColorHandler.getColor(salah, for: .light).opacity(0.7))
                         }

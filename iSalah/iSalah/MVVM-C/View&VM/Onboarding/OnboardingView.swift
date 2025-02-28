@@ -46,7 +46,7 @@ struct OnboardingView: View {
 private extension OnboardingView {
     func makeOnboardingView(_ model: OnboardingModel) -> some View {
         let onbAct = vm.isOnbActive
-        let radius = dw(1) / 6.5
+        let radius = dw(1) / 7
         
         return ZStack {
             /// Background

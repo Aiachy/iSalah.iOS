@@ -27,9 +27,7 @@ struct EventAndTimeView: View {
                 .font(FontHandler.setDubaiFont(weight: .medium, size: .h2_5))
         }
         .frame(height: dh(0.082))
-        .task {
-            await makeEventAndTimeText()
-        }
+        .onAppear(perform: makeEventAndTimeText)
     }
 }
 
@@ -43,10 +41,11 @@ struct EventAndTimeView: View {
 
 private extension EventAndTimeView {
     
-    func makeEventAndTimeText() async {
-       
-        let location: LocationSuggestion? = salah.user.location
-        eventAndTime = await PrayerTimeService.shared.getNextPrayerTimeInfo(for: location)
+    func makeEventAndTimeText() {
+        Task {
+            let location: LocationSuggestion? = salah.user.location
+            eventAndTime = await PrayerTimeService.shared.getNextPrayerTimeInfo(for: location)
+        }
         
     }
     

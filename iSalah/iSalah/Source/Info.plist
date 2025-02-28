@@ -2,26 +2,36 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Dubai-Bold.ttf</string>
-		<string>Dubai-Light.ttf</string>
-		<string>Dubai-Medium.ttf</string>
-		<string>Dubai-Regular.ttf</string>
-		<string>new-york-medium_black.ttf</string>
-		<string>new-york-medium_black-italic.ttf</string>
-		<string>new-york-medium_bold.ttf</string>
-		<string>new-york-medium_bold-italic.ttf</string>
-		<string>new-york-medium_heavy.ttf</string>
-		<string>new-york-medium_heavy-italic.ttf</string>
-		<string>new-york-medium_medium.ttf</string>
-		<string>new-york-medium_medium-italic.ttf</string>
-		<string>new-york-medium_regular.ttf</string>
-		<string>new-york-medium_regular-italic.ttf</string>
-		<string>new-york-medium_semibold.ttf</string>
-		<string>new-york-medium_semibold-italic.ttf</string>
-	</array>
-	<key>UIFileSharingEnabled</key>
-	<true/>
+    <key>BGTaskSchedulerPermittedIdentifiers</key>
+    <array>
+        <string>Azman.iSalah</string>
+    </array>
+
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+    </array>
+
+    <key>UIAppFonts</key>
+    <array>
+        <string>Dubai-Bold.ttf</string>
+        <string>Dubai-Light.ttf</string>
+        <string>Dubai-Medium.ttf</string>
+        <string>Dubai-Regular.ttf</string>
+    </array>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+        <string>fetch</string>
+        <string>location</string>
+        <string>remote-notification</string>
+    </array>
+    <key>UIFileSharingEnabled</key>
+    <true/>
+
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    <key>UIApplicationSkipsOnboarding</key>
+    <true/>
 </dict>
 </plist>

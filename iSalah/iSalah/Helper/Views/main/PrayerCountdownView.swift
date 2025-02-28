@@ -29,7 +29,7 @@ struct PrayerCountdownView: View {
             )
             
             Text(":")
-                .font(FontHandler.setDubaiFont(weight: .bold, size: .xl))
+                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                 .offset(y: -4)
             
@@ -41,7 +41,7 @@ struct PrayerCountdownView: View {
             )
             
             Text(":")
-                .font(FontHandler.setDubaiFont(weight: .bold, size: .xl))
+                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                 .offset(y: -4)
             

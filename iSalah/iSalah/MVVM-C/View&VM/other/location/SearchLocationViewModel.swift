@@ -243,19 +243,19 @@ class SearchLocationViewModel: NSObject, ObservableObject {
             LocationSuggestion(
                 country: "Türkiye",
                 city: "Istanbul",
-                district: nil,
+                district: "nil",
                 coordinate: CLLocationCoordinate2D(latitude: 41.0082, longitude: 28.9784)
             ),
             LocationSuggestion(
                 country: "Türkiye",
                 city: "Ankara",
-                district: nil,
+                district: "nil",
                 coordinate: CLLocationCoordinate2D(latitude: 39.9334, longitude: 32.8597)
             ),
             LocationSuggestion(
                 country: "Türkiye",
                 city: "Izmir",
-                district: nil,
+                district: "nil",
                 coordinate: CLLocationCoordinate2D(latitude: 38.4192, longitude: 27.1287)
             ),
             LocationSuggestion(
@@ -267,7 +267,7 @@ class SearchLocationViewModel: NSObject, ObservableObject {
             LocationSuggestion(
                 country: "United Kingdom",
                 city: "London",
-                district: nil,
+                district: "nil",
                 coordinate: CLLocationCoordinate2D(latitude: 51.5074, longitude: -0.1278)
             )
         ]
@@ -325,7 +325,7 @@ class SearchLocationViewModel: NSObject, ObservableObject {
                     let suggestion = LocationSuggestion(
                         country: country,
                         city: city,
-                        district: district,
+                        district: district ?? "",
                         coordinate: placemark.coordinate
                     )
                     
@@ -384,6 +384,7 @@ class SearchLocationViewModel: NSObject, ObservableObject {
                     self.isLoading = false
                     self.isSearchInProgress = false
                     self.loadHardcodedLocations()
+                    print("performSearch error: \(error)")
                 }
             }
         }

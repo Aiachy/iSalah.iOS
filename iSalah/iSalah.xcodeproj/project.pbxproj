@@ -19,6 +19,7 @@
 		C30D534A2D700D8100508436 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C30D53492D700D8100508436 /* FirebaseStorage */; };
 		C30D534C2D700D8100508436 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C30D534B2D700D8100508436 /* FirebaseStorageCombine-Community */; };
 		C30D53542D7013DE00508436 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C30D53532D7013DE00508436 /* FirebaseAuth */; };
+		C3C2AE1D2D712E2C0041BC44 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C2AE1C2D712E2C0041BC44 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		C3B54C4A2D61C05E00916BE5 /* iSalah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSalah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B54C5F2D61C06000916BE5 /* iSalahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSalahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B54C692D61C06000916BE5 /* iSalahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSalahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C2AE1C2D712E2C0041BC44 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -91,6 +93,7 @@
 				C30D533C2D700D8100508436 /* FirebaseAnalytics in Frameworks */,
 				C30D53422D700D8100508436 /* FirebaseFirestore in Frameworks */,
 				C30D53462D700D8100508436 /* FirebasePerformance in Frameworks */,
+				C3C2AE1D2D712E2C0041BC44 /* StoreKit.framework in Frameworks */,
 				C30D53442D700D8100508436 /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +118,7 @@
 		C30D53522D7013DE00508436 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3C2AE1C2D712E2C0041BC44 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,6 +284,18 @@
 				el,
 				"en-AU",
 				ms,
+				fi,
+				es,
+				"es-419",
+				arz,
+				az,
+				"ar-DZ",
+				"ar-BH",
+				"ar-TD",
+				af,
+				"af-ZA",
+				"af-NA",
+				"ar-KM",
 			);
 			mainGroup = C3B54C412D61C05E00916BE5;
 			minimizedProjectReferenceProxies = 1;
@@ -395,7 +411,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;

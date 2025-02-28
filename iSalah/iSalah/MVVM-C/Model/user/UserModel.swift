@@ -11,15 +11,39 @@ struct UserModel {
     var id: String?
     var info: UserInfoModel
     var appInfo: AppInfoModel
+    var harvest: HarvestModel
     var location: LocationSuggestion?
     
-    init(id: String? = nil,
+    init(
          info: UserInfoModel = .init(),
          appInfo: AppInfoModel = .init(),
-         location: LocationSuggestion? = nil) {
-        self.id = id
+         harvest: HarvestModel = .init(),
+         location: LocationSuggestion? = nil
+    ) {
+        self.id = UserDefaults.standard.string(forKey: userIDKey)
         self.info = info
         self.appInfo = appInfo
+        self.harvest = harvest
         self.location = location
+    }
+}
+
+extension UserModel {
+    
+    var wrappedId: String {
+        id ?? ""
+    }
+    
+}
+
+extension UserModel {
+    func getLocationString() -> String {
+        
+        guard let location = location else {
+            return ""
+        }
+        
+        return "\(location.district), \(location.city)"
+        
     }
 }

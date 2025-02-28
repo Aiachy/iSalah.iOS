@@ -6,24 +6,55 @@
 //
 
 import Foundation
+import Combine
 
 class SplashViewModel: ObservableObject {
     
     @Published var isAppReady: Bool
+    var cancelBag = Set<AnyCancellable>()
     
     init(isAppReady: Bool = false) {
         self.isAppReady = isAppReady
-        
-        simulateAppReady()
     }
     
 }
 
-private extension SplashViewModel {
+extension SplashViewModel {
     
-    func simulateAppReady() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.isAppReady = true
-        }
+    func createUser(_ user: UserModel,resultId: @escaping (UserModel) -> Void) {
+        FirebaseAuthManager.shared.authenticateAnonymously()
+            .receive(on: DispatchQueue.main)
+            .sink { value in
+                switch value {
+                case .finished:
+                    print("")
+                case .failure(let error):
+                    print(
+                        "SplashViewModel: Error authenticating anonymously \(error)"
+                    )
+                }
+                    
+            } receiveValue: { [self] userId in
+                print(
+                    "SplashViewModel: Authenticated anonymously with userId \(userId)"
+                )
+                FirebaseFirestoreManager.shared.saveHarvestData(user.harvest, userId: userId)
+                
+                Task {
+                    let model = await self.getAllUserInfo(userId)
+                    resultId(model)
+                    isAppReady.toggle()
+                }
+            }
+            .store(in: &cancelBag)
+    }
+    
+    private func getAllUserInfo(_ userId: String) async -> UserModel {
+        var model: UserModel = .init()
+        
+        model.location = await FirebaseFirestoreManager.shared.getSelectedLocation(userId: userId)
+        model.appInfo = await FirebaseFirestoreManager.shared.getAppInfo(userId: userId)
+        
+        return model
     }
 }

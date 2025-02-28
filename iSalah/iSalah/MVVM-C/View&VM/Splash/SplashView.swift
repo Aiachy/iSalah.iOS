@@ -37,11 +37,27 @@ private extension SplashView {
     
     var splashView: some View {
         ZStack {
-            BackgroundView()
-            ImageHandler.getIcon(salah, image: .allah, render: .original)
-                .scaledToFit()
+            Group {
+                BackgroundView()
+                ImageHandler.getIcon(salah, image: .allah, render: .original)
+                    .scaledToFit()
+            }
+            .ignoresSafeArea()
+            VStack {
+                Spacer()
+                Text("App Beta\n\(salah.user.harvest.appVersion) (\(salah.user.harvest.buildNumber))")
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+            }
         }
-        .ignoresSafeArea()
+        .onAppear {
+            vm.createUser(salah.user) { user in
+                DispatchQueue.main.async {
+                    salah.user = user
+                }
+            }
+        }
+        
     }
     
 }

@@ -25,12 +25,11 @@ struct MainHeaderView: View {
         HStack(spacing: 20) {
             hicriCalenderAndLocationView
             Spacer()
-            if version {
-                PrayerCountdownView()
-            }
+            PrayerCountdownView()
+                .opacity(version ? 1 : 0)
             compassView
         }
-        .frame(width: size9)
+        .frame(width: size9, height: dh(0.06))
     }
 }
 
@@ -39,7 +38,7 @@ struct MainHeaderView: View {
         BackgroundView()
         MainHeaderView(.constant(false)) { }
     }
-        .environmentObject(mockSalah)
+    .environmentObject(mockSalah)
 }
 
 private extension MainHeaderView {
@@ -48,7 +47,7 @@ private extension MainHeaderView {
         VStack(alignment: .leading) {
             Text(Date().toFormattedHijri())
                 .font(FontHandler.setDubaiFont(weight: .bold, size: .s))
-            Text("\(salah.user.location?.district ?? ""), \(salah.user.location?.city ?? "")")
+            Text(salah.user.getLocationString())
                 .font(FontHandler.setDubaiFont(weight: .regular, size: .xs))
         }
         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
@@ -58,7 +57,7 @@ private extension MainHeaderView {
         ImageHandler.getIcon(salah, image: .compass)
             .scaledToFit()
             .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-            .frame(width: dh(0.055))
+            .frame(width: dw(0.1))
             .onTapGesture(perform: navToCompass)
     }
     

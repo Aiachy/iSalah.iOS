@@ -5,24 +5,8 @@
 //  Created on 27.02.2025.
 //
 
-import Foundation
+import SwiftUI
 import CoreLocation
-
-struct PrayerTime: Identifiable, Equatable {
-    let id = UUID()
-    let name: String
-    let time: Date
-    
-    var timeString: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm"
-        return formatter.string(from: time)
-    }
-    
-    var isPassed: Bool {
-        return Date() > time
-    }
-}
 
 class PrayerTimeService {
     
@@ -35,11 +19,25 @@ class PrayerTimeService {
         // using the coordinates from the LocationSuggestion
         
         // For demo purposes, generate some prayer times for the current day
-        return await generateDemoPrayerTimes(latitude: location.coordinate.latitude, 
+        return await generateDemoPrayerTimes(latitude: location.coordinate.latitude,
                                              longitude: location.coordinate.longitude)
     }
     
-    private func generateDemoPrayerTimes(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async -> [PrayerTime] {
+    // New function to get the next day's prayer times
+    func getNextDayPrayerTimes(for location: LocationSuggestion) async -> [PrayerTime] {
+        // For demo purposes, generate prayer times for the next day
+        return await generateDemoPrayerTimes(
+            latitude: location.coordinate.latitude,
+            longitude: location.coordinate.longitude,
+            dayOffset: 1
+        )
+    }
+    
+    private func generateDemoPrayerTimes(
+        latitude: CLLocationDegrees,
+        longitude: CLLocationDegrees,
+        dayOffset: Int = 0
+    ) async -> [PrayerTime] {
         // This is a placeholder implementation
         // In a real app, you would use proper calculation methods or API calls
         
@@ -50,8 +48,15 @@ class PrayerTimeService {
             from: now
         )
         
+        // Add offset for next day if needed
+        if dayOffset > 0 {
+            if let nextDay = calendar.date(byAdding: .day, value: dayOffset, to: now) {
+                dateComponents = calendar.dateComponents([.year, .month, .day], from: nextDay)
+            }
+        }
+        
         // Prayer time names in English
-        let prayerNames = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"]
+        let prayerNames: [String] = ["Fajr", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"]
         
         // Base hours for demo (these would normally be calculated based on location)
         let baseHours = [5, 6, 12, 15, 18, 19]
@@ -88,44 +93,75 @@ class PrayerTimeService {
          
         let prayerTimes = await getPrayerTimes(for: location)
         let now = Date()
-         
-        guard let nextPrayer = prayerTimes.first(where: { $0.time > now }) else {
-            return nil
+        
+        // Check if there's a next prayer today
+        if let nextPrayer = prayerTimes.first(where: { $0.time > now }) {
+            return (name: nextPrayer.name, time: nextPrayer.timeString)
+        } else {
+            // If no more prayers today, get first prayer from tomorrow
+            let nextDayPrayerTimes = await getNextDayPrayerTimes(for: location)
+            if let firstPrayer = nextDayPrayerTimes.first {
+                return (name: firstPrayer.name, time: firstPrayer.timeString)
+            }
         }
          
-        return (name: nextPrayer.name, time: nextPrayer.timeString)
+        return nil
     }
     
     // Get remaining time until next prayer in hours, minutes, and seconds
-     func getRemainingTimeUntilNextPrayer(for location: LocationSuggestion) async -> (nextPrayerName: String, hours: Int, minutes: Int, seconds: Int, formattedTime: String)? {
+    func getRemainingTimeUntilNextPrayer(for location: LocationSuggestion) async -> (nextPrayerName: String, hours: Int, minutes: Int, seconds: Int, formattedTime: String)? {
          let prayerTimes = await getPrayerTimes(for: location)
          let now = Date()
          
-         guard let nextPrayer = prayerTimes.first(where: { $0.time > now }) else {
-             return nil
+         // Check if there's a next prayer for today
+         if let nextPrayer = prayerTimes.first(where: { $0.time > now }) {
+             let timeInterval = nextPrayer.time.timeIntervalSince(now)
+             let totalSeconds = Int(timeInterval)
+             
+             let hours = totalSeconds / 3600
+             let minutes = (totalSeconds % 3600) / 60
+             let seconds = totalSeconds % 60
+             
+             // Create formatted string (e.g., "02:45:30")
+             let formattedTime = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+             
+             return (
+                 nextPrayerName: nextPrayer.name,
+                 hours: hours,
+                 minutes: minutes,
+                 seconds: seconds,
+                 formattedTime: formattedTime
+             )
+         } else {
+             // If no more prayers today, get the first prayer of tomorrow
+             let nextDayPrayerTimes = await getNextDayPrayerTimes(for: location)
+             
+             if let firstPrayer = nextDayPrayerTimes.first {
+                 let timeInterval = firstPrayer.time.timeIntervalSince(now)
+                 let totalSeconds = Int(timeInterval)
+                 
+                 let hours = totalSeconds / 3600
+                 let minutes = (totalSeconds % 3600) / 60
+                 let seconds = totalSeconds % 60
+                 
+                 // Create formatted string (e.g., "02:45:30")
+                 let formattedTime = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
+                 
+                 return (
+                     nextPrayerName: firstPrayer.name,
+                     hours: hours,
+                     minutes: minutes,
+                     seconds: seconds,
+                     formattedTime: formattedTime
+                 )
+             }
          }
          
-         let timeInterval = nextPrayer.time.timeIntervalSince(now)
-         let totalSeconds = Int(timeInterval)
-         
-         let hours = totalSeconds / 3600
-         let minutes = (totalSeconds % 3600) / 60
-         let seconds = totalSeconds % 60
-         
-         // Create formatted string (e.g., "02:45:30")
-         let formattedTime = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
-         
-         return (
-             nextPrayerName: nextPrayer.name,
-             hours: hours,
-             minutes: minutes,
-             seconds: seconds,
-             formattedTime: formattedTime
-         )
+         return nil
      }
      
      // Timer function that provides continuous updates of the remaining time
-     func startRemainingTimeTimer(for location: LocationSuggestion, updateInterval: TimeInterval = 1.0, onUpdate: @escaping (String, String, String, String) -> Void) -> Timer {
+    func startRemainingTimeTimer(for location: LocationSuggestion, updateInterval: TimeInterval = 1.0, onUpdate: @escaping (String, String, String, String) -> Void) -> Timer {
          // This function returns a Timer that the caller should retain
          // The caller should invalidate the timer when it's no longer needed
          
@@ -147,7 +183,7 @@ class PrayerTimeService {
                          onUpdate(nextPrayerName, hoursStr, minutesStr, secondsStr)
                      }
                  } else {
-                     // No next prayer found, perhaps it's after the last prayer of the day
+                     // This should now rarely happen since we're checking next day's prayers
                      DispatchQueue.main.async {
                          onUpdate("", "00", "00", "00")
                      }

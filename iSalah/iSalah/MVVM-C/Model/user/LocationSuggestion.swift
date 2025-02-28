@@ -13,14 +13,11 @@ struct LocationSuggestion: Identifiable, Equatable, Hashable {
     let id = UUID()
     let country: String
     let city: String
-    let district: String?
+    let district: String
     let coordinate: CLLocationCoordinate2D
     
     var formattedLocation: String {
-        if let district = district, !district.isEmpty {
-            return "\(district), \(city), \(country)"
-        }
-        return "\(city), \(country)"
+        "\(district), \(city), \(country)"
     }
     
     // Equatable implementation için

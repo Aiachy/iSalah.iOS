@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//MARK: View
 struct MosqueCallTimerView: View {
     
     @EnvironmentObject var salah: iSalahState
@@ -33,13 +33,12 @@ struct MosqueCallTimerView: View {
         .frame(height: dh(0.06))
 
         .onAppear {
-            print(Date())
             loadPrayerTimes()
         }
     }
     
 }
-
+//MARK: Preview
 #Preview {
     ZStack {
         BackgroundView()
@@ -47,7 +46,7 @@ struct MosqueCallTimerView: View {
     }
     .environmentObject(mockSalah)
 }
-
+//MARK: Views
 private extension MosqueCallTimerView {
     
     func makeCallTimer(_ title: String, time: String, isPassed: Bool) -> some View {
@@ -64,7 +63,7 @@ private extension MosqueCallTimerView {
         .padding(.horizontal, 12)
     }
 }
-
+//MARK: Func
 private extension MosqueCallTimerView {
     private func loadPrayerTimes() {
         guard let location = salah.user.location else {

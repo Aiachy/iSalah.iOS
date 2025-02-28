@@ -64,6 +64,7 @@ extension OnboardingViewModel {
                 image: .onb3,
                 action: { [self] in
                     coordinator.navigate(to: .main)
+                    onboardingFinished()
                 }
             )
             
@@ -74,7 +75,7 @@ extension OnboardingViewModel {
         selectedModelId += 1
     }
     
-    func onboardingFinished() {
+    private func onboardingFinished() {
         UserDefaults.standard.set(true, forKey: "onboardingFinished")
     }
     

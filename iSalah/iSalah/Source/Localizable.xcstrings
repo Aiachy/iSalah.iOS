@@ -7,12 +7,12 @@
     ":" : {
 
     },
-    "%@, %@" : {
+    "%@, %@, %@" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "new",
-            "value" : "%1$@, %2$@"
+            "value" : "%1$@, %2$@, %3$@"
           }
         }
       }
@@ -20,7 +20,41 @@
     "•" : {
 
     },
+    "Accessibility" : {
+
+    },
     "Add Item" : {
+
+    },
+    "App Beta\n%@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "App Beta\n%1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Arabian Desert" : {
+
+    },
+    "As a user of the application, you are responsible for:" : {
+
+    },
+    "Asr" : {
+
+    },
+    "Back" : {
+
+    },
+    "Blessed Days" : {
+
+    },
+    "By accessing or using our application, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the application." : {
+
+    },
+    "Contact Us" : {
 
     },
     "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?" : {
@@ -32,28 +66,139 @@
     "Current Location" : {
 
     },
+    "Dhuhr" : {
+
+    },
+    "Dubai Bold" : {
+
+    },
+    "Dubai Font Tests" : {
+
+    },
+    "Dubai Light" : {
+
+    },
+    "Dubai Medium" : {
+
+    },
+    "Dubai Regular" : {
+
+    },
+    "Fajr" : {
+
+    },
     "Find Location" : {
+
+    },
+    "For the purposes of this Privacy Policy:" : {
+
+    },
+    "Gender" : {
+
+    },
+    "Get unlimited access to all the features we offer for you and have an experience that reflects your soul with our special themes." : {
 
     },
     "Guidance Compass" : {
 
     },
+    "Half Rose" : {
+
+    },
+    "If you have any questions about this Privacy Policy, You can contact us:" : {
+
+    },
+    "Isha" : {
+
+    },
     "Item at %@" : {
+
+    },
+    "Last updated: February 27, 2025" : {
+
+    },
+    "Location not available" : {
+
+    },
+    "Lokasyon" : {
+
+    },
+    "Maghrib" : {
 
     },
     "Meal: %@" : {
 
     },
+    "Medina Evening" : {
+
+    },
+    "New York Black" : {
+
+    },
+    "New York Bold" : {
+
+    },
+    "New York Heavy" : {
+
+    },
+    "New York Italic" : {
+
+    },
+    "New York Medium" : {
+
+    },
+    "New York Regular" : {
+
+    },
+    "New York SemiBold" : {
+
+    },
+    "NewYork Font Tests (System Serif)" : {
+
+    },
     "No locations found" : {
 
     },
+    "Notification" : {
+
+    },
+    "Notifications" : {
+
+    },
+    "Please read these terms of usage carefully before using the AISalah application." : {
+
+    },
+    "Please set your location to use the Qibla compass" : {
+
+    },
+    "Please wait..." : {
+
+    },
     "Popular Locations" : {
+
+    },
+    "Print Available Fonts" : {
+
+    },
+    "Privacy Policy" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Qibla Compass" : {
 
     },
     "Reading: %@" : {
 
     },
     "Ready" : {
+
+    },
+    "Remove all ads and use the app with an ad-free, peaceful experience." : {
+
+    },
+    "Restore Purchases" : {
 
     },
     "Search Country, City or District" : {
@@ -71,6 +216,33 @@
     "Share" : {
 
     },
+    "Subscribe" : {
+
+    },
+    "Sunrise" : {
+
+    },
+    "Terms of Usage" : {
+
+    },
+    "Terms of Use and Privacy Policy" : {
+
+    },
+    "Terms Usage" : {
+
+    },
+    "The Service and its original content, features, and functionality are and will remain the exclusive property of AISalah and its licensors. The Service is protected by copyright, trademark, and other laws." : {
+
+    },
+    "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural." : {
+
+    },
+    "Themes" : {
+
+    },
+    "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You." : {
+
+    },
     "Today Pray" : {
 
     },
@@ -80,7 +252,19 @@
     "Type to search" : {
 
     },
+    "Usage Data is collected automatically when using the Service." : {
+
+    },
+    "We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy." : {
+
+    },
+    "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:" : {
+
+    },
     "With You Every Step of the Way" : {
+
+    },
+    "Your Location" : {
 
     },
     "Your Personal Experience" : {

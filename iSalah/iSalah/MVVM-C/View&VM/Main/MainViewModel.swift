@@ -10,10 +10,10 @@ import Foundation
 class MainViewModel: ObservableObject {
     
     @Published var isHidingHeader: Bool
-    let coordinator: GeneralCoordinatorPresenter
+    let coordinator: MainCoordinatorPresenter
     
     init(isHidingHeader: Bool = false,
-         coordinator: GeneralCoordinatorPresenter) {
+         coordinator: MainCoordinatorPresenter) {
         self.isHidingHeader = isHidingHeader
         self.coordinator = coordinator
     }

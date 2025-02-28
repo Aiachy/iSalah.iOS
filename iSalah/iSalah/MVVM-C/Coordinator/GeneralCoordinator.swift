@@ -16,17 +16,19 @@ enum GeneralCoordinators {
     case main
     case settings
     
-    case compass
 }
 //MARK: Presenter
 class GeneralCoordinatorPresenter: ObservableObject, GeneralProtocol {
     
     @Published var currentView: GeneralCoordinators
+    @Published var isHidingNavbar: Bool
     
-    init() {
+    init(isHidingNavbar: Bool = false) {
         let checkOnbHaveBeenShown = UserDefaults.standard.bool(forKey: onboardingFinishedKey)
         
         self.currentView = checkOnbHaveBeenShown ? .main : .onboarding
+        self.isHidingNavbar = isHidingNavbar
+
     }
     
     func navigate(to destination: GeneralCoordinators) {
@@ -48,20 +50,17 @@ struct GeneralCoordinator: View {
             case .onboarding:
                 OnboardingView(coordinator)
             case .main:
-                MainView(coordinator)
+                MainCoordinator(parent: coordinator)
             case .settings:
-                EmptyView()
-                
-            case .compass:
-                EmptyView()
+                SettingsCoordinator(parent: coordinator)
             }
         }
         .overlay(alignment: .bottom, content: {
-//            if coordinator.currentView == .main || coordinator.currentView == .settings {
+            if !coordinator.isHidingNavbar && (coordinator.currentView == .main || coordinator.currentView == .settings ) {
                 tabBarView
-//            }
+            }
         })
-        .ignoresSafeArea()
+        .edgesIgnoringSafeArea(.bottom)
         .environmentObject(salah)
     }
 }
@@ -77,46 +76,48 @@ private extension GeneralCoordinator {
         ZStack {
             ColorHandler.getColor(salah, for: .islamicAlt)
             HStack {
+                Spacer()
                 Button {
                     coordinator.navigate(to: .main)
                 } label: {
                     ZStack {
-                        tabBarButtonView
+                        tabBarButtonView(coordinator.currentView == .main)
                         ImageHandler.getIcon(salah, image: .main)
                             .scaledToFit()
                             .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                            .frame(width: dw(0.1))
+                            .frame(width: dw(0.05))
                     }
                         
                 }
-                
+                Spacer()
                 Button {
                     coordinator.navigate(to: .settings)
                 } label: {
                     ZStack {
-                        tabBarButtonView
+                        tabBarButtonView(coordinator.currentView == .settings)
                         ImageHandler.getIcon(salah, image: .settings)
                             .scaledToFit()
                             .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                            .frame(width: dw(0.1))
+                            .frame(width: dw(0.05))
+                            
                     }
                 }
-
-                
+                Spacer()
             }
+            .offset(y: dh(-0.01))
         }
-        .frame(height: dh(0.08))
+        .frame(height: dh(0.095))
     }
     
-    var tabBarButtonView: some View {
+    func tabBarButtonView(_ isSelected: Bool) -> some View {
       
         ZStack {
             Circle()
                 .fill(ColorHandler.getColor(salah, for: .islamicAlt))
             Circle()
-                .stroke(ColorHandler.getColor(salah, for: .gold))
+                .stroke(ColorHandler.getColor(salah, for: isSelected ? .gold : .light))
         }
-        .frame(width: dw(0.1))
+        .frame(width: dw(0.13))
 
     }
     

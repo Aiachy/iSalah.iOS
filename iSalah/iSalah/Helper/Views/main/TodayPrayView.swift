@@ -149,6 +149,7 @@ private extension TodayPrayView {
         }
         .frame(width: dw(0.1))
         .onTapGesture {
+            HapticManager.shared.tabSelection()
             withAnimation {
                 action()
             }

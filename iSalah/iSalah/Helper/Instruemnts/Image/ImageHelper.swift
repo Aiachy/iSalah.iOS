@@ -16,15 +16,32 @@ struct ImageHelper {
         case female = "female"
         case location = "location"
         case magnifyingGlass = "magnifyingGlass"
+        
         case compass = "compass"
+        case compassLine = "compassLine"
+        case qible = "qible"
+        
         case heart = "heart"
         case heartFill = "heartFill"
         case share = "share"
+        case cancel = "cancel"
         
         case main = "main"
         case settings = "settings"
         
         case decorationTodayPray = "decorationTodayPray"
+        
+        /// Settings
+        case accessibility = "accessibility"
+        case contact = "contact"
+        case notification = "notification"
+        case privacyAndTerms = "privacyAndTerms"
+        case profile = "profile"
+        case theme = "theme"
+        
+        case subscribe = "subscribe"
+        
+        case back = "back"
     }
     
     enum massive: String {
@@ -40,5 +57,7 @@ struct ImageHelper {
         case mosque1 = "mosque1"
         case mosque2 = "mosque2"
         case mosque3 = "mosque3"
+        
+        case paywall = "paywall"
     }
 }

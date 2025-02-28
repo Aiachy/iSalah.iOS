@@ -16,3 +16,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     return true
   }
 }
+
+extension AppDelegate {
+    // Setup notification services when app launches
+    func setupNotificationServices() {
+        // Initialize notification manager (this will trigger singleton creation)
+        _ = NotificationManager.shared
+        
+        // Request notification permissions
+        NotificationManager.shared.requestAuthorization()
+    }
+}

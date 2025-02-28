@@ -8,7 +8,7 @@
 import Foundation
 
 struct AppInfoModel: Codable {
-    let theme: String
+    var theme: String
     
     init(theme: String = "Medina Evening") {
         self.theme = theme
