@@ -85,7 +85,6 @@ class FirebaseFirestoreManager {
         return array.map { safeValueForFirestore($0) }
     }
     
-    @discardableResult
     func listenToAppInfoChanges(userId: String? = nil, listener: @escaping (AppInfoModel?, Error?) -> Void) -> (() -> Void) {
         let uid = userId ?? getCurrentUserId() ?? ""
         

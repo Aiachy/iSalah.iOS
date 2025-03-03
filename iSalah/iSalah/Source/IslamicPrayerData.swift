@@ -9,6 +9,33 @@
 import Foundation
 
 struct IslamicPrayerData {
+    
+    static func getDailyPrayer() -> TodayPrayerModel {
+        let calendar = Calendar.current
+        let dateComponents = calendar.dateComponents([.day, .month, .year], from: Date())
+        
+        let fallbackPrayer = TodayPrayerModel(
+            id: "default",
+            title: "Sahih Bukhari",
+            subTitle: "Hadith 6369",
+            arabic: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+            reading: "Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 'adhaban-nar",
+            meal: "Our Lord, give us good in this world and good in the Hereafter, and save us from the punishment of the Fire."
+        )
+
+        guard let day = dateComponents.day, let month = dateComponents.month else {
+            // Fallback to first prayer if we can't get date components
+            return prayers.first ?? fallbackPrayer
+        }
+        
+        // Use the day and month to calculate a consistent index
+        let index = (day + month - 1) % max(1, prayers.count)
+        
+        // Return the prayer at the calculated index, or fallback if the array is empty
+        return prayers.indices.contains(index) ? prayers[index] : fallbackPrayer
+                
+    }
+        
     static let prayers: [TodayPrayerModel] = [
         // 1
         TodayPrayerModel(

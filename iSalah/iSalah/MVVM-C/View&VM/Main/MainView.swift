@@ -42,7 +42,7 @@ struct MainView: View {
                     VStack {
                         headerView
                         TodayPrayView(
-                            IslamicPrayerData.prayers.randomElement()!
+                            IslamicPrayerData.getDailyPrayer()
                         )
                         .padding(.top)
                         Rectangle()

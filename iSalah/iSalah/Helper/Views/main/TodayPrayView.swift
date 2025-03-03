@@ -12,26 +12,31 @@ struct TodayPrayView: View {
     @EnvironmentObject var salah: iSalahState
     @State private var isLikedPray: Bool = false
     @State private var index: Int
-
+    @State private var translatedMeal: String
+    
     let model: TodayPrayerModel
     
     init(index: Int = 0,
          _ model: TodayPrayerModel ) {
         self.index = index
         self.model = model
+        self.translatedMeal = model.meal
     }
     
     var body: some View {
             
         VStack(spacing: 18) {
             makeHeaderView(model.title, sub: model.subTitle)
-            makeContentView(model.arabic, reading: model.reading, meal: model.meal.translated)
+            makeContentView(model.arabic, reading: model.reading, meal: translatedMeal)
             makeBottomView(model)
                 
         }
         .padding(10)
         .frame(width: size9)
         .background(backgroundView)
+        .task {
+            self.translatedMeal = await PrayerTranslationManager.shared.translate(text: model.meal)
+        }
     }
 }
 //MARK: Preview
