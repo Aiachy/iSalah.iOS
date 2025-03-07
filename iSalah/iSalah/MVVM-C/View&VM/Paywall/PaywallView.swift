@@ -12,9 +12,11 @@ struct PaywallView: View {
     @Environment(\.dismiss) var dismiss
     @EnvironmentObject var salah: iSalahState
     @StateObject var vm: PaywallViewModel
+    @Binding var isAppear: Bool
     
-    init() {
+    init(_ isAppear: Binding<Bool>) {
         _vm = StateObject(wrappedValue: PaywallViewModel())
+        _isAppear = isAppear
     }
     
     var body: some View {
@@ -24,7 +26,7 @@ struct PaywallView: View {
                 Spacer()
                 makeElementView("Remove all ads and use the app with an ad-free, peaceful experience.")
                     
-                makeElementView("Get unlimited access to all the features we offer for you and have an experience that reflects your soul with our special themes.")
+                makeElementView("Get unlimited access and enjoy a soulful experience with special themes.")
                     .padding(.vertical,20)
                     .padding(.bottom,40)
                 buyButtonView
@@ -33,17 +35,13 @@ struct PaywallView: View {
             }
         }
         .overlay(alignment: .topLeading, content: { cancelButtonView })
-        .overlay {
-            if vm.isLoading {
-                loadingView
-            }
-        }
+        .overlay { if vm.isLoading { loadingView } }
         .environmentObject(salah)
     }
 }
 
 #Preview {
-    PaywallView()
+    PaywallView(.constant(false))
         .environmentObject(mockSalah)
 }
 
@@ -66,24 +64,29 @@ private extension PaywallView {
     }
     
     func makeElementView(_ text: LocalizedStringKey) -> some View {
-        Text(text)
-            .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
-            .font(FontHandler.setDubaiFont(weight: .bold, size: .s))
-            .multilineTextAlignment(.center)
-            .lineSpacing(-5)
-            .padding(.horizontal)
-            .background {
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(ColorHandler.getColor(salah, for: .light))
-                    .padding(.vertical, -10)
-                    .frame(width: size9, height: dh(0.06))
-            }
-            .frame(width: size9, height: dh(0.06))
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .fill(ColorHandler.getColor(salah, for: .light))
+                .padding(.vertical, -10)
+            Text(text)
+                .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
+                .font(FontHandler.setDubaiFont(weight: .bold, size: .s))
+                .multilineTextAlignment(.center)
+                .lineSpacing(-5)
+                .padding(.horizontal)
+        }
+            .frame(width: size9, height: dh(0.08))
     }
     
     var buyButtonView: some View {
         Button(action: {
-            vm.purchasePackage()
+            vm.purchasePackage { isPurchasing in
+                if isPurchasing {
+                    salah.user.info.isPremium = true
+                    isAppear = false
+                    dismiss()
+                }
+            }
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)
@@ -92,7 +95,7 @@ private extension PaywallView {
                 RoundedRectangle(cornerRadius: 20)
                     .fill(ColorHandler.getColor(salah, for: .islamicAlt))
                 
-                Text(vm.fullSubscriptionText + " " + "with annual subscription")
+                Text(vm.fullSubscriptionText + " " + "with year subscription")
                     .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                     .font(FontHandler.setDubaiFont(weight: .bold, size: .l))
             }

@@ -47,13 +47,13 @@ private extension SettingsHeaderView {
         
         RoundedRectangle(cornerRadius: 50)
             .stroke(ColorHandler.getColor(salah, for: .light), lineWidth: 0.5)
-            .frame(width: dw(0.18), height: dh(0.035))
+            .frame(width: dw(0.2), height: dh(0.035))
             .overlay {
                 HStack {
                     ImageHandler.getIcon(salah, image: .back)
                         .scaledToFit()
                         .frame(width: dw(0.02))
-                    Spacer()
+                    
                     Text("Back")
                         .font(FontHandler.setDubaiFont(weight: .bold, size: .xs))
                 }

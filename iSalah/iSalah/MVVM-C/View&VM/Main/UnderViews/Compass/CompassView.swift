@@ -24,22 +24,12 @@ struct CompassView: View {
             BackgroundView()
             VStack(spacing: 20) {
                 SettingsHeaderView("Qibla Compass", back: vm.makeBackButton)
-                
                 Spacer()
-                
-                if let location = salah.user.location {
+                if salah.user.location != nil {
                     compassView
                 } else {
-                    Text("Location not available")
-                        .font(FontHandler.setDubaiFont(weight: .medium, size: .l))
-                        .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
-                    Text("Please set your location to use the Qibla compass")
-                        .font(FontHandler.setDubaiFont(weight: .regular, size: .m))
-                        .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 40)
+                    locationNotAvailable
                 }
-                
                 Spacer()
                 locationTextView
             }
@@ -61,25 +51,9 @@ struct CompassView: View {
 }
 
 private extension CompassView {
-    // Helper functions to break up complex position calculations
-    func calculateX(angle: Double) -> CGFloat {
-        let radius = size9/2 - 20
-        let centerX = size9/2
-        let angleInRadians = angle * .pi / 180
-        return centerX + radius * cos(angleInRadians)
-    }
-    
-    func calculateY(angle: Double) -> CGFloat {
-        let radius = size9/2 - 20
-        let centerY = size9/2
-        let angleInRadians = angle * .pi / 180
-        return centerY + radius * sin(angleInRadians)
-    }
-    
+
     var compassView: some View {
-        // Fixed background container
         ZStack {
-            // Outer circle (fixed)
             Circle()
                 .stroke(
                     ColorHandler.getColor(salah, for: .light),
@@ -87,24 +61,28 @@ private extension CompassView {
                 )
                 .frame(width: size9, height: size9)
             
-            // Inner circle (fixed)
             Circle()
                 .fill(
                     ColorHandler.getColor(salah, for: .islamic)
                 )
                 .frame(width: size9, height: size9)
             
-            // This container rotates with the compass heading
             ZStack {
-                // Qibla indicator (rotates to show the Qibla direction)
                 if let qiblaDirection = vm.qiblaDirection {
-                    // Qibla icon on edge
+                    /// Qibla
                     ImageHandler.getIcon(salah, image: .qible)
                         .scaledToFit()
                         .frame(width: dw(0.1))
                         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                         .position(x: calculateX(angle: qiblaDirection),
                                   y: calculateY(angle: qiblaDirection))
+                    /// Line
+                    ImageHandler.getIcon(salah, image: .compassLine)
+                        .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                        .scaledToFit()
+                        .frame(width: dw(0.12))
+                        .offset(y: dh(-0.05))
+                        .rotate(-30)
                     }
             }
             .frame(width: size9, height: size9)
@@ -126,5 +104,34 @@ private extension CompassView {
             }
             .font(FontHandler.setDubaiFont(weight: .bold, size: .l))
         }
+    }
+    
+    var locationNotAvailable: some View {
+        VStack {
+            Text("Location not available")
+                .font(FontHandler.setDubaiFont(weight: .medium, size: .l))
+                .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
+            Text("Please set your location to use the Qibla compass")
+                .font(FontHandler.setDubaiFont(weight: .regular, size: .m))
+                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 40)
+        }
+    }
+}
+
+private extension CompassView {
+    func calculateX(angle: Double) -> CGFloat {
+        let radius = size9/2 - 30
+        let centerX = size9/2
+        let angleInRadians = angle * .pi / 180
+        return centerX + radius * cos(angleInRadians)
+    }
+    
+    func calculateY(angle: Double) -> CGFloat {
+        let radius = size9/2 - 30
+        let centerY = size9/2
+        let angleInRadians = angle * .pi / 180
+        return centerY + radius * sin(angleInRadians)
     }
 }

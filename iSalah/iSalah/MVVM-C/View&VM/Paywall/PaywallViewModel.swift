@@ -67,7 +67,7 @@ extension PaywallViewModel {
         }
     }
     
-    func purchasePackage() {
+    func purchasePackage(result: @escaping (Bool) -> ()) {
         guard let package = currentPackage else {
             return
         }
@@ -80,11 +80,13 @@ extension PaywallViewModel {
                 await MainActor.run {
                     self.isLoading = false
                     print("🔶 Paket satın alma başarılı")
+                    result(true)
                 }
             } catch {
                 await MainActor.run {
                     self.isLoading = false
                     print("🔶 Satın alma hatası: \(error.localizedDescription)")
+                    result(false)
                 }
             }
         }

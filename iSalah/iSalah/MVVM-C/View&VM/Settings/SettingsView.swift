@@ -20,7 +20,9 @@ struct SettingsView: View {
         ZStack {
             BackgroundView()
             VStack(spacing: 20) {
-                makeSettingsButton("Subscribe", icon: .subscribe, action: vm.openPaywall)
+                if !salah.user.checkIsPremium() {
+                    makeSettingsButton("Subscribe", icon: .subscribe, action: vm.openPaywall)
+                }
                 makeSettingsButton("Profile", icon: .profile, action: vm.navToProfile)
                 
                 makeSettingsButton("Themes", icon: .theme, action: vm.navToTheme)
@@ -43,7 +45,7 @@ struct SettingsView: View {
                 .modifier(SheetModifier(borderC: .oneTrue, 0.98))
         }
         .fullScreenCover(isPresented: $vm.isOpenPaywall) {
-            PaywallView()
+            PaywallView($vm.isOpenPaywall)
         }
     }
 }
@@ -79,7 +81,7 @@ private extension SettingsView {
             }
             .padding(.horizontal)
         }
-        .frame(width: size9, height: dh(0.07))
+        .frame(width: size9, height: dh(0.08))
         .onTapGesture {
             withAnimation(.linear) {
                 action()

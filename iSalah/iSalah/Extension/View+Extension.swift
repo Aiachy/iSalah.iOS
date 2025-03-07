@@ -18,3 +18,12 @@ extension View {
     }
     
 }
+
+extension View {
+    
+    func rotate(_ angle: Double) -> some View {
+        self
+            .rotationEffect(.degrees(-30))
+    }
+    
+}

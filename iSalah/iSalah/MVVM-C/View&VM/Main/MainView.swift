@@ -18,13 +18,15 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
+            /// Background
             BackgroundView()
             VStack {
+                /// Header
                 MainHeaderView(
                     $vm.isHidingHeader,
                     navToCompass: vm.navigationToCompass
                 )
-                
+                /// Custom Scroll
                 ScrollViewWithOffset { offset in
                     let threshold: CGFloat = 100
                     
@@ -40,18 +42,27 @@ struct MainView: View {
                     }
                 } content: {
                     VStack {
+                        /// Scroll Info Header
                         headerView
+                        /// Today pray
                         TodayPrayView(
                             IslamicPrayerData.getDailyPrayer()
                         )
                         .padding(.top)
-                        Rectangle()
-                            .opacity(0.001)
-                            .frame(height: dh(0.095))
+
                     }
                 }
+                if !salah.user.checkIsPremium() {
+                    BannerAdView()
+                        .frame(height: dh(0.058))
+                }
+                /// TabBar spacer
+                Rectangle()
+                    .opacity(0.001)
+                    .frame(height: dh(0.095))
             }
         }
+        .interstitialAd($vm.isShowingInterstitialAd, isP: salah.user.checkIsPremium())
         .environmentObject(salah)
     }
 }

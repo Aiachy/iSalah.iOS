@@ -44,6 +44,9 @@ extension UserModel {
         }
         
         return "\(location.district), \(location.city)"
-        
+    }
+    
+    func checkIsPremium() -> Bool {
+        info.isPremium
     }
 }

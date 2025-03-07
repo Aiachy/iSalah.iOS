@@ -28,12 +28,17 @@ struct OnboardingView: View {
                 )
             }
         }
-        .sheet(isPresented: $vm.isLocationSheetActive) {
-            SearchLocationView { location in
-                salah.user.location = location
-                vm.nextOnbPage()
+        .onChange(of: vm.userCurrentLocation != nil) { newValue in
+            if let location = vm.userCurrentLocation, let city = location.city, let country = location.country {
+                    let userLocation = LocationSuggestion(
+                        country: country,
+                        city: city,
+                        district: location.district ?? "",
+                        coordinate: location.coordinate
+                    )
+                print("iSalah: OnboardingView - userLocation: \(userLocation)")
+                salah.user.location = userLocation
             }
-            .modifier(SheetModifier(0.9))
         }
     }
 }
@@ -74,7 +79,6 @@ private extension OnboardingView {
             circleBackgroundView
             VStack {
                 makeCircleTitleAndDescription(model)
-                
                 circleStarLineView
                 Spacer()
                 if vm.selectedModelId == 2 {
@@ -94,13 +98,13 @@ private extension OnboardingView {
                     .frame(height: dh(0.08))
                 } else {
                     /// Normal Button
-                    circleButtonView(model.button)
-                        .onTapGesture(perform: model.action)
+                    RoundedButtonView(model.button, action: model.action)
                 }
                 Spacer()
             }
-            .frame(height: dh(0.36))
+            .frame(height: dh(0.5))
             .multilineTextAlignment(.center)
+            
         }
         .frame(width: dw(0.96))
     }
@@ -130,20 +134,22 @@ private extension OnboardingView {
     
     /// Circle Title And Description
     func makeCircleTitleAndDescription(_ model: OnboardingModel) -> some View {
-        VStack {
+        VStack(spacing: 0) {
             /// Title
             Text(model.title)
                 .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
-                .font(FontHandler.setDubaiFont(weight: .bold, size: .xl))
-                .frame(width: dw(0.5), height: dh(0.055))
-            
+                .font(FontHandler.setDubaiFont(weight: .bold, size: .l))
+                .frame(width: dw(0.6))
+                .padding(.bottom)
             /// Decription
             Text(model.description)
-                .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
+                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                 .font(FontHandler.setDubaiFont(weight: .regular, size: .xs))
-                .padding(.vertical)
-                .padding(.horizontal,30)
+                .padding(.horizontal)
+                
         }
+        .frame(height: dh(0.235))
+        .padding(.horizontal,10)
     }
     
     /// Circle Star Line View
@@ -163,18 +169,6 @@ private extension OnboardingView {
 }
 //MARK: Buttons
 private extension OnboardingView {
-    /// Circle Button
-    func circleButtonView(_ text: LocalizedStringKey) -> some View {
-        RoundedRectangle(cornerRadius: 20)
-            .stroke(ColorHandler.getColor(salah, for: .gold))
-            .frame(width: dw(0.25), height: dh(0.05))
-            .overlay {
-                Text(text)
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                    .font(FontHandler.setDubaiFont(weight: .regular, size: .s))
-                    .multilineTextAlignment(.center)
-            }
-    }
     /// Circel Gender Button
     func makeGenderButtonView(_ circleColor: ColorHelper.original, icon: ImageHelper.icon) -> some View {
         ZStack {
@@ -186,7 +180,7 @@ private extension OnboardingView {
             ImageHandler.getIcon(salah, image: icon)
                 .scaledToFit()
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .padding(20)
+                .padding(15)
         }
         
     }

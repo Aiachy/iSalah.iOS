@@ -45,7 +45,7 @@ private extension SplashView {
             .ignoresSafeArea()
             VStack {
                 Spacer()
-                Text("App Beta\n\(salah.user.harvest.appVersion) (\(salah.user.harvest.buildNumber))")
+                Text("\n\(salah.user.harvest.appVersion) (\(salah.user.harvest.buildNumber))")
                     .multilineTextAlignment(.center)
                     .foregroundStyle(ColorHandler.getColor(salah, for: .light))
             }

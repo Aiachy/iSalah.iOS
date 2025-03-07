@@ -4,6 +4,16 @@
     "" : {
 
     },
+    "\n%@ (%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "\n%1$@ (%2$@)"
+          }
+        }
+      }
+    },
     ":" : {
 
     },
@@ -26,16 +36,6 @@
     "Add Item" : {
 
     },
-    "App Beta\n%@ (%@)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "App Beta\n%1$@ (%2$@)"
-          }
-        }
-      }
-    },
     "Arabian Desert" : {
 
     },
@@ -57,10 +57,10 @@
     "Contact Us" : {
 
     },
-    "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?" : {
+    "Continue" : {
 
     },
-    "Could you please specify your gender so that we can provide you with personalized content and religious information? This information will help us organize special recommendations for your hijab, prayers and other religious practices." : {
+    "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?" : {
 
     },
     "Current Location" : {
@@ -87,16 +87,13 @@
     "Fajr" : {
 
     },
-    "Find Location" : {
-
-    },
     "For the purposes of this Privacy Policy:" : {
 
     },
     "Gender" : {
 
     },
-    "Get unlimited access to all the features we offer for you and have an experience that reflects your soul with our special themes." : {
+    "Get unlimited access and enjoy a soulful experience with special themes." : {
 
     },
     "Guidance Compass" : {
@@ -130,6 +127,9 @@
 
     },
     "Medina Evening" : {
+
+    },
+    "Namaz vakitleri yüklenemedi" : {
 
     },
     "New York Black" : {
@@ -175,6 +175,9 @@
 
     },
     "Popular Locations" : {
+
+    },
+    "Premium" : {
 
     },
     "Print Available Fonts" : {
@@ -261,7 +264,10 @@
     "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:" : {
 
     },
-    "With You Every Step of the Way" : {
+    "With You Every\nStep of the Way" : {
+
+    },
+    "Would you like to share your gender for personalized religious content? This helps us tailor recommendations for hijab, prayers, and other Islamic practices." : {
 
     },
     "Your Location" : {
@@ -270,7 +276,7 @@
     "Your Personal Experience" : {
 
     },
-    "Your smart assistant that makes yourIslamic life easier is now ready.It is specially designed for all your needs,from prayer times to Quran readings, from prayer reminders to qibla compass." : {
+    "Your smart Islamic assistant is now ready. Specially designed for all your needs: prayer times, Quran readings, prayer reminders, and qibla compass." : {
 
     }
   },

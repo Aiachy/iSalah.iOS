@@ -25,10 +25,13 @@ struct ThemeView: View {
             BackgroundView()
             VStack {
                 SettingsHeaderView("Themes", back: vm.makeBackButton)
-                VStack(spacing: 30) {
-                    medineThemeRow
-                    roseThemeRow
-                    arabThemeRow
+                ScrollView(.vertical,showsIndicators: false) {
+                    VStack(spacing: 30) {
+                        medineThemeRow
+                        roseThemeRow
+                        arabThemeRow
+                    }
+                    .padding(.top)
                 }
                 Spacer()
             }
@@ -63,12 +66,10 @@ extension ThemeView {
                     ColorHandler.getColor(salah, for: .gold)
                         .frame(height: 1)
                         .offset(y: 5)
-                        .opacity(salah.user.appInfo.theme == "Medina Evening" ? 1 : 0 )
+                        .opacity(checkIsSelectedTheme("Medina Evening"))
                 }
         }
-        .onTapGesture {
-            salah.user.appInfo.theme = "Medina Evening"
-        }
+        .onTapGesture { makeSelectedTheme("Medina Evening", isPremium: false) }
     }
     
     var roseThemeRow: some View {
@@ -83,19 +84,20 @@ extension ThemeView {
             }
             
             /// Title
-            Text("Half Rose")
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
-                .background(alignment: .bottom) {
-                    ColorHandler.getColor(salah, for: .gold)
-                        .frame(height: 1)
-                        .offset(y: 5)
-                        .opacity(salah.user.appInfo.theme == "Half Rose" ? 1 : 0 )
-                }
+            VStack(spacing: 0){
+                Text("Half Rose")
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                    .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
+                    .background(alignment: .bottom) {
+                        ColorHandler.getColor(salah, for: .gold)
+                            .frame(height: 1)
+                            .offset(y: 5)
+                            .opacity(checkIsSelectedTheme("Half Rose"))
+                    }
+                makePremiumTitle()
+            }
         }
-        .onTapGesture {
-            salah.user.appInfo.theme = "Half Rose"
-        }
+        .onTapGesture { makeSelectedTheme("Half Rose") }
     }
     
     var arabThemeRow: some View {
@@ -110,19 +112,20 @@ extension ThemeView {
             }
             
             /// Title
-            Text("Arabian Desert")
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
-                .background(alignment: .bottom) {
-                    ColorHandler.getColor(salah, for: .gold)
-                        .frame(height: 1)
-                        .offset(y: 5)
-                        .opacity(salah.user.appInfo.theme == "Arab Desert" ? 1 : 0 )
-                }
+            VStack(spacing: 0) {
+                Text("Arabian Desert")
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                    .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
+                    .background(alignment: .bottom) {
+                        ColorHandler.getColor(salah, for: .gold)
+                            .frame(height: 1)
+                            .offset(y: 5)
+                            .opacity(checkIsSelectedTheme("Arab Desert") )
+                    }
+                makePremiumTitle()
+            }
         }
-        .onTapGesture {
-            salah.user.appInfo.theme = "Arab Desert"
-        }
+        .onTapGesture { makeSelectedTheme("Arab Desert") }
     }
     
     
@@ -135,6 +138,29 @@ extension ThemeView {
                 .fill(color)
         }
         .frame(width: dw(0.135), height: dh(0.2))
+    }
+    
+}
+
+private extension ThemeView {
+    
+    private func checkIsSelectedTheme(_ themeTitle: String) -> Double {
+        salah.user.appInfo.theme == themeTitle ? 1 : 0
+    }
+    
+    private func makeSelectedTheme(_ themeTitle: String, isPremium: Bool = true) {
+        guard !isPremium || salah.user.checkIsPremium() else { return }
+        withAnimation(.linear) {
+            salah.user.appInfo.theme = themeTitle
+        }
+    }
+    @ViewBuilder
+    func makePremiumTitle() -> some View {
+        if !salah.user.checkIsPremium() {
+            Text("Premium")
+                .foregroundStyle(ColorHandler.getColor(salah, for: .gold))
+                .font(FontHandler.setNewYorkFont(weight: .bold, size: .s))
+        }
     }
     
 }

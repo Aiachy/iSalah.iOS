@@ -10,19 +10,20 @@ import Combine
 
 class OnboardingViewModel: ObservableObject {
     
+    @Published var userCurrentLocation: LocationInfo? = nil
     @Published var isOnbActive: Bool
-    @Published var isLocationSheetActive: Bool
     @Published var selectedModelId: Int
     
     var cancelBag = Set<AnyCancellable>()
-    let coordinator: GeneralCoordinatorPresenter
-    
-    init(isOnbActive: Bool = false,
-         isLocationSheetActive: Bool = false,
+    private let coordinator: GeneralCoordinatorPresenter
+    private let locationManager = LocationManager()
+
+    init(userCurrentLocation: LocationInfo? = nil,
+         isOnbActive: Bool = false,
          selectedModelId: Int = 0,
          coordinator: GeneralCoordinatorPresenter) {
+        self.userCurrentLocation = userCurrentLocation
         self.isOnbActive = isOnbActive
-        self.isLocationSheetActive = isLocationSheetActive
         self.selectedModelId = selectedModelId
         
         self.coordinator = coordinator
@@ -37,8 +38,8 @@ extension OnboardingViewModel {
         [
             .init(
                 id: 0,
-                title: "With You Every Step of the Way",
-                description: "Your smart assistant that makes yourIslamic life easier is now ready.It is specially designed for all your needs,from prayer times to Quran readings, from prayer reminders to qibla compass.",
+                title: "With You Every\nStep of the Way",
+                description: "Your smart Islamic assistant is now ready. Specially designed for all your needs: prayer times, Quran readings, prayer reminders, and qibla compass.",
                 button: "Ready",
                 image: .onb1,
                 action: { [self] in
@@ -50,16 +51,17 @@ extension OnboardingViewModel {
                 id: 1,
                 title: "Guidance Compass",
                 description: "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?",
-                button: "Find Location",
+                button: "Continue",
                 image: .onb2,
                 action: { [self] in
-                    isLocationSheetActive.toggle()
+                    nextOnbPage()
+                    getUserLocation() 
                 }
             ),
             .init(
                 id: 2,
                 title: "Your Personal Experience",
-                description: "Could you please specify your gender so that we can provide you with personalized content and religious information? This information will help us organize special recommendations for your hijab, prayers and other religious practices.",
+                description: "Would you like to share your gender for personalized religious content? This helps us tailor recommendations for hijab, prayers, and other Islamic practices.",
                 button: "",
                 image: .onb3,
                 action: { [self] in
@@ -91,6 +93,28 @@ extension OnboardingViewModel {
                 }
             }
             .store(in: &cancelBag)
+    }
+    
+}
+
+extension OnboardingViewModel {
+    
+    private func getUserLocation() {
+        print("iSalah: OnboardingViewModel - Started LocationManager ")
+        locationManager.getUserLocation { [weak self] result in
+            guard let self = self else { return }
+            print("iSalah: OnboardingViewModel - Start getting user location")
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let locationInfo):
+                    self.userCurrentLocation = locationInfo
+                    print("iSalah: OnboardingViewModel - Successfully get user location")
+
+                case .failure(let error):
+                    print("iSalah: OnboardingViewModel - Failed to get user location Error: \(error)")
+                }
+            }
+        }
     }
     
 }

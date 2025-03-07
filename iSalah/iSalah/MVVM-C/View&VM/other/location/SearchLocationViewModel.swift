@@ -85,7 +85,6 @@ class SearchLocationViewModel: NSObject, ObservableObject {
                 case .success(let locationInfo):
                     self.userCurrentLocation = locationInfo
                     
-                    // Eğer özel bir arama yoksa, kullanıcının ülkesindeki popüler şehirleri getir
                     if self.searchText.isEmpty {
                         if let country = locationInfo.country {
                             self.loadPopularLocationsFor(country: country)
@@ -94,7 +93,6 @@ class SearchLocationViewModel: NSObject, ObservableObject {
                         }
                     }
                 case .failure(_):
-                    // Hata mesajını gösterme, sadece konum bilgisi olmadan devam et
                     self.loadPopularLocations()
                 }
             }

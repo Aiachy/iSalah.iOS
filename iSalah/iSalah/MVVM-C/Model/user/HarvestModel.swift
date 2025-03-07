@@ -76,12 +76,6 @@ struct HarvestModel {
     var appOpenCount: [String: Int] // Günlere göre app açılma sayısı
     var usageByHour: [Int: TimeInterval] // Saate göre kullanım süresi
     
-    // Kullanıcı davranışı
-    var screenViewCounts: [String: Int] // Ekran görüntülenme sayıları
-    var buttonClickCounts: [String: Int] // Buton tıklama sayıları
-    var featureUsageCounts: [String: Int] // Özellik kullanım sayıları
-    var errorCounts: [String: Int] // Hata sayıları
-    
     private static let userDefaultsPrefix = "com.harvest.data."
     private static let sessionStartKey = userDefaultsPrefix + "sessionStart"
     private static let launchCountKey = userDefaultsPrefix + "launchCount"
@@ -206,13 +200,7 @@ struct HarvestModel {
                 self.usageByHour[hourInt] = duration
             }
         }
-        
-        // Kullanıcı davranışı
-        self.screenViewCounts = UserDefaults.standard.dictionary(forKey: HarvestModel.screenViewCountsKey) as? [String: Int] ?? [:]
-        self.buttonClickCounts = UserDefaults.standard.dictionary(forKey: HarvestModel.buttonClickCountsKey) as? [String: Int] ?? [:]
-        self.featureUsageCounts = UserDefaults.standard.dictionary(forKey: HarvestModel.featureUsageCountsKey) as? [String: Int] ?? [:]
-        self.errorCounts = UserDefaults.standard.dictionary(forKey: HarvestModel.errorCountsKey) as? [String: Int] ?? [:]
-        
+
         // İnit tamamlandıktan sonra kullanım takibini başlat
         NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: .main) { _ in
             HarvestModel.endSession()

@@ -19,6 +19,7 @@
 		C30D534A2D700D8100508436 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C30D53492D700D8100508436 /* FirebaseStorage */; };
 		C30D534C2D700D8100508436 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C30D534B2D700D8100508436 /* FirebaseStorageCombine-Community */; };
 		C30D53542D7013DE00508436 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C30D53532D7013DE00508436 /* FirebaseAuth */; };
+		C3560FBF2D76ED1700B20791 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = C3560FBE2D76ED1700B20791 /* GoogleMobileAds */; };
 		C3C2AE1D2D712E2C0041BC44 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C2AE1C2D712E2C0041BC44 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 				C30D53372D700CDF00508436 /* RevenueCatUI in Frameworks */,
 				C30D534A2D700D8100508436 /* FirebaseStorage in Frameworks */,
 				C30D53402D700D8100508436 /* FirebaseCrashlytics in Frameworks */,
+				C3560FBF2D76ED1700B20791 /* GoogleMobileAds in Frameworks */,
 				C30D53352D700CDF00508436 /* RevenueCat in Frameworks */,
 				C30D53542D7013DE00508436 /* FirebaseAuth in Frameworks */,
 				C30D533C2D700D8100508436 /* FirebaseAnalytics in Frameworks */,
@@ -176,6 +178,7 @@
 				C30D53492D700D8100508436 /* FirebaseStorage */,
 				C30D534B2D700D8100508436 /* FirebaseStorageCombine-Community */,
 				C30D53532D7013DE00508436 /* FirebaseAuth */,
+				C3560FBE2D76ED1700B20791 /* GoogleMobileAds */,
 			);
 			productName = iSalah;
 			productReference = C3B54C4A2D61C05E00916BE5 /* iSalah.app */;
@@ -302,6 +305,7 @@
 			packageReferences = (
 				C30D53332D700CDF00508436 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 				C30D533A2D700D8100508436 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C3560FBD2D76ED1700B20791 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C3B54C4B2D61C05E00916BE5 /* Products */;
@@ -512,8 +516,10 @@
 				INFOPLIST_FILE = iSalah/Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AISalah;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need the location so that the application can provide you with better prayer times.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need the location so that the application can provide you with better prayer times.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need the location so that the application can provide you with better prayer times.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This permission is necessary so that we can show you more relevant ads. Your personal data will not be shared with third parties without your permission in any way.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -551,8 +557,10 @@
 				INFOPLIST_FILE = iSalah/Source/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = AISalah;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need the location so that the application can provide you with better prayer times.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need the location so that the application can provide you with better prayer times.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need the location so that the application can provide you with better prayer times.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This permission is necessary so that we can show you more relevant ads. Your personal data will not be shared with third parties without your permission in any way.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -706,6 +714,14 @@
 				minimumVersion = 11.9.0;
 			};
 		};
+		C3560FBD2D76ED1700B20791 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -768,6 +784,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C30D533A2D700D8100508436 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		C3560FBE2D76ED1700B20791 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3560FBD2D76ED1700B20791 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
