@@ -49,8 +49,8 @@ struct MainView: View {
                             IslamicPrayerData.getDailyPrayer()
                         )
                         .padding(.top)
-
                     }
+                    .padding(.top)
                 }
                 if !salah.user.checkIsPremium() {
                     BannerAdView()

@@ -10,9 +10,9 @@ import SwiftUI
 struct EventAndTimeView: View {
     
     @EnvironmentObject var salah: iSalahState
-    @State private var eventAndTime: (name: String, time: String)?
+    @State private var eventAndTime: (name: LocalizedStringKey, time: String)?
     
-    init(_ eventAndTime: (name: String, time: String)? = nil) {
+    init(_ eventAndTime: (name: LocalizedStringKey, time: String)? = nil) {
         self.eventAndTime = eventAndTime
     }
     
@@ -28,6 +28,7 @@ struct EventAndTimeView: View {
         }
         .frame(height: dh(0.082))
         .onAppear(perform: makeEventAndTimeText)
+        .onChange(of: salah.user.location?.country, makeEventAndTimeText)
     }
 }
 

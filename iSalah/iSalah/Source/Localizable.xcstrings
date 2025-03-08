@@ -14,9 +14,6 @@
         }
       }
     },
-    ":" : {
-
-    },
     "%@, %@, %@" : {
       "localizations" : {
         "en" : {
@@ -87,6 +84,9 @@
     "Fajr" : {
 
     },
+    "Find My Location" : {
+
+    },
     "For the purposes of this Privacy Policy:" : {
 
     },
@@ -127,9 +127,6 @@
 
     },
     "Medina Evening" : {
-
-    },
-    "Namaz vakitleri yüklenemedi" : {
 
     },
     "New York Black" : {
@@ -268,6 +265,9 @@
 
     },
     "Would you like to share your gender for personalized religious content? This helps us tailor recommendations for hijab, prayers, and other Islamic practices." : {
+
+    },
+    "You need to enable location services to use this feature." : {
 
     },
     "Your Location" : {

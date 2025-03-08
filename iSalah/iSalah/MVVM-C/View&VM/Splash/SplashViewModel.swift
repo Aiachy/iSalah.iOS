@@ -40,10 +40,12 @@ extension SplashViewModel {
                 )
                 FirebaseFirestoreManager.shared.saveHarvestData(user.harvest, userId: userId)
                 
-                Task {
-                    let model = await self.getAllUserInfo(userId)
-                    resultId(model)
-                    isAppReady.toggle()
+                DispatchQueue.main.async {
+                    Task {
+                        let model = await self.getAllUserInfo(userId)
+                        resultId(model)
+                        self.isAppReady.toggle()
+                    }
                 }
             }
             .store(in: &cancelBag)

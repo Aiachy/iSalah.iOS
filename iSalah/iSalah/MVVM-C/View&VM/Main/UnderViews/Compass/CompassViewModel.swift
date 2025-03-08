@@ -15,7 +15,7 @@ class CompassViewModel: NSObject, ObservableObject {
     let coordinator: MainCoordinatorPresenter
     private let locationManager = CLLocationManager()
     
-    // MARK: - Published Properties
+    @Published var isSheetPresented: Bool
     @Published var compassHeading: Float = 0
     @Published var qiblaDirection: Double? = nil
     
@@ -26,7 +26,9 @@ class CompassViewModel: NSObject, ObservableObject {
     )
     
     // MARK: - Initialization
-    init(coordinator: MainCoordinatorPresenter) {
+    init(isSheetPresented: Bool = false,
+         coordinator: MainCoordinatorPresenter) {
+        self.isSheetPresented = isSheetPresented
         self.coordinator = coordinator
         super.init()
         

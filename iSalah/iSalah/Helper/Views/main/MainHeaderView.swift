@@ -6,33 +6,42 @@
 //
 
 import SwiftUI
-
+//MARK: View
 struct MainHeaderView: View {
     
     @EnvironmentObject var salah: iSalahState
     @Binding var version: Bool
+    @State private var isSheetPresented: Bool
     
     let navToCompass: () -> ()
     
     init(_ version: Binding<Bool>,
+         isSheetPresented: Bool = false,
          navToCompass: @escaping () -> ()) {
         _version = version
-        
+        self.isSheetPresented = isSheetPresented
         self.navToCompass = navToCompass
     }
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: 10) {
             hicriCalenderAndLocationView
             Spacer()
             PrayerCountdownView()
                 .opacity(version ? 1 : 0)
             compassView
         }
+        .sheet(isPresented: $isSheetPresented, content: {
+            SearchLocationView { location in
+                salah.user.location = location
+                isSheetPresented = false
+            }
+            .modifier(SheetModifier(0.99))
+        })
         .frame(width: size9, height: dh(0.06))
     }
 }
-
+//MARK: Preview
 #Preview {
     ZStack {
         BackgroundView()
@@ -40,7 +49,7 @@ struct MainHeaderView: View {
     }
     .environmentObject(mockSalah)
 }
-
+//MARK: Views
 private extension MainHeaderView {
     
     var hicriCalenderAndLocationView: some View {
@@ -51,6 +60,9 @@ private extension MainHeaderView {
                 .font(FontHandler.setDubaiFont(weight: .regular, size: .xs))
         }
         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+        .onTapGesture {
+            isSheetPresented.toggle()
+        }
     }
     
     var compassView: some View {

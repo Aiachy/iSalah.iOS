@@ -9,18 +9,43 @@ import SwiftUI
 
 struct PrayerCountdownView: View {
     @EnvironmentObject var salah: iSalahState
-    @State private var hours: String = "00"
-    @State private var minutes: String = "00"
-    @State private var seconds: String = "00"
+
     @State private var timer: Timer?
     
     // Animation states
-    @State private var secondsOpacity: Double = 1.0
-    @State private var minutesOpacity: Double = 1.0
-    @State private var hoursOpacity: Double = 1.0
+    @State private var secondsOpacity: Double
+    @State private var minutesOpacity: Double
+    @State private var hoursOpacity: Double
+    
+    @State private var hours: String
+    @State private var minutes: String
+    @State private var seconds: String
+    init(
+        timer: Timer? = nil,
+        
+        secondsOpacity: Double = 1.0,
+        minutesOpacity: Double = 1.0,
+        hoursOpacity: Double = 1.0,
+        
+        hours: String = "00",
+        minutes: String = "00",
+        seconds: String = "00"
+    ) {
+        self.timer = timer
+
+        self.secondsOpacity = secondsOpacity
+        self.minutesOpacity = minutesOpacity
+        self.hoursOpacity = hoursOpacity
+        
+        
+        self.hours = hours
+        self.minutes = minutes
+        self.seconds = seconds
+      
+    }
     
     var body: some View {
-        HStack(spacing: 8) {
+        HStack(alignment: .center,spacing: 8) {
             // Hours
             timeBlock(
                 value: hours,
@@ -28,10 +53,7 @@ struct PrayerCountdownView: View {
                 opacity: hoursOpacity
             )
             
-            Text(":")
-                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .offset(y: -4)
+            twoPointView
             
             // Minutes
             timeBlock(
@@ -40,10 +62,7 @@ struct PrayerCountdownView: View {
                 opacity: minutesOpacity
             )
             
-            Text(":")
-                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xl))
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .offset(y: -4)
+            twoPointView
             
             // Seconds
             timeBlock(
@@ -56,6 +75,7 @@ struct PrayerCountdownView: View {
         .onAppear {
             startTimer()
         }
+        .onChange(of: salah.user.location?.country, newCountryDetection)
         .onDisappear {
             timer?.invalidate()
             timer = nil
@@ -78,11 +98,14 @@ private extension PrayerCountdownView {
                 CustomRectangleShape(radius: 8, corners: [.topLeft, .topRight])
                     .fill(ColorHandler.getColor(salah, for: .light))
                     .frame(width: dw(0.08), height: dh(0.025))
-                CustomRectangleShape(radius: 8, corners: [.bottomLeft, .bottomRight])
-                    .fill(ColorHandler.getColor(salah, for: .light))
-                    .frame(width: dw(0.08), height: dh(0.025))
+                CustomRectangleShape(
+                    radius: 8,
+                    corners: [.bottomLeft, .bottomRight]
+                )
+                .fill(ColorHandler.getColor(salah, for: .light))
+                .frame(width: dw(0.08), height: dh(0.025))
             }
-                .shadow(radius: 10)
+            .shadow(radius: 10)
             VStack(spacing: 2) {
                    
                 Text(value)
@@ -97,6 +120,20 @@ private extension PrayerCountdownView {
         .padding(.vertical, 8)
         .padding(.horizontal, 2)
     }
+    
+    var twoPointView: some View {
+        VStack(alignment: .center) {
+            ForEach(0..<2) { _ in
+                Circle()
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                    .frame(width: 4, height: 4)
+            }
+        }
+    }
+    
+}
+
+private extension PrayerCountdownView {
     
     private func startTimer() {
         guard let location = salah.user.location else { return }
@@ -159,5 +196,13 @@ private extension PrayerCountdownView {
                 self.minutes = mins
                 self.seconds = secs
             }
+    }
+    
+    func newCountryDetection() {
+        timer?.invalidate()
+        timer = nil
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            startTimer()
+        }
     }
 }

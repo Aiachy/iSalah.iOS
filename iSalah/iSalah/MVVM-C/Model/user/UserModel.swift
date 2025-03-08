@@ -40,10 +40,10 @@ extension UserModel {
     func getLocationString() -> String {
         
         guard let location = location else {
-            return ""
+            return "Get Location For Features"
         }
         
-        return "\(location.district), \(location.city)"
+        return "\(location.district) \(location.district.isEmpty ? "" : ", ")\(location.city)"
     }
     
     func checkIsPremium() -> Bool {

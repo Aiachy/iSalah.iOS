@@ -16,8 +16,13 @@ struct MosqueCallTimerView: View {
     var body: some View {
         ZStack {
             ColorHandler.getColor(salah, for: .islamicAlt)
-            if isLoading {
+            if salah.user.location == nil {
+               Text("You need to enable location services to use this feature.")
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                    .font(FontHandler.setNewYorkFont(weight: .semibold, size: .xs))
+            } else if isLoading {
                 ProgressView()
+                    .tint(ColorHandler.getColor(salah, for: .light))
             } else {
                 HStack(spacing: 5) {
                     ForEach(prayerTimes) { prayerTime in
@@ -31,10 +36,10 @@ struct MosqueCallTimerView: View {
             }
         }
         .frame(height: dh(0.06))
-
         .onAppear {
             loadPrayerTimes()
         }
+        .onChange(of: salah.user.location?.country, loadPrayerTimes)
     }
     
 }
@@ -49,7 +54,7 @@ struct MosqueCallTimerView: View {
 //MARK: Views
 private extension MosqueCallTimerView {
     
-    func makeCallTimer(_ title: String, time: String, isPassed: Bool) -> some View {
+    func makeCallTimer(_ title: LocalizedStringKey, time: String, isPassed: Bool) -> some View {
         VStack {
             Text(title)
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
@@ -65,15 +70,14 @@ private extension MosqueCallTimerView {
 }
 //MARK: Func
 private extension MosqueCallTimerView {
-    private func loadPrayerTimes() {
+    func loadPrayerTimes() {
         guard let location = salah.user.location else {
             prayerTimes = []
             isLoading = false
             return
         }
-        
+        print("iSalah: MosqueCallTimerView - loadPrayerTimes - \(location)")
         isLoading = true
-        
         Task {
             let times = await PrayerTimeService.shared.getPrayerTimes(
                 for: location

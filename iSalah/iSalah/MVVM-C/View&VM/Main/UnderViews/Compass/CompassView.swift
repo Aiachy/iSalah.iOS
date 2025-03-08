@@ -42,6 +42,12 @@ struct CompassView: View {
                 vm.stopCompassUpdates()
             }
         }
+        .sheet(isPresented: $vm.isSheetPresented) {
+            SearchLocationView { location in
+                salah.user.location = location
+                vm.isSheetPresented = false
+            }
+        }
     }
 }
 //MARK: Preview
@@ -116,6 +122,9 @@ private extension CompassView {
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
+            RoundedButtonView("Find My Location") {
+                vm.isSheetPresented.toggle()
+            }
         }
     }
 }
