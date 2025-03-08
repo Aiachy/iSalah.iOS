@@ -234,7 +234,6 @@ extension SearchLocationView {
                 )
                 result(userLocation)
                 salah.user.location = userLocation
-                NotificationManager.shared.updateLocation(userLocation)
                 dismiss()
             }
         }) {
@@ -269,7 +268,6 @@ extension SearchLocationView {
         Button(action: {
             result(location)
             salah.user.location = location
-            NotificationManager.shared.updateLocation(location)
             dismiss()
         }) {
             HStack {

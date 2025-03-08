@@ -9,7 +9,7 @@ import UserNotifications
 import SwiftUI
 import CoreLocation
 
-enum PrayerNotificationType: String, CaseIterable {
+enum PrayerNotificationType: String, CaseIterable, Codable {
     case fajr = "Fajr"
     case sunrise = "Sunrise"
     case dhuhr = "Dhuhr"
@@ -29,17 +29,26 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
     @Published var isNotificationsAuthorized = false
     
     private let notificationCenter = UNUserNotificationCenter.current()
-    private var currentLocation: LocationSuggestion?
     
     // Debug mode flag (enable for detailed logs)
     private let debugMode = true
     
+    // UserDefaults key for storing notification settings
+    private let notificationSettingsKey = "iSalahNotificationSettings"
+    
     private override init() {
         super.init()
         
-        // Default to enabling all notification types
-        for type in PrayerNotificationType.allCases {
-            notificationSettings[type] = true
+        // Load saved notification settings if available
+        if let savedSettings = loadNotificationSettings() {
+            notificationSettings = savedSettings
+        } else {
+            // Default to enabling all notification types
+            for type in PrayerNotificationType.allCases {
+                notificationSettings[type] = true
+            }
+            // Save initial settings
+            saveNotificationSettings()
         }
         
         notificationCenter.delegate = self
@@ -61,12 +70,6 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
                 self?.isNotificationsAuthorized = granted
                 if granted {
                     self?.logDebug("✅ Notification permission granted")
-                    // Schedule notifications if we have a location
-                    if let location = self?.currentLocation {
-                        Task {
-                            await self?.schedulePrayerNotifications(for: location, days: 7)
-                        }
-                    }
                 } else {
                     self?.logDebug("⚠️ Notification permission denied")
                 }
@@ -77,15 +80,9 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
     func checkNotificationStatus() {
         notificationCenter.getNotificationSettings { [weak self] settings in
             DispatchQueue.main.async {
-                self?.isNotificationsAuthorized = settings.authorizationStatus == .authorized
+                let authorized = settings.authorizationStatus == .authorized
+                self?.isNotificationsAuthorized = authorized
                 self?.logDebug("📋 Notification authorization status: \(settings.authorizationStatus.rawValue)")
-                
-                // If authorized, make sure we have notifications scheduled
-                if settings.authorizationStatus == .authorized, let location = self?.currentLocation {
-                    Task {
-                        await self?.schedulePrayerNotifications(for: location, days: 7)
-                    }
-                }
             }
         }
     }
@@ -94,10 +91,10 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
     
     /// Schedule notifications for prayer times
     /// - Parameters:
-    ///   - location: The location for which to schedule notifications
+    ///   - prayerTimes: Array of PrayerTime objects
     ///   - days: Number of days to schedule in advance (default: 1)
-    func schedulePrayerNotifications(for location: LocationSuggestion, days: Int = 1) async {
-        logDebug("📆 Scheduling prayer notifications for \(location.formattedLocation) for \(days) days")
+    func schedulePrayerNotifications(for prayerTimes: [PrayerTime], days: Int = 1) async {
+        logDebug("📆 Scheduling prayer notifications for \(prayerTimes.count) prayer times for \(days) days")
         
         // First, remove existing notifications to avoid duplicates
         await removeAllPendingNotifications()
@@ -105,43 +102,67 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
         let today = Date()
         let calendar = Calendar.current
         
-        // Schedule for each day
-        for dayOffset in 0..<days {
-            guard let date = calendar.date(byAdding: .day, value: dayOffset, to: today) else {
+        // Copy the prayer times to avoid modifying the original
+        var allPrayerTimes = prayerTimes
+        
+        // For additional days, project future prayer times
+        for dayOffset in 1..<days {
+            guard let futureDate = calendar.date(byAdding: .day, value: dayOffset, to: today) else {
                 continue
             }
             
-            // Get prayer times for this date
-            let prayerTimes = await PrayerTimeService.shared.getPrayerTimes(for: location, on: date)
-            logDebug("🕒 Found \(prayerTimes.count) prayer times for day \(dayOffset + 1)")
-            
-            // Schedule notifications for each prayer time
-            for prayerTime in prayerTimes {
-                // Convert LocalizedStringKey to String
-                let prayerNameString = String(describing: prayerTime.name)
+            // Create future prayer times by copying today's times with adjusted dates
+            let futureTimes = prayerTimes.map { prayerTime in
+                // Create a new date component with the future date but same time
+                let prayerTimeComponents = calendar.dateComponents([.hour, .minute], from: prayerTime.time)
+                var futureComponents = calendar.dateComponents([.year, .month, .day], from: futureDate)
+                futureComponents.hour = prayerTimeComponents.hour
+                futureComponents.minute = prayerTimeComponents.minute
                 
-                // Try to match with a notification type
-                let matchedType = findMatchingNotificationType(from: prayerNameString)
-                
-                guard let notificationType = matchedType,
-                      let isEnabled = notificationSettings[notificationType],
-                      isEnabled else {
-                    // Skip if no matching type or notifications disabled for this type
-                    if let type = matchedType {
-                        logDebug("⚠️ Skipping \(prayerNameString) - notifications disabled")
-                    } else {
-                        logDebug("❓ Couldn't match prayer name: \(prayerNameString) to any notification type")
-                    }
-                    continue
+                // Create a new prayer time with the future date
+                guard let futureTime = calendar.date(from: futureComponents) else {
+                    return prayerTime // Fallback to original if date creation fails
                 }
                 
-                // Check if prayer time is in the future
-                if prayerTime.time > today {
-                    scheduleNotification(for: prayerTime, type: notificationType)
-                } else {
-                    logDebug("⏭️ Skipping \(prayerNameString) - time already passed")
-                }
+                return PrayerTime(
+                    name: prayerTime.name,
+                    time: futureTime
+                )
             }
+            
+            // Add the future times to our collection
+            allPrayerTimes.append(contentsOf: futureTimes)
+        }
+        
+        logDebug("🕒 Processing a total of \(allPrayerTimes.count) prayer times")
+        
+        // Schedule notifications for all prayer times
+        for prayerTime in allPrayerTimes {
+            // Skip past prayer times
+            if prayerTime.time <= today {
+                continue
+            }
+            
+            // Convert LocalizedStringKey to String
+            let prayerNameString = String(describing: prayerTime.name)
+            
+            // Try to match with a notification type
+            let matchedType = findMatchingNotificationType(from: prayerNameString)
+            
+            guard let notificationType = matchedType,
+                  let isEnabled = notificationSettings[notificationType],
+                  isEnabled else {
+                // Skip if no matching type or notifications disabled for this type
+                if let type = matchedType {
+                    logDebug("⚠️ Skipping \(prayerNameString) - notifications disabled")
+                } else {
+                    logDebug("❓ Couldn't match prayer name: \(prayerNameString) to any notification type")
+                }
+                continue
+            }
+            
+            // Schedule notification for this prayer time
+            scheduleNotification(for: prayerTime, type: notificationType)
         }
         
         // Log scheduled notifications for debugging
@@ -149,12 +170,6 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
     }
     
     private func scheduleNotification(for prayerTime: PrayerTime, type: PrayerNotificationType) {
-        // Create notification content
-        let content = UNMutableNotificationContent()
-        content.title = "Prayer Time: \(type.rawValue)"
-        content.body = "Prayer time for \(type.rawValue) is approaching in 15 minutes"
-        content.sound = UNNotificationSound.default
-        
         // 15 minutes reminder
         scheduleReminderNotification(
             for: prayerTime,
@@ -267,14 +282,24 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
     func updateNotificationSetting(for type: PrayerNotificationType, isEnabled: Bool) {
         logDebug("🔄 Updating notification setting for \(type.rawValue): \(isEnabled)")
         notificationSettings[type] = isEnabled
+        saveNotificationSettings()
+    }
+    
+    func updateAllNotificationSettings(isEnabled: Bool) {
+        logDebug("🔄 Updating ALL notification settings: \(isEnabled)")
+        
+        // Update all notification settings
+        for type in PrayerNotificationType.allCases {
+            notificationSettings[type] = isEnabled
+        }
+        
+        // Save settings
+        saveNotificationSettings()
         
         if !isEnabled {
-            removePendingNotifications(for: type)
-        } else if isNotificationsAuthorized {
+            // Remove all pending notifications
             Task {
-                if let location = currentLocation {
-                    await schedulePrayerNotifications(for: location, days: 7)
-                }
+                await removeAllPendingNotifications()
             }
         }
     }
@@ -295,18 +320,23 @@ class NotificationManager: NSObject, ObservableObject, UNUserNotificationCenterD
         logDebug("🧹 All pending notifications removed")
     }
     
-    func updateLocation(_ location: LocationSuggestion) {
-        logDebug("📍 Location updated to \(location.formattedLocation)")
-        currentLocation = location
-        
-        // Only schedule notifications if we have permission
-        if isNotificationsAuthorized {
-            Task {
-                await schedulePrayerNotifications(for: location, days: 7)
-            }
-        } else {
-            logDebug("⚠️ Can't schedule notifications - no authorization")
+    // MARK: - Settings Persistence
+    
+    private func saveNotificationSettings() {
+        if let encoded = try? JSONEncoder().encode(notificationSettings) {
+            UserDefaults.standard.set(encoded, forKey: notificationSettingsKey)
+            logDebug("💾 Notification settings saved")
         }
+    }
+    
+    private func loadNotificationSettings() -> [PrayerNotificationType: Bool]? {
+        guard let savedSettings = UserDefaults.standard.object(forKey: notificationSettingsKey) as? Data,
+              let decodedSettings = try? JSONDecoder().decode([PrayerNotificationType: Bool].self, from: savedSettings) else {
+            return nil
+        }
+        
+        logDebug("📂 Loaded saved notification settings")
+        return decodedSettings
     }
     
     // MARK: - UNUserNotificationCenterDelegate

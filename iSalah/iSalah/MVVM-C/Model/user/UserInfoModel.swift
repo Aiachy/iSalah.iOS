@@ -14,7 +14,7 @@ struct UserInfoModel {
     var premiumType: String?
     
     init(
-        isPremium: Bool = true,
+        isPremium: Bool = false,
         gender: String? = nil,
         premiumType: String? = nil
     ) {

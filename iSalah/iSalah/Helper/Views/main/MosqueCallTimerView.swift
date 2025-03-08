@@ -13,6 +13,9 @@ struct MosqueCallTimerView: View {
     @State private var prayerTimes: [PrayerTime] = []
     @State private var isLoading = true
     
+    // Reference to notification manager
+    private let notificationManager = NotificationManager.shared
+    
     var body: some View {
         ZStack {
             ColorHandler.getColor(salah, for: .islamicAlt)
@@ -37,9 +40,13 @@ struct MosqueCallTimerView: View {
         }
         .frame(height: dh(0.06))
         .onAppear {
+            // Check notification authorization when view appears
+            notificationManager.checkNotificationStatus()
             loadPrayerTimes()
         }
-        .onChange(of: salah.user.location?.country, loadPrayerTimes)
+        .onChange(of: salah.user.location?.country) {
+            loadPrayerTimes()
+        }
     }
     
 }
@@ -86,7 +93,25 @@ private extension MosqueCallTimerView {
             DispatchQueue.main.async {
                 self.prayerTimes = times
                 self.isLoading = false
+                
+                // Schedule notifications based on the newly loaded prayer times
+                if !times.isEmpty {
+                    self.schedulePrayerNotifications(for: times)
+                }
             }
+        }
+    }
+    
+    func schedulePrayerNotifications(for prayerTimes: [PrayerTime]) {
+        // Only schedule if notification permission is granted
+        if notificationManager.isNotificationsAuthorized {
+            Task {
+                // Schedule notifications for the next 7 days
+                await notificationManager.schedulePrayerNotifications(for: prayerTimes, days: 7)
+            }
+        } else {
+            // Request permission if not already granted
+            notificationManager.requestAuthorization()
         }
     }
 }

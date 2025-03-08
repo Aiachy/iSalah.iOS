@@ -27,10 +27,16 @@
     "•" : {
 
     },
+    "⚠️ Notification permissions not granted" : {
+
+    },
     "Accessibility" : {
 
     },
     "Add Item" : {
+
+    },
+    "All Notifications" : {
 
     },
     "Arabian Desert" : {
@@ -198,6 +204,9 @@
     "Remove all ads and use the app with an ad-free, peaceful experience." : {
 
     },
+    "Request Permission" : {
+
+    },
     "Restore Purchases" : {
 
     },
@@ -211,6 +220,9 @@
 
     },
     "Select an item" : {
+
+    },
+    "Send Test Notification" : {
 
     },
     "Share" : {
