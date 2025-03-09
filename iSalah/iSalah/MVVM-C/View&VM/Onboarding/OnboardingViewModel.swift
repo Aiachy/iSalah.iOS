@@ -44,6 +44,7 @@ extension OnboardingViewModel {
                 image: .onb1,
                 action: { [self] in
                     isOnbActive = false
+                    NotificationManager.shared.requestAuthorization { _ in }
                     nextOnbPage()
                 }
             ),

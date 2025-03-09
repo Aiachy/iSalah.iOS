@@ -26,16 +26,11 @@ struct NotificationView: View {
                 SettingsHeaderView("Notification", back: vm.makeBackButton)
                 ScrollView(.vertical) {
                     VStack(spacing: 20) {
-//                        testNotificationSection
                         prayerTimersView
                     }
                     .padding(.bottom, 20)
                 }
             }
-        }
-        .onAppear {
-            // Check notification status when view appears
-            vm.checkNotificationPermissionStatus()
         }
     }
 }
@@ -46,50 +41,6 @@ struct NotificationView: View {
 }
 
 extension NotificationView {
-    
-    // Test notification section
-    private var testNotificationSection: some View {
-        VStack(spacing: 10) {
-            SettingsSubTittleView("Test Notifications")
-            
-            Button(action: {
-                vm.sendTestNotification()
-            }) {
-                Text("Send Test Notification")
-                    .font(.system(size: 16, weight: .medium))
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            }
-            .padding(.horizontal)
-            
-            if !vm.isNotificationsAuthorized {
-                Text("⚠️ Notification permissions not granted")
-                    .foregroundColor(.orange)
-                    .font(.system(size: 14))
-                    .padding(.top, 5)
-                
-                Button(action: {
-                    vm.requestNotificationPermission()
-                }) {
-                    Text("Request Permission")
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.green)
-                        .cornerRadius(10)
-                }
-                .padding(.horizontal)
-            }
-        }
-        .padding()
-        .background(Color(.secondarySystemBackground))
-        .cornerRadius(12)
-        .padding(.horizontal)
-    }
 
     private var prayerTimersView: some View {
         VStack {

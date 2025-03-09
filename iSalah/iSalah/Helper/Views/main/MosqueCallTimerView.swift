@@ -14,7 +14,6 @@ struct MosqueCallTimerView: View {
     @State private var isLoading = true
     
     // Reference to notification manager
-    private let notificationManager = NotificationManager.shared
     
     var body: some View {
         ZStack {
@@ -41,7 +40,6 @@ struct MosqueCallTimerView: View {
         .frame(height: dh(0.06))
         .onAppear {
             // Check notification authorization when view appears
-            notificationManager.checkNotificationStatus()
             loadPrayerTimes()
         }
         .onChange(of: salah.user.location?.country) {
@@ -103,15 +101,9 @@ private extension MosqueCallTimerView {
     }
     
     func schedulePrayerNotifications(for prayerTimes: [PrayerTime]) {
-        // Only schedule if notification permission is granted
-        if notificationManager.isNotificationsAuthorized {
-            Task {
-                // Schedule notifications for the next 7 days
-                await notificationManager.schedulePrayerNotifications(for: prayerTimes, days: 7)
-            }
-        } else {
-            // Request permission if not already granted
-            notificationManager.requestAuthorization()
-        }
+        print("iSalah: MosqueCallTimerView - schedulePrayerNotifications")
+        
+        // Use the NotificationManager to schedule notifications for prayer times
+        NotificationManager.shared.schedulePrayerNotifications(for: prayerTimes)
     }
 }
