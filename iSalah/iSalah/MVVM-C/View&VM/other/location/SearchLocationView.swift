@@ -27,21 +27,23 @@ struct SearchLocationView: View {
             VStack(spacing: 16) {
                 headerView
                 
-                // Yükleniyor göstergesi
-                if vm.isLoading {
-                    VStack {
-                        ProgressView()
-                            .tint(ColorHandler.getColor(salah, for: .gold))
-                            .scaleEffect(1.2)
-                            .padding()
-                        
-                        Text("Searching locations...")
-                            .font(FontHandler.setDubaiFont(weight: .medium, size: .xs))
-                            .foregroundColor(ColorHandler.getColor(salah, for: .light))
+                if !KeyboardManager.shared.isKeyboardVisible {
+                    // Yükleniyor göstergesi
+                    if vm.isLoading {
+                        VStack {
+                            ProgressView()
+                                .tint(ColorHandler.getColor(salah, for: .gold))
+                                .scaleEffect(1.2)
+                                .padding()
+                            
+                            Text("Searching locations...")
+                                .font(FontHandler.setDubaiFont(weight: .medium, size: .xs))
+                                .foregroundColor(ColorHandler.getColor(salah, for: .light))
+                        }
+                        .frame(height: 100)
+                    } else {
+                        locationListView
                     }
-                    .frame(height: 100)
-                } else {
-                    locationListView
                 }
                 
                 Spacer()

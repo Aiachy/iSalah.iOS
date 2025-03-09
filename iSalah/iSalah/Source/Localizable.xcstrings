@@ -51,6 +51,12 @@
     "Back" : {
 
     },
+    "Beginning of Ramadan" : {
+
+    },
+    "Beginning of Three Holy Months" : {
+
+    },
     "Blessed Days" : {
 
     },
@@ -67,6 +73,9 @@
 
     },
     "Current Location" : {
+
+    },
+    "Day of Ashura" : {
 
     },
     "Dhuhr" : {
@@ -87,6 +96,39 @@
     "Dubai Regular" : {
 
     },
+    "Eid al-Adha" : {
+
+    },
+    "Eid al-Adha (Day 1)" : {
+
+    },
+    "Eid al-Adha (Day 2)" : {
+
+    },
+    "Eid al-Adha (Day 3)" : {
+
+    },
+    "Eid al-Adha (Day 4)" : {
+
+    },
+    "Eid al-Fitr" : {
+
+    },
+    "Eid al-Fitr (Day 1)" : {
+
+    },
+    "Eid al-Fitr (Day 2)" : {
+
+    },
+    "Eid al-Fitr (Day 3)" : {
+
+    },
+    "Eve of Eid al-Adha" : {
+
+    },
+    "Eve of Eid al-Fitr" : {
+
+    },
     "Fajr" : {
 
     },
@@ -102,6 +144,9 @@
     "Get unlimited access and enjoy a soulful experience with special themes." : {
 
     },
+    "Greating Days" : {
+
+    },
     "Guidance Compass" : {
 
     },
@@ -112,6 +157,9 @@
 
     },
     "Isha" : {
+
+    },
+    "Islamic New Year" : {
 
     },
     "Item at %@" : {
@@ -159,6 +207,18 @@
     "NewYork Font Tests (System Serif)" : {
 
     },
+    "Night of Ascension" : {
+
+    },
+    "Night of Forgiveness" : {
+
+    },
+    "Night of Power" : {
+
+    },
+    "No blessed days available for this year" : {
+
+    },
     "No locations found" : {
 
     },
@@ -192,7 +252,13 @@
     "Profile" : {
 
     },
+    "Prophet's Birthday" : {
+
+    },
     "Qibla Compass" : {
+
+    },
+    "Ragaib Night" : {
 
     },
     "Reading: %@" : {
@@ -217,6 +283,9 @@
 
     },
     "Searching locations..." : {
+
+    },
+    "See all" : {
 
     },
     "Select an item" : {

@@ -49,6 +49,7 @@ struct MainView: View {
                             IslamicPrayerData.getDailyPrayer()
                         )
                         .padding(.top)
+                        GreatingDaysCardView(GreatingDaysData.getDaysFor2025(), action: vm.navigationToGreating)
                     }
                     .padding(.top)
                 }

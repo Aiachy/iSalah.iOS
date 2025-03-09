@@ -9,23 +9,29 @@ import Foundation
 
 extension Date {
     
-    /// Converts a Gregorian date to a formatted Hijri date with traditional month names
-    /// in the format "03 Rabi Al-Akhar 1446"
+    func toFormatted(_ format: String = "dd MMMM yyyy, EE") -> String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        formatter.dateFormat = format
+           
+        return formatter.string(from: self)
+    }
+    
     func toFormattedHijri() -> String {
         let hijriCalendar = Calendar(identifier: .islamicCivil)
-        let components = hijriCalendar.dateComponents([.year, .month, .day], from: self)
+        let components = hijriCalendar.dateComponents(
+            [.year, .month, .day],
+            from: self
+        )
         
-        // Get day and pad with zero if needed
         let day = components.day ?? 0
-        let dayString = String(format: "%02d", day) // Ensures 2 digits with leading zero
+        let dayString = String(
+            format: "%02d",
+            day
+        )
         
-        // Get year
         let year = components.year ?? 0
-        
-        // Get month number
         let month = components.month ?? 0
-        
-        // Define traditional Islamic month names
         let monthNames = [
             "Muharram",
             "Safar",
@@ -41,14 +47,18 @@ extension Date {
             "Dhu Al-Hijjah"
         ]
         
-        // Get month name (with safety bounds check)
         let monthName = monthNames[max(0, min(month - 1, monthNames.count - 1))]
-        
-        // Combine all parts into the desired format
         return "\(dayString) \(monthName) \(year)"
     }
 }
 
-// Usage example:
-// let today = Date()
-// let hijriDate = today.toFormattedHijri() // e.g. "03 Rabi Al-Akhar 1446"
+extension Date {
+    func daysUntil(_ futureDate: Date = Date()) -> Int {
+        let calendar = Calendar.current
+        let startOfToday = calendar.startOfDay(for: futureDate)
+        let startOfFuture = calendar.startOfDay(for: self)
+
+        let components = calendar.dateComponents([.day], from: startOfToday, to: startOfFuture)
+        return components.day ?? 0
+    }
+}

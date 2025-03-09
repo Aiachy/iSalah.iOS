@@ -37,4 +37,8 @@ extension MainViewModel {
         coordinator.navigate(to: .compass)
     }
     
+    func navigationToGreating() {
+        coordinator.navigate(to: .greatingDays)
+    }
+    
 }
