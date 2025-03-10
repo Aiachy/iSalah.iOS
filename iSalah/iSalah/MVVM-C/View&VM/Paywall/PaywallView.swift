@@ -24,11 +24,15 @@ struct PaywallView: View {
             backgroundView
             VStack {
                 Spacer()
-                makeElementView("Remove all ads and use the app with an ad-free, peaceful experience.")
-                    
-                makeElementView("Get unlimited access and enjoy a soulful experience with special themes.")
-                    .padding(.vertical,20)
+                VStack(spacing: 30, content: {
+                    makeElementView("Remove all ads and use the app with an ad-free, peaceful experience.")
+                        
+                    makeElementView("Get unlimited access and enjoy a soulful experience with special themes.")
+                    makeElementView("You can use features like Tasbih as much as you want and without limits.")
+                })
                     .padding(.bottom,40)
+
+
                 buyButtonView
                 
                 restoreButtonView
@@ -75,7 +79,7 @@ private extension PaywallView {
                 .lineSpacing(-5)
                 .padding(.horizontal)
         }
-            .frame(width: size9, height: dh(0.08))
+            .frame(width: size9, height: dh(0.075))
     }
     
     var buyButtonView: some View {

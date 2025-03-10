@@ -101,9 +101,16 @@ private extension MosqueCallTimerView {
     }
     
     func schedulePrayerNotifications(for prayerTimes: [PrayerTime]) {
-        print("iSalah: MosqueCallTimerView - schedulePrayerNotifications")
-        
-        // Use the NotificationManager to schedule notifications for prayer times
-        NotificationManager.shared.schedulePrayerNotifications(for: prayerTimes)
-    }
+            print("iSalah: MosqueCallTimerView - schedulePrayerNotifications")
+            
+            // Schedule today's notifications
+            NotificationManager.shared.schedulePrayerNotifications(for: prayerTimes)
+            
+            // Schedule weekly notifications asynchronously if location is available
+            if let location = salah.user.location {
+                Task {
+                    await NotificationManager.shared.scheduleWeeklyPrayerNotifications(for: location)
+                }
+            }
+        }
 }

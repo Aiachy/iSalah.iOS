@@ -31,7 +31,7 @@ struct SettingsView: View {
                 
                 makeSettingsButton("Terms of Use and Privacy Policy", icon: .privacyAndTerms, action: vm.openTermsAndPrivacy)
                 
-//                makeSettingsButton("Notifications", icon: .notification, action: vm.navToNotifications)
+                makeSettingsButton("Notifications", icon: .notification, action: vm.navToNotifications)
                 
                 makeSettingsButton("Contact Us", icon: .contact, action: {
                     vm.makeMail(salah.user)

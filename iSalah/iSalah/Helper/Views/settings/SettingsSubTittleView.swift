@@ -29,7 +29,6 @@ struct SettingsSubTittleView: View {
             Spacer()
         }
         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-        .frame(width: size9)
     }
 }
 

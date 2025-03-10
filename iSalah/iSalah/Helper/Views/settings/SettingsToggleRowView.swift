@@ -10,33 +10,31 @@ import SwiftUI
 struct SettingsToggleRowView: View {
     
     @EnvironmentObject var salah: iSalahState
-    @Binding var isOn: Bool
-    let title: LocalizedStringKey
+    let model: SettingsToggleRowModel
     
     init (
-        _ isOn: Binding<Bool>,
-        title: LocalizedStringKey
+        _ model: SettingsToggleRowModel
+    
     ) {
-        _isOn = isOn
-        self.title = title
+        self.model = model
     }
     
     var body: some View {
         HStack {
-            Text(title)
-                .font(FontHandler.setDubaiFont(weight: .bold, size: .l))
+            Text(model.title)
+                .font(FontHandler.setDubaiFont(weight: model.font, size: model.size))
             Spacer()
-            CustomToggleView($isOn)
+            CustomToggleView(model.$isOn)
         }
         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-        .frame(width: size9)
+        
     }
 }
 
 #Preview {
     ZStack {
         BackgroundView()
-        SettingsToggleRowView(.constant(true) , title: "Test")
+        SettingsToggleRowView(.init(id: "1", isOn: .constant(true), font: .bold, size: .l, title: "Test" ))
     }
     .environmentObject(mockSalah)
 }

@@ -17,8 +17,11 @@ struct ColorHelper {
 
         case light = "light"
         case horizon = "horizon"
+        /// Islam
+        case islam = "islam"
         case islamic = "islamic"
         case islamicAlt = "islamicAlt"
+        
         case shadow = "shadow"
         case gold = "gold"
     }
@@ -31,8 +34,10 @@ struct ColorHelper {
         
         case opaqRose = "opaqRose"
         case softRose = "softRose"
+        
         case darkBlue = "darkBlue"
         case nightBlue = "nightBlue"
+        
         case deepPurple = "deepPurple"
         case roseNight = "roseNight"
     }

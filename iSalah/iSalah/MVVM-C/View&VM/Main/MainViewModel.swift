@@ -41,4 +41,8 @@ extension MainViewModel {
         coordinator.navigate(to: .greatingDays)
     }
     
+    func navigationToTasbih() {
+        coordinator.navigate(to: .tasbeeh)
+    }
+    
 }

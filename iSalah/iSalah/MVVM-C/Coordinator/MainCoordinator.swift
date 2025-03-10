@@ -61,7 +61,7 @@ struct MainCoordinator: View {
             case .greatingDays:
                 GreatingDaysView(coordinator)
             case .tasbeeh:
-                EmptyView()
+                TasbeehView(coordinator)
             case .map:
                 EmptyView()
             case .quran:

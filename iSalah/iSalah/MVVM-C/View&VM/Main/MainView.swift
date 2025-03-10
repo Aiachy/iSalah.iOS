@@ -49,6 +49,15 @@ struct MainView: View {
                             IslamicPrayerData.getDailyPrayer()
                         )
                         .padding(.top)
+                        /// Navs Button
+                        HStack {
+                            ScrollView(.horizontal) {
+                                MainNavButtonView(.init(icon: .tesbih, title: "Tasbih", action: { vm.navigationToTasbih() }))
+                                    .padding(.leading)
+                            }
+                        }
+                        .padding(.vertical,8)
+                        /// Greating Days
                         GreatingDaysCardView(GreatingDaysData.getDaysFor2025(), action: vm.navigationToGreating)
                     }
                     .padding(.top)

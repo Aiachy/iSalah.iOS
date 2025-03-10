@@ -16,10 +16,11 @@ struct ImageHelper {
         case female = "female"
         case location = "location"
         case magnifyingGlass = "magnifyingGlass"
-        
+        case tesbih = "tesbih"
         case compass = "compass"
         case compassLine = "compassLine"
         case qible = "qible"
+        case plusCircle = "plusCircle"
         
         case heart = "heart"
         case heartFill = "heartFill"
