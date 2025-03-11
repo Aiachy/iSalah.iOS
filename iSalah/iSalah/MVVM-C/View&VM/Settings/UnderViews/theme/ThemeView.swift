@@ -36,6 +36,9 @@ struct ThemeView: View {
                 Spacer()
             }
         }
+        .fullScreenCover(isPresented: $vm.isPaywallAppear) {
+            PaywallView($vm.isPaywallAppear)
+        }
     }
 }
 
@@ -132,28 +135,31 @@ extension ThemeView {
     
     func makeRowForThemeView(_ color: Color) -> some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: 6)
                 .stroke(ColorHandler.getColor(salah, for: .light))
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: 6)
                 .fill(color)
         }
-        .frame(width: dw(0.135), height: dh(0.2))
+        .frame(width: dw(0.11), height: dh(0.2))
     }
     
 }
 
 private extension ThemeView {
     
-    private func checkIsSelectedTheme(_ themeTitle: String) -> Double {
+    func checkIsSelectedTheme(_ themeTitle: String) -> Double {
         salah.user.appInfo.theme == themeTitle ? 1 : 0
     }
     
-    private func makeSelectedTheme(_ themeTitle: String, isPremium: Bool = true) {
-        guard !isPremium || salah.user.checkIsPremium() else { return }
+    func makeSelectedTheme(_ themeTitle: String, isPremium: Bool = true) {
+        guard themeTitle != salah.user.appInfo.theme else { return }
+        
+        guard !isPremium || salah.user.checkIsPremium() else { vm.isPaywallAppear.toggle(); return }
         withAnimation(.linear) {
             salah.user.appInfo.theme = themeTitle
         }
     }
+    
     @ViewBuilder
     func makePremiumTitle() -> some View {
         if !salah.user.checkIsPremium() {

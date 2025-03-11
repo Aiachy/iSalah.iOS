@@ -17,11 +17,12 @@ struct MainNavButtonView: View {
     }
     
     var body: some View {
-        VStack {
-            buttonView
-            Text(model.title)
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .font(FontHandler.setNewYorkFont(weight: .semibold,size: .s))
+        Group {
+            if model.version == 0 {
+                firstVersion
+            } else {
+                secondVersion
+            }
         }
         .onTapGesture {
             model.action()
@@ -32,13 +33,45 @@ struct MainNavButtonView: View {
 #Preview {
     ZStack {
         BackgroundView()
-        MainNavButtonView(.init(icon: .tesbih, title: "Tesbih", action: { }))
+        MainNavButtonView(.init(.tesbih, version: 1, title: "Tesbih", action: { }))
     }
         .environmentObject(mockSalah)
 }
 
 private extension MainNavButtonView {
-    var buttonView: some View {
+    
+    private var firstVersion: some View {
+        VStack {
+            /// iconic
+            ZStack {
+                makeButtonView(CGSize(width: 0.2, height: 0.2))
+                iconView
+            }
+            Text(model.title)
+                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                .font(FontHandler.setNewYorkFont(weight: .semibold,size: .s))
+        }
+    }
+    
+    private var secondVersion: some View {
+        ZStack {
+            makeButtonView(CGSize(width: 0.44, height: 0.2))
+            HStack {
+                iconView
+                Spacer()
+                Text(model.title)
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                    .font(FontHandler.setNewYorkFont(weight: .semibold,size: .l))
+            }
+            .padding(.horizontal)
+        }
+        .frame(width: dw(0.44))
+    }
+    
+}
+
+private extension MainNavButtonView {
+    func makeButtonView(_ size: CGSize) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
@@ -46,11 +79,14 @@ private extension MainNavButtonView {
             RoundedRectangle(cornerRadius: 12)
                 .stroke(ColorHandler.getColor(salah, for: .islam))
             
-            ImageHandler.getIcon(salah, image: model.icon)
-                .scaledToFit()
-                .foregroundColor(ColorHandler.getColor(salah, for: .light))
-                .frame(width: dw(0.1))
         }
-        .frame(width: dw(0.2), height: dw(0.2))
+        .frame(width: dw(size.width), height: dw(size.height))
+    }
+    
+    var iconView: some View {
+        ImageHandler.getIcon(salah, image: model.icon)
+            .scaledToFit()
+            .foregroundColor(ColorHandler.getColor(salah, for: .light))
+            .frame(width: dw(0.1))
     }
 }

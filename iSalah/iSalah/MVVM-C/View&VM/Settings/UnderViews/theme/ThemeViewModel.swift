@@ -9,9 +9,14 @@ import Foundation
 
 class ThemeViewModel: ObservableObject {
     
+    @Published var isPaywallAppear: Bool
     let coordinator: SettingsCoordinatorPresenter
     
-    init(coordinator: SettingsCoordinatorPresenter) {
+    init(
+        isPaywallAppear: Bool = false,
+        coordinator: SettingsCoordinatorPresenter
+    ) {
+        self.isPaywallAppear = isPaywallAppear
         self.coordinator = coordinator
     }
     

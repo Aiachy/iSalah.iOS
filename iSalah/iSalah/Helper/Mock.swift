@@ -15,7 +15,7 @@ let civrilLocation = LocationSuggestion(
     coordinate: CLLocationCoordinate2D(latitude: 38.3019, longitude: 29.7387)
 )
 
-let mockInfo: UserInfoModel = .init(isPremium: true, gender: "", premiumType: "")
+let mockInfo: UserInfoModel = .init(isPremium: false, gender: "", premiumType: "")
 
 let user: UserModel = .init(info: mockInfo ,location: nil)
 

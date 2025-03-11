@@ -82,6 +82,6 @@ class TasbeehViewModel: ObservableObject {
 
 extension TasbeehViewModel {
     func makeBackButton() {
-        coordinator.navigate(to: .map)
+        coordinator.navigate(to: .main)
     }
 }

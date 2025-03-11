@@ -45,20 +45,41 @@ struct MainView: View {
                         /// Scroll Info Header
                         headerView
                         /// Today pray
-                        TodayPrayView(
+                        TodayHadisView(
                             IslamicPrayerData.getDailyPrayer()
                         )
                         .padding(.top)
                         /// Navs Button
                         HStack {
-                            ScrollView(.horizontal) {
-                                MainNavButtonView(.init(icon: .tesbih, title: "Tasbih", action: { vm.navigationToTasbih() }))
-                                    .padding(.leading)
-                            }
+                            /// Tasbih
+                            MainNavButtonView(
+                                .init(
+                                    .tesbih,
+                                    version: 1,
+                                    title: "Tasbih",
+                                    action: { vm.navigationToTasbih() }
+                                )
+                            )
+                            /// Quran
+                            MainNavButtonView(
+                                .init(
+                                    .quran,
+                                    version: 1,
+                                    title: "Quran",
+                                    action: { vm.navigationToQuran() }
+                                )
+                            )
+                            .opacity(0)
+                            .disabled(true)
+                            
                         }
+                        .padding(.horizontal)
                         .padding(.vertical,8)
                         /// Greating Days
-                        GreatingDaysCardView(GreatingDaysData.getDaysFor2025(), action: vm.navigationToGreating)
+                        GreatingDaysCardView(
+                            GreatingDaysData.getDaysFor2025(),
+                            action: vm.navigationToGreating
+                        )
                     }
                     .padding(.top)
                 }
@@ -72,7 +93,10 @@ struct MainView: View {
                     .frame(height: dh(0.095))
             }
         }
-        .interstitialAd($vm.isShowingInterstitialAd, isP: salah.user.checkIsPremium())
+        .interstitialAd(
+            $vm.isShowingInterstitialAd,
+            isP: salah.user.checkIsPremium()
+        )
         .environmentObject(salah)
     }
 }

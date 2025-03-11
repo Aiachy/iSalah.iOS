@@ -45,4 +45,8 @@ extension MainViewModel {
         coordinator.navigate(to: .tasbeeh)
     }
     
+    func navigationToQuran() {
+        coordinator.navigate(to: .quran)
+    }
+    
 }

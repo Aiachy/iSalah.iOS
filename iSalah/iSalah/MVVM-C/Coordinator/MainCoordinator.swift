@@ -65,7 +65,7 @@ struct MainCoordinator: View {
             case .map:
                 EmptyView()
             case .quran:
-                EmptyView()
+                QuranView(coordinator)
             }
         }
         .onChange(of: coordinator.currentView, perform: { newValue in

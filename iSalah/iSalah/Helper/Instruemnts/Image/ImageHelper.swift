@@ -21,6 +21,8 @@ struct ImageHelper {
         case compassLine = "compassLine"
         case qible = "qible"
         case plusCircle = "plusCircle"
+        case quran = "quran"
+        case plus = "plus"
         
         case heart = "heart"
         case heartFill = "heartFill"
@@ -44,6 +46,7 @@ struct ImageHelper {
         
         case back = "back"
     }
+    
     
     enum massive: String {
         case onb1 = "onb1"

@@ -1,5 +1,5 @@
 //
-//  TodayPrayerModel.swift
+//  TodayHadisModel.swift
 //  iSalah
 //
 //  Created by Mert Türedü on 27.02.2025.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TodayPrayerModel: Identifiable, Equatable {
+struct TodayHadisModel: Identifiable, Equatable {
     var id: String
     var title: String
     var subTitle: String
@@ -16,12 +16,12 @@ struct TodayPrayerModel: Identifiable, Equatable {
     var meal: String
     
     // Static equality comparison
-    static func == (lhs: TodayPrayerModel, rhs: TodayPrayerModel) -> Bool {
+    static func == (lhs: TodayHadisModel, rhs: TodayHadisModel) -> Bool {
         return lhs.id == rhs.id
     }
     
     // Default empty prayer to avoid nil values
-    static let empty = TodayPrayerModel(
+    static let empty = TodayHadisModel(
         id: "empty",
         title: "No Prayer Available",
         subTitle: "",

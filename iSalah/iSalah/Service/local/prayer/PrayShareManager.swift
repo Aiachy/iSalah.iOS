@@ -16,7 +16,7 @@ class PrayShareManager {
     
     /// Share a prayer to WhatsApp or other platforms
     /// - Parameter prayer: The prayer to share
-    func sharePrayer(_ prayer: TodayPrayerModel) {
+    func sharePrayer(_ prayer: TodayHadisModel) {
         let formattedText = createShareText(for: prayer)
         shareText(formattedText)
     }
@@ -24,7 +24,7 @@ class PrayShareManager {
     /// Creates a nicely formatted text from a prayer model
     /// - Parameter prayer: The prayer model to format
     /// - Returns: Formatted text ready for sharing
-    private func createShareText(for prayer: TodayPrayerModel) -> String {
+    private func createShareText(for prayer: TodayHadisModel) -> String {
         var shareText = ""
         
         // Add prayer title and time
@@ -77,7 +77,7 @@ extension View {
     /// Adds a share button to any SwiftUI view
     /// - Parameter prayer: The prayer to share
     /// - Returns: View with share button
-    func withPrayerShareButton(for prayer: TodayPrayerModel) -> some View {
+    func withPrayerShareButton(for prayer: TodayHadisModel) -> some View {
         self.overlay(
             Button {
                 PrayShareManager.shared.sharePrayer(prayer)
@@ -97,7 +97,7 @@ extension View {
 // MARK: - Example Usage
 
 struct PrayerView_Example: View {
-    let prayer: TodayPrayerModel
+    let prayer: TodayHadisModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {

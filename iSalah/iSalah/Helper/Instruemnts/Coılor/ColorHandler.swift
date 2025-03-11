@@ -39,14 +39,16 @@ struct ColorHandler {
                 return Color(ColorHelper.rose.opaqRose.rawValue)
             case .horizon:
                 return Color(ColorHelper.rose.softRose.rawValue)
+                
                 /// Islam
             case .islam:
-                return Color(ColorHelper.rose.deepPurple.rawValue) ///
+                return Color(ColorHelper.rose.deadRose.rawValue)
             case .islamic:
                 return Color(ColorHelper.rose.darkBlue.rawValue)
             case .islamicAlt:
                 return Color(ColorHelper.rose.nightBlue.rawValue)
-                
+                ///
+            
             case .shadow:
                 return Color(ColorHelper.rose.deepPurple.rawValue)
             case .gold:
@@ -70,12 +72,13 @@ struct ColorHandler {
                 return Color(ColorHelper.arab.goldSand.rawValue)
                 /// Islam
             case .islam:
-                return Color(ColorHelper.arab.desertNight.rawValue) ///
+                return Color(ColorHelper.arab.desertSunrise.rawValue)
             case .islamic:
                 return Color(ColorHelper.arab.desertNight.rawValue)
             case .islamicAlt:
                 return Color(ColorHelper.arab.dirt.rawValue)
-                
+                ///
+            
             case .shadow:
                 return Color(ColorHelper.arab.nightStone.rawValue)
             case .gold:

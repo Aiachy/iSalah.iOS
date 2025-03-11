@@ -17,12 +17,15 @@ struct TasbeehView: View {
     }
     
     var body: some View {
-        VStack {
-            SettingsHeaderView("Tasbeeh", back: vm.makeBackButton)
-            if vm.tasbeehs.isEmpty {
-                emptyDhikrView
-            } else {
-                tasbeehListView
+        ZStack {
+            BackgroundView()
+            VStack {
+                SettingsHeaderView("Tasbeeh", back: vm.makeBackButton)
+                if vm.tasbeehs.isEmpty {
+                    emptyDhikrView
+                } else {
+                    tasbeehListView
+                }
             }
         }
         .overlay(alignment: .bottomTrailing) {
@@ -63,21 +66,6 @@ struct TasbeehView: View {
 
 private extension TasbeehView {
     
-    var emptyDhikrView: some View {
-        VStack {
-            Spacer()
-            Text("Add New Dhikr")
-                .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
-                .font(FontHandler.setNewYorkFont(weight: .bold, size: .l))
-            Text("It seems your dhikr tank is empty.\nPress + for new dhikr.")
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xs))
-                .frame(width: dw(0.68))
-            Spacer()
-        }
-        .multilineTextAlignment(.center)
-    }
-    
     var tasbeehListView: some View {
         List {
             ForEach(vm.tasbeehs) { tasbeeh in
@@ -93,40 +81,76 @@ private extension TasbeehView {
         .padding(.horizontal)
     }
     
+    
     func tasbeehCard(_ tasbeeh: TasbeehModel) -> some View {
-        HStack {
-            VStack(alignment: .leading, spacing: 4) {
-                Text(tasbeeh.name)
-                    .font(FontHandler.setNewYorkFont(weight: .bold, size: .m))
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
-                
-                Text("Count: \(tasbeeh.pressed)")
-                    .font(FontHandler.setNewYorkFont(weight: .semibold, size: .xs))
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-            }
-            Spacer()
-            
-            Button {
-                vm.incrementCounter(for: tasbeeh)
-            } label: {
-                ZStack {
-                    Circle()
-                        .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
-                    Circle()
-                        .stroke(ColorHandler.getColor(salah, for: .islam))
-                    Text("+")
-                        .font(FontHandler.setNewYorkFont(weight: .bold, size: .l))
+        ZStack {
+            /// backgrounds
+            cardBackgroundView
+            HStack {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(tasbeeh.name)
+                        .font(FontHandler.setNewYorkFont(weight: .bold, size: .m))
+                        .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
+                    
+                    Text("Count: \(tasbeeh.pressed)")
+                        .font(FontHandler.setNewYorkFont(weight: .semibold, size: .xs))
                         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                 }
-                .frame(width: dw(0.12), height: dw(0.12))
+                Spacer()
+                tasbeehButtonView { vm.incrementCounter(for: tasbeeh) }
             }
+            .padding()
         }
-        .padding()
-        .background {
+        .frame(width: size9, height: dh(0.1))
+    }
+    
+    func tasbeehButtonView(_ action: @escaping () -> Void ) -> some View {
+        Button {
+            withAnimation(.linear) {
+                action()
+            }
+        } label: {
+            ZStack {
+                Circle()
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                    .shadow(color: ColorHandler.getColor(salah, for: .light).opacity(0.25), radius: 5)
+                Circle()
+                    .stroke(ColorHandler.getColor(salah, for: .shadow),lineWidth: 0.5)
+                ImageHandler.getIcon(salah, image: .plus)
+                    .scaledToFit()
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
+                    .padding(13)
+            }
+            .frame(width: dw(0.12), height: dw(0.12))
+        }
+    }
+    
+    var cardBackgroundView: some View {
+        ZStack {
             RoundedRectangle(cornerRadius: 12)
-                .foregroundStyle(ColorHandler.getColor(salah, for: .islam))
-                .shadow(radius: 2)
+                .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
+                .shadow(color: ColorHandler.getColor(salah, for: .dark).opacity(0.25), radius: 4, y: 4)
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(ColorHandler.getColor(salah, for: .islam))
         }
+    }
+}
+
+private extension TasbeehView {
+    
+    var emptyDhikrView: some View {
+        VStack {
+            Spacer()
+            Text("Add New Dhikr")
+                .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
+                .font(FontHandler.setNewYorkFont(weight: .bold, size: .l))
+            Text("It seems your dhikr tank is empty.\nPress + for new dhikr.")
+                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                .font(FontHandler.setNewYorkFont(weight: .bold, size: .xs))
+                .frame(width: dw(0.68))
+            Spacer()
+        }
+        .multilineTextAlignment(.center)
     }
     
     var addButtonView: some View {
@@ -137,14 +161,14 @@ private extension TasbeehView {
                 Circle()
                     .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
                 Circle()
-                    .stroke(ColorHandler.getColor(salah, for: .islam))
+                    .stroke(ColorHandler.getColor(salah, for: .light),lineWidth: 0.8)
                 ImageHandler.getIcon(salah, image: .plusCircle)
                     .scaledToFit()
                     .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                    .padding()
+                    .padding(14)
             }
             .scaledToFit()
-            .frame(height: dw(0.19))
+            .frame(height: dw(0.16))
         }
     }
 }

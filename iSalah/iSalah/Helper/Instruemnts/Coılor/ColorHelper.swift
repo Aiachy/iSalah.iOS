@@ -32,6 +32,7 @@ struct ColorHelper {
         case female = "female"
         case male = "male"
         
+        case deadRose = "deadRose"
         case opaqRose = "opaqRose"
         case softRose = "softRose"
         
@@ -48,6 +49,7 @@ struct ColorHelper {
         case female = "female"
         case male = "male"
 
+        case desertSunrise = "desertSunrise"
         case desertSand = "desertSand"
         case goldSand = "goldSand"
         case desertNight = "desertNight"

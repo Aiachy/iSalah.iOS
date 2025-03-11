@@ -10,11 +10,11 @@ import Foundation
 
 struct IslamicPrayerData {
     
-    static func getDailyPrayer() -> TodayPrayerModel {
+    static func getDailyPrayer() -> TodayHadisModel {
         let calendar = Calendar.current
         let dateComponents = calendar.dateComponents([.day, .month, .year], from: Date())
         
-        let fallbackPrayer = TodayPrayerModel(
+        let fallbackPrayer = TodayHadisModel(
             id: "default",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6369",
@@ -36,9 +36,9 @@ struct IslamicPrayerData {
                 
     }
         
-    static let prayers: [TodayPrayerModel] = [
+    static let prayers: [TodayHadisModel] = [
         // 1
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "1",
             title: "Sahih Bukhari",
             subTitle: "Hadith 1",
@@ -48,7 +48,7 @@ struct IslamicPrayerData {
         ),
         
         // 2
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "2",
             title: "Sahih Muslim",
             subTitle: "Hadith 19",
@@ -58,7 +58,7 @@ struct IslamicPrayerData {
         ),
         
         // 3
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "3",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 466",
@@ -68,7 +68,7 @@ struct IslamicPrayerData {
         ),
         
         // 4
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "4",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3419",
@@ -78,7 +78,7 @@ struct IslamicPrayerData {
         ),
         
         // 5
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "5",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6369",
@@ -88,7 +88,7 @@ struct IslamicPrayerData {
         ),
         
         // 6
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "6",
             title: "Sahih Muslim",
             subTitle: "Hadith 2702",
@@ -98,7 +98,7 @@ struct IslamicPrayerData {
         ),
         
         // 7
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "7",
             title: "Sunan Ibn Majah",
             subTitle: "Hadith 3830",
@@ -108,7 +108,7 @@ struct IslamicPrayerData {
         ),
         
         // 8
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "8",
             title: "Sahih Bukhari",
             subTitle: "Hadith 2823",
@@ -118,7 +118,7 @@ struct IslamicPrayerData {
         ),
         
         // 9
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "9",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 5065",
@@ -128,7 +128,7 @@ struct IslamicPrayerData {
         ),
         
         // 10
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "10",
             title: "Sahih Muslim",
             subTitle: "Hadith 763",
@@ -138,7 +138,7 @@ struct IslamicPrayerData {
         ),
         
         // 11
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "11",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3479",
@@ -148,7 +148,7 @@ struct IslamicPrayerData {
         ),
         
         // 12
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "12",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6307",
@@ -158,7 +158,7 @@ struct IslamicPrayerData {
         ),
         
         // 13
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "13",
             title: "Sahih Muslim",
             subTitle: "Hadith 2696",
@@ -168,7 +168,7 @@ struct IslamicPrayerData {
         ),
         
         // 14
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "14",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 1544",
@@ -178,7 +178,7 @@ struct IslamicPrayerData {
         ),
         
         // 15
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "15",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3575",
@@ -188,7 +188,7 @@ struct IslamicPrayerData {
         ),
         
         // 16
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "16",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6399",
@@ -198,7 +198,7 @@ struct IslamicPrayerData {
         ),
         
         // 17
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "17",
             title: "Sahih Muslim",
             subTitle: "Hadith 2722",
@@ -208,7 +208,7 @@ struct IslamicPrayerData {
         ),
         
         // 18
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "18",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 1510",
@@ -218,7 +218,7 @@ struct IslamicPrayerData {
         ),
         
         // 19
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "19",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3551",
@@ -228,7 +228,7 @@ struct IslamicPrayerData {
         ),
         
         // 20
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "20",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6401",
@@ -238,7 +238,7 @@ struct IslamicPrayerData {
         ),
         
         // 21
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "21",
             title: "Sahih Muslim",
             subTitle: "Hadith 2078",
@@ -248,7 +248,7 @@ struct IslamicPrayerData {
         ),
         
         // 22
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "22",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 5090",
@@ -258,7 +258,7 @@ struct IslamicPrayerData {
         ),
         
         // 23
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "23",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3566",
@@ -268,7 +268,7 @@ struct IslamicPrayerData {
         ),
         
         // 24
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "24",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6368",
@@ -278,7 +278,7 @@ struct IslamicPrayerData {
         ),
         
         // 25
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "25",
             title: "Sahih Muslim",
             subTitle: "Hadith 2725",
@@ -288,7 +288,7 @@ struct IslamicPrayerData {
         ),
         
         // 26
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "26",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 1554",
@@ -298,7 +298,7 @@ struct IslamicPrayerData {
         ),
         
         // 27
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "27",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3409",
@@ -308,7 +308,7 @@ struct IslamicPrayerData {
         ),
         
         // 28
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "28",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6390",
@@ -318,7 +318,7 @@ struct IslamicPrayerData {
         ),
         
         // 29
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "29",
             title: "Sahih Muslim",
             subTitle: "Hadith 2739",
@@ -328,7 +328,7 @@ struct IslamicPrayerData {
         ),
         
         // 30
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "30",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 5088",
@@ -338,7 +338,7 @@ struct IslamicPrayerData {
         ),
         
         // 31
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "31",
             title: "Sunan Ibn Majah",
             subTitle: "Hadith 3831",
@@ -348,7 +348,7 @@ struct IslamicPrayerData {
         ),
         
         // 32
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "32",
             title: "Sahih Bukhari",
             subTitle: "Hadith 4438",
@@ -358,7 +358,7 @@ struct IslamicPrayerData {
         ),
         
         // 33
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "33",
             title: "Sahih Muslim",
             subTitle: "Hadith 2086",
@@ -368,7 +368,7 @@ struct IslamicPrayerData {
         ),
         
         // 34
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "34",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3615",
@@ -378,7 +378,7 @@ struct IslamicPrayerData {
         ),
         
         // 35
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "35",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6404",
@@ -388,7 +388,7 @@ struct IslamicPrayerData {
         ),
         
         // 36
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "36",
             title: "Sahih Muslim",
             subTitle: "Hadith 2691",
@@ -398,7 +398,7 @@ struct IslamicPrayerData {
         ),
         
         // 37
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "37",
             title: "Sunan Abu Dawud",
             subTitle: "Hadith 5071",
@@ -408,7 +408,7 @@ struct IslamicPrayerData {
         ),
         
         // 38
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "38",
             title: "Sahih Bukhari",
             subTitle: "Hadith 6403",
@@ -418,7 +418,7 @@ struct IslamicPrayerData {
         ),
         
         // 39
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "39",
             title: "Sahih Muslim",
             subTitle: "Hadith 2706",
@@ -428,7 +428,7 @@ struct IslamicPrayerData {
         ),
         
         // 40
-        TodayPrayerModel(
+        TodayHadisModel(
             id: "40",
             title: "Sunan Tirmidhi",
             subTitle: "Hadith 3577",

@@ -185,10 +185,10 @@ class PrayerTranslationManager: ObservableObject {
     ///   - prayer: The prayer model to translate
     ///   - languageCode: Target language code
     /// - Returns: New prayer model with translated meal
-    func translatePrayer(_ prayer: TodayPrayerModel, to languageCode: String? = nil) async -> TodayPrayerModel {
+    func translatePrayer(_ prayer: TodayHadisModel, to languageCode: String? = nil) async -> TodayHadisModel {
         let translatedMeal = await translate(text: prayer.meal, to: languageCode)
         
-        return TodayPrayerModel(
+        return TodayHadisModel(
             id: prayer.id,
             title: prayer.title,
             subTitle: prayer.subTitle,
@@ -203,8 +203,8 @@ class PrayerTranslationManager: ObservableObject {
     ///   - prayers: Array of prayer models
     ///   - languageCode: Target language code
     /// - Returns: Array of translated prayer models
-    func translatePrayers(_ prayers: [TodayPrayerModel], to languageCode: String? = nil) async -> [TodayPrayerModel] {
-        var translatedPrayers = [TodayPrayerModel]()
+    func translatePrayers(_ prayers: [TodayHadisModel], to languageCode: String? = nil) async -> [TodayHadisModel] {
+        var translatedPrayers = [TodayHadisModel]()
         
         for prayer in prayers {
             let translatedPrayer = await translatePrayer(prayer, to: languageCode)

@@ -10,7 +10,6 @@ final class RevenueCatManager: NSObject {
     // Durumlar
     var packages: [SubscriptionPackage] = []
     var isLoading: Bool = false
-    var isPremium: Bool = false
     private var currentTask: Task<Void, Never>?
     
     // Zaman aşımı süresi
@@ -19,47 +18,35 @@ final class RevenueCatManager: NSObject {
     // Özel başlatıcı
     private override init() {
         super.init()
-        print("🔶 RevenueCat başlatılıyor")
+        print("🔶RevenueCatManager: RevenueCat Starting")
         setupRevenueCat()
     }
     
-    // RevenueCat kurulumu
+    // RevenueCat setup
     private func setupRevenueCat() {
         Purchases.configure(withAPIKey: "appl_NQOVlatBEYhVBLntAAKviUDjUAp")
         Purchases.shared.delegate = self
         
-        // Mevcut abonelikleri kontrol et
-        checkSubscriptionStatus()
     }
 }
 
-// MARK: - Abonelik İşlemleri
+// MARK: - Subs Handling
 extension RevenueCatManager {
-    // Abonelik durumunu kontrol et
-    func checkSubscriptionStatus() {
-        print("🔶 Abonelik durumu kontrol ediliyor")
+    func checkSubscriptionStatus(result: @escaping (Bool) -> Void) {
+        print("🔶 RevenueCatManager: Checking subscription status")
         
         Task {
             do {
                 let customerInfo = try await Purchases.shared.customerInfo()
                 
-                // Ana thread'de UI güncellemeleri
-                await MainActor.run {
-                    updatePremiumStatus(with: customerInfo)
-                }
+                let isPremium = customerInfo.entitlements["premium"]?.isActive == true
+                print("🔶 RevenueCatManager: Premium status: \(isPremium ? "Active" : "Passive")")
             } catch {
-                print("🔶 Hata: \(error.localizedDescription)")
+                print("🔶 RevenueCatManager: Error: \(error.localizedDescription)")
             }
         }
     }
-    
-    // Premium durumunu güncelle
-    @MainActor
-    private func updatePremiumStatus(with info: CustomerInfo) {
-        // "premium" entitlement'ın aktif olup olmadığını kontrol et
-        isPremium = info.entitlements["premium"]?.isActive == true
-        print("🔶 Premium durumu: \(isPremium ? "Aktif" : "Pasif")")
-    }
+
 }
 
 // MARK: - Paket İşlemleri
@@ -174,7 +161,6 @@ extension RevenueCatManager {
             let result = try await Purchases.shared.purchase(package: rcPackage)
             
             await MainActor.run {
-                self.updatePremiumStatus(with: result.customerInfo)
                 print("🔶 Satın alma başarılı")
             }
             
@@ -193,7 +179,6 @@ extension RevenueCatManager {
             let customerInfo = try await Purchases.shared.restorePurchases()
             
             await MainActor.run {
-                self.updatePremiumStatus(with: customerInfo)
                 print("🔶 Geri yükleme başarılı")
             }
             
@@ -247,7 +232,6 @@ extension RevenueCatManager {
 extension RevenueCatManager: PurchasesDelegate {
     func purchases(_ purchases: Purchases, receivedUpdated customerInfo: CustomerInfo) {
         Task { @MainActor in
-            updatePremiumStatus(with: customerInfo)
             print("🔶 Müşteri bilgileri güncellendi")
         }
     }

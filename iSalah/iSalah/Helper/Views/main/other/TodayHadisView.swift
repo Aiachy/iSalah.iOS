@@ -1,5 +1,5 @@
 //
-//  TodayPrayView.swift
+//  TodayHadisView.swift
 //  iSalah
 //
 //  Created by Mert Türedü on 27.02.2025.
@@ -7,17 +7,18 @@
 
 import SwiftUI
 
-struct TodayPrayView: View {
+struct TodayHadisView: View {
     
     @EnvironmentObject var salah: iSalahState
+    @State private var isBackgroundAnimationActive: Bool = false
     @State private var isLikedPray: Bool = false
     @State private var index: Int
     @State private var translatedMeal: String
     
-    let model: TodayPrayerModel
+    let model: TodayHadisModel
     
     init(index: Int = 0,
-         _ model: TodayPrayerModel ) {
+         _ model: TodayHadisModel ) {
         self.index = index
         self.model = model
         self.translatedMeal = model.meal
@@ -29,9 +30,13 @@ struct TodayPrayView: View {
             makeHeaderView(model.title, sub: model.subTitle)
             makeContentView(model.arabic, reading: model.reading, meal: translatedMeal)
             makeBottomView(model)
-                
         }
         .padding(10)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                isBackgroundAnimationActive = true
+            }
+        }
         .frame(width: size9)
         .background(backgroundView)
         .task {
@@ -43,7 +48,7 @@ struct TodayPrayView: View {
 #Preview {
     ZStack {
         BackgroundView()
-        TodayPrayView(
+        TodayHadisView(
             .init(id: "0",
                   title: "Sahih Bukhari",
                   subTitle: "Hadees 1",
@@ -56,21 +61,30 @@ struct TodayPrayView: View {
     .environmentObject(mockSalah)
 }
 //MARK: Views
-private extension TodayPrayView {
+private extension TodayHadisView {
     
     private var backgroundView: some View {
-        ZStack {
+        let isActive = isBackgroundAnimationActive
+        let linear = LinearGradient(stops: [.init(color: ColorHandler.getColor(salah, for: isActive ? .islamicAlt : .horizon), location: 0),
+                                            .init(color: ColorHandler.getColor(salah, for: isActive ? .horizon : .islamicAlt), location: 1)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing)
+        
+        return ZStack {
+            /// background
             RoundedRectangle(cornerRadius: 16)
                 .fill(ColorHandler.getColor(salah, for: .islamicAlt))
+            /// Strokes
             RoundedRectangle(cornerRadius: 16)
-                .stroke(ColorHandler.getColor(salah, for: .gold))
+                .stroke(linear)
+                .animation(.linear(duration: 5).repeatForever(), value: isBackgroundAnimationActive)
         }
       
     }
     /// Header View
     private func makeHeaderView(_ title: String, sub: String) -> some View {
         HStack(spacing: 6) {
-            Text("Today Pray")
+            Text("Today Hadis")
                 .font(FontHandler.setDubaiFont(weight: .bold, size: .m))
             Spacer()
             VStack(alignment: .trailing) {
@@ -104,7 +118,7 @@ private extension TodayPrayView {
     
     
     
-    private func makeBottomView(_ model: TodayPrayerModel) -> some View {
+    private func makeBottomView(_ model: TodayHadisModel) -> some View {
         let isContain: Bool = isLikedPray
         
         return HStack {
@@ -143,7 +157,7 @@ private extension TodayPrayView {
     
 }
 //MARK: Helper Views
-private extension TodayPrayView {
+private extension TodayHadisView {
     private func makeButtonView(_ view: () -> some View, action: @escaping () -> ()) -> some View {
         ZStack {
             Circle()
@@ -161,4 +175,8 @@ private extension TodayPrayView {
         }
             
     }
+}
+
+private extension TodayHadisView {
+    
 }
