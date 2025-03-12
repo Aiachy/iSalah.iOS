@@ -27,7 +27,7 @@ struct MainHeaderView: View {
         HStack(spacing: 10) {
             hicriCalenderAndLocationView
             Spacer()
-            PrayerCountdownView()
+            ClockCountdownView()
                 .opacity(version ? 1 : 0)
             compassView
         }

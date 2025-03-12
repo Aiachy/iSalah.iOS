@@ -3,6 +3,7 @@
 //  iSalah
 //
 //  Created by Mert Türedü on 20.02.2025.
+//  Updated on 13.03.2025.
 //
 
 import Foundation
@@ -11,14 +12,26 @@ import Combine
 class iSalahState: ObservableObject {
     
     @Published var user: UserModel
+    @Published var clockService = ClockServiceManager()
     var cancelBag = Set<AnyCancellable>()
     
     init(user: UserModel = .init()) {
         self.user = user
         
         allListeners()
+        setupClockService()
     }
     
+    private func setupClockService() {
+        $user
+            .map(\.location)
+            .removeDuplicates()
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] location in
+                self?.clockService.startTimer(for: location)
+            }
+            .store(in: &cancelBag)
+    }
 }
 
 

@@ -11,6 +11,8 @@ import UIKit
 let onboardingFinishedKey = "onboardingFinished"
 let userIDKey = "firebase_user_id"
 
+let themeIdKey = "theme_id"
+
 //MARK: DB Key
 let dbKeyUsers = "users"
 

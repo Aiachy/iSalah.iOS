@@ -13,7 +13,7 @@ struct AppInfoModel: Codable {
     
     init(theme: String = "Medina Evening",
          language: String = "en" ) {
-        self.theme = theme
+        self.theme = UserDefaults.standard.string(forKey: themeIdKey) ?? theme
         self.language = Locale.current.language.languageCode?.identifier ?? language
     }
 }

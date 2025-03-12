@@ -54,13 +54,18 @@ extension ThemeView {
     var medineThemeRow: some View {
         VStack {
             /// Colors
-            HStack {
-                ForEach(ColorHelper.original.allCases.filter {
-                    !["oneTrue", "dark", "female", "male"].contains($0.rawValue)
-                }, id: \.self) { color in
-                    makeRowForThemeView(Color(color.rawValue))
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(ColorHelper.original.allCases.filter {
+                        !["oneTrue", "dark", "female", "male"].contains($0.rawValue)
+                    }, id: \.self) { color in
+                        makeRowForThemeView(Color(color.rawValue))
+                    }
                 }
+                .padding(.vertical)
+                .padding(.leading)
             }
+                
             /// Title
             Text("Medina Evening")
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
@@ -78,12 +83,16 @@ extension ThemeView {
     var roseThemeRow: some View {
         VStack {
             /// Colors
-            HStack {
-                ForEach(ColorHelper.rose.allCases.filter {
-                    !["oneTrue", "dark", "female", "male"].contains($0.rawValue)
-                }, id: \.self) { color in
-                    makeRowForThemeView(Color(color.rawValue))
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(ColorHelper.rose.allCases.filter {
+                        !["oneTrue", "dark", "female", "male"].contains($0.rawValue)
+                    }, id: \.self) { color in
+                        makeRowForThemeView(Color(color.rawValue))
+                    }
                 }
+                .padding(.vertical)
+                .padding(.leading)
             }
             
             /// Title
@@ -106,12 +115,16 @@ extension ThemeView {
     var arabThemeRow: some View {
         VStack {
             /// Colors
-            HStack {
-                ForEach(ColorHelper.arab.allCases.filter {
-                    !["oneTrue", "dark", "female", "male"].contains($0.rawValue)
-                }, id: \.self) { color in
-                    makeRowForThemeView(Color(color.rawValue))
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(ColorHelper.arab.allCases.filter {
+                        !["oneTrue", "dark", "female", "male"].contains($0.rawValue)
+                    }, id: \.self) { color in
+                        makeRowForThemeView(Color(color.rawValue))
+                    }
                 }
+                .padding(.vertical)
+                .padding(.leading)
             }
             
             /// Title
@@ -140,7 +153,7 @@ extension ThemeView {
             RoundedRectangle(cornerRadius: 6)
                 .fill(color)
         }
-        .frame(width: dw(0.11), height: dh(0.2))
+        .frame(width: dw(0.12), height: dh(0.23))
     }
     
 }
@@ -157,6 +170,7 @@ private extension ThemeView {
         guard !isPremium || salah.user.checkIsPremium() else { vm.isPaywallAppear.toggle(); return }
         withAnimation(.linear) {
             salah.user.appInfo.theme = themeTitle
+            UserDefaults.standard.set(themeTitle, forKey: themeIdKey)
         }
     }
     

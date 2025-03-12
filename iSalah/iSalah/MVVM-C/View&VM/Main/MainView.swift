@@ -113,7 +113,7 @@ private extension MainView {
         VStack(spacing: -5) {
             if !vm.isHidingHeader {
                 EventAndTimeView()
-                PrayerCountdownView()
+                ClockCountdownView()
                     .padding(.bottom)
                 mosqueView
                 MosqueCallTimerView()
