@@ -28,49 +28,3675 @@
 
     },
     "Accessibility" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toeganklikheid"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toeganklikheid"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toeganklikheid"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمكانية الوصول"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمكانية الوصول"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمكانية الوصول"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمكانية الوصول"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمكانية الوصول"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إمكانية الوصول"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əlçatanlıq"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilgængelighed"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barrierefreiheit"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσβασιμότητα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesibilidad"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesibilidad"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesibilidad"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saavutettavuus"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibilité"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पहुँच-क्षमता"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hozzáférhetőség"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aksesibilitas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibilità"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクセシビリティ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "접근성"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gihîştin"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gihîştin"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kebolehcapaian"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toegankelijkheid"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dostępność"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acessibilidade"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acessibilidade"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acessibilidade"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesibilitate"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступность"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การเข้าถึง"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erişilebilirlik"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khả năng tiếp cận"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无障碍"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無障礙"
+          }
+        }
+      }
     },
     "Add Item" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg Item by"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg Item by"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg Item by"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة عنصر"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Element əlavə et"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj element"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Element hinzufügen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη στοιχείου"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Item"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Item"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Item"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Item"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir elemento"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar elemento"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar elemento"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kohde"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un élément"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आइटम जोड़ें"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elem hozzáadása"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah Item"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi elemento"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アイテムを追加"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "항목 추가"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hêmanek lê zêde bike"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hêmanek lê zêde bike"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah Item"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Item toevoegen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj element"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar item"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar item"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar item"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă element"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить элемент"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มรายการ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğe Ekle"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm mục"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加项目"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增項目"
+          }
+        }
+      }
     },
     "Add New Dhikr" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg Nuwe Dhikr by"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg Nuwe Dhikr by"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg Nuwe Dhikr by"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة ذكر جديد"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة ذكر جديد"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة ذكر جديد"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة ذكر جديد"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة ذكر جديد"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة ذكر جديد"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Zikr əlavə et"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilføj ny Dhikr"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neuen Dhikr hinzufügen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη νέου Dhikr"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add New Dhikr"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add New Dhikr"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add New Dhikr"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add New Dhikr"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir nuevo Dhikr"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar nuevo Dhikr"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar nuevo Dhikr"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää uusi Dhikr"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un nouveau Dhikr"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नया ज़िक्र जोड़ें"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Új Dhikr hozzáadása"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah Dhikr Baru"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi nuovo Dhikr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいジクル（唱念）を追加"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새 디크르 추가"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zikrê nû lê zêde bike"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zikrê nû lê zêde bike"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah Zikir Baru"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieuwe Dhikr toevoegen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj nowy Dhikr"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar novo Dhikr"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar novo Dhikr"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar novo Dhikr"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă Dhikr nou"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить новый Зикр"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มซิกร์ใหม่"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Zikir Ekle"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm Dhikr mới"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加新的记念词"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新增記念詞"
+          }
+        }
+      }
     },
     "Arabian Desert" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabiese Woestyn"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabiese Woestyn"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabiese Woestyn"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء العربية"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء العربية"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء العربية"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء العربية"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء العربية"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصحراء العربية"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ərəbistan Səhrası"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabiske Ørken"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabische Wüste"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αραβική Έρημος"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabian Desert"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabian Desert"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabian Desert"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabian Desert"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desierto Arábigo"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desierto Arábigo"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desierto Arábigo"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabian aavikko"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désert d'Arabie"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अरब का रेगिस्तान"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arab sivatag"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gurun Arab"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deserto Arabico"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アラビア砂漠"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아라비아 사막"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çola Erebî"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çola Erebî"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gurun Arab"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arabische Woestijn"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pustynia Arabska"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deserto Arábico"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deserto Arábico"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deserto Arábico"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deșertul Arabic"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аравийская пустыня"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ทะเลทรายอาหรับ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arap Çölü"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sa mạc Ả Rập"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "阿拉伯沙漠"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "阿拉伯沙漠"
+          }
+        }
+      }
     },
     "As a user of the application, you are responsible for:" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As 'n gebruiker van die toepassing is jy verantwoordelik vir:"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As 'n gebruiker van die toepassing is jy verantwoordelik vir:"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As 'n gebruiker van die toepassing is jy verantwoordelik vir:"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كمستخدم للتطبيق، أنت مسؤول عن:"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كمستخدم للتطبيق، أنت مسؤول عن:"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كمستخدم للتطبيق، أنت مسؤول عن:"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كمستخدم للتطبيق، أنت مسؤول عن:"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كمستخدم للتطبيق، أنت مسؤول عن:"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كمستخدم للتطبيق، أنت مسؤول عن:"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tətbiqin istifadəçisi olaraq siz aşağıdakılara görə məsuliyyət daşıyırsınız:"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Som bruger af applikationen er du ansvarlig for:"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als Nutzer der Anwendung sind Sie verantwortlich für:"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ως χρήστης της εφαρμογής, είστε υπεύθυνοι για:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As a user of the application, you are responsible for:"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As a user of the application, you are responsible for:"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As a user of the application, you are responsible for:"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As a user of the application, you are responsible for:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como usuario de la aplicación, usted es responsable de:"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como usuario de la aplicación, usted es responsable de:"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como usuario de la aplicación, usted es responsable de:"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sovelluksen käyttäjänä olet vastuussa seuraavista:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En tant qu'utilisateur de l'application, vous êtes responsable de :"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एप्लिकेशन के उपयोगकर्ता के रूप में, आप इनके लिए जिम्मेदार हैं:"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Az alkalmazás felhasználójaként Ön felelős a következőkért:"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagai pengguna aplikasi, Anda bertanggung jawab untuk:"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come utente dell'applicazione, sei responsabile per:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリケーションのユーザーとして、あなたには以下の責任があります："
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "애플리케이션 사용자로서 귀하는 다음에 대한 책임이 있습니다:"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wek bikarhênerê sepanê, tu berpirsiyar î ji bo:"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wek bikarhênerê sepanê, tu berpirsiyar î ji bo:"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sebagai pengguna aplikasi, anda bertanggungjawab untuk:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als gebruiker van de applicatie bent u verantwoordelijk voor:"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jako użytkownik aplikacji, jesteś odpowiedzialny za:"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como utilizador da aplicação, você é responsável por:"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como usuário do aplicativo, você é responsável por:"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como utilizador da aplicação, você é responsável por:"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ca utilizator al aplicației, sunteți responsabil pentru:"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как пользователь приложения, вы несете ответственность за:"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ในฐานะผู้ใช้แอปพลิเคชั่น คุณมีหน้าที่รับผิดชอบต่อ:"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamanın kullanıcısı olarak, aşağıdakilerden sorumlusunuz:"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Với tư cách là người dùng ứng dụng, bạn có trách nhiệm:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作为应用程序的用户，您负责："
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作為應用程式的用戶，您負責："
+          }
+        }
+      }
     },
     "Back" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terug"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terug"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terug"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رجوع"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رجوع"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رجوع"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رجوع"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رجوع"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رجوع"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilbage"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurück"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πίσω"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atrás"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atrás"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atrás"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takaisin"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retour"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वापस"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vissza"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kembali"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indietro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "戻る"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "뒤로"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paşve"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paşve"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kembali"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terug"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wstecz"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voltar"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voltar"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voltar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Înapoi"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назад"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ย้อนกลับ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quay lại"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
+        }
+      }
     },
     "Beginning of Ramadan" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Ramadan"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Ramadan"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Ramadan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رمضان"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رمضان"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رمضان"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رمضان"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رمضان"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية رمضان"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazanın başlanğıcı"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begyndelsen af Ramadan"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn des Ramadan"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αρχή του Ραμαζανιού"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Ramadan"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Ramadan"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Ramadan"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Ramadan"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienzo del Ramadán"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienzo del Ramadán"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienzo del Ramadán"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramadanin alku"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Début du Ramadan"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रमज़ान का आरंभ"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramadán kezdete"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Awal Ramadhan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizio del Ramadan"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ラマダーン月の始まり"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "라마단의 시작"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destpêka Remezanê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destpêka Remezanê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permulaan Ramadan"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Ramadan"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Początek Ramadanu"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início do Ramadão"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início do Ramadã"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início do Ramadão"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Începutul Ramadanului"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начало Рамадана"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มต้นเดือนรอมฎอน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Başlangıcı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu tháng Ramadan"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "斋月开始"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "齋月開始"
+          }
+        }
+      }
     },
     "Beginning of Three Holy Months" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Drie Heilige Maande"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Drie Heilige Maande"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Drie Heilige Maande"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية الأشهر الثلاثة المقدسة"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية الأشهر الثلاثة المقدسة"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية الأشهر الثلاثة المقدسة"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية الأشهر الثلاثة المقدسة"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية الأشهر الثلاثة المقدسة"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بداية الأشهر الثلاثة المقدسة"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üç Müqəddəs Ayın Başlanğıcı"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begyndelsen af Tre Hellige Måneder"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginn der Drei Heiligen Monate"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αρχή των Τριών Ιερών Μηνών"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Three Holy Months"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Three Holy Months"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Three Holy Months"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginning of Three Holy Months"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienzo de los Tres Meses Sagrados"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienzo de los Tres Meses Sagrados"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comienzo de los Tres Meses Sagrados"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kolmen pyhän kuukauden alku"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Début des Trois Mois Sacrés"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "तीन पवित्र महीनों की शुरुआत"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Három Szent Hónap kezdete"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Awal Tiga Bulan Suci"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizio dei Tre Mesi Sacri"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "三聖月の始まり"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "세 성월의 시작"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destpêka Sê Mehên Pîroz"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destpêka Sê Mehên Pîroz"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permulaan Tiga Bulan Suci"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin van Drie Heilige Maanden"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Początek Trzech Świętych Miesięcy"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início dos Três Meses Sagrados"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início dos Três Meses Sagrados"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Início dos Três Meses Sagrados"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Începutul celor Trei Luni Sfinte"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начало Трех Священных Месяцев"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เริ่มต้นสามเดือนศักดิ์สิทธิ์"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üç Ayların Başlangıcı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu Ba Tháng Thiêng liêng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "三圣月开始"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "三聖月開始"
+          }
+        }
+      }
     },
     "Blessed Days" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geseënde Dae"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geseënde Dae"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geseënde Dae"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام مباركة"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام مباركة"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام مباركة"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام مباركة"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام مباركة"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أيام مباركة"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mübarək Günlər"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velsignede Dage"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesegnete Tage"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ευλογημένες Ημέρες"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blessed Days"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blessed Days"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blessed Days"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blessed Days"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Días Benditos"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Días Benditos"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Días Benditos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siunatut Päivät"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jours Bénis"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पवित्र दिन"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Áldott Napok"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari-hari Berkah"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorni Benedetti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "祝福された日々"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "축복받은 날들"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rojên Pîroz"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rojên Pîroz"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari-hari Diberkati"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gezegende Dagen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Błogosławione Dni"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias Abençoados"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias Abençoados"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dias Abençoados"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zile Binecuvântate"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Благословенные Дни"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันศักดิ์สิทธิ์"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mübarek Günler"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những Ngày Hồng Phúc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "吉祥日"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "吉祥日"
+          }
+        }
+      }
     },
     "By accessing or using our application, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the application." : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deur toegang tot of gebruik van ons toepassing, stem jy in om deur hierdie Voorwaardes gebind te word. As jy met enige deel van die voorwaardes verskil, mag jy nie toegang tot die toepassing kry nie."
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deur toegang tot of gebruik van ons toepassing, stem jy in om deur hierdie Voorwaardes gebind te word. As jy met enige deel van die voorwaardes verskil, mag jy nie toegang tot die toepassing kry nie."
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deur toegang tot of gebruik van ons toepassing, stem jy in om deur hierdie Voorwaardes gebind te word. As jy met enige deel van die voorwaardes verskil, mag jy nie toegang tot die toepassing kry nie."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالوصول إلى تطبيقنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من الشروط، فلا يجوز لك الوصول إلى التطبيق."
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالوصول إلى تطبيقنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من الشروط، فلا يجوز لك الوصول إلى التطبيق."
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالوصول إلى تطبيقنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من الشروط، فلا يجوز لك الوصول إلى التطبيق."
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالوصول إلى تطبيقنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من الشروط، فلا يجوز لك الوصول إلى التطبيق."
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالوصول إلى تطبيقنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من الشروط، فلا يجوز لك الوصول إلى التطبيق."
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالوصول إلى تطبيقنا أو استخدامه، فإنك توافق على الالتزام بهذه الشروط. إذا كنت لا توافق على أي جزء من الشروط، فلا يجوز لك الوصول إلى التطبيق."
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tətbiqimizə daxil olmaqla və ya istifadə etməklə, bu Şərtlərlə bağlı olmağa razılaşırsınız. Şərtlərin hər hansı bir hissəsi ilə razılaşmırsınızsa, tətbiqə daxil ola bilməzsiniz."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ved at tilgå eller bruge vores applikation accepterer du at være bundet af disse Vilkår. Hvis du er uenig i nogen del af vilkårene, må du ikke tilgå applikationen."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durch den Zugriff auf oder die Nutzung unserer Anwendung stimmen Sie zu, an diese Bedingungen gebunden zu sein. Wenn Sie mit einem Teil der Bedingungen nicht einverstanden sind, dürfen Sie nicht auf die Anwendung zugreifen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με την πρόσβαση ή τη χρήση της εφαρμογής μας, συμφωνείτε να δεσμεύεστε από αυτούς τους Όρους. Εάν διαφωνείτε με οποιοδήποτε μέρος των όρων, δεν επιτρέπεται να έχετε πρόσβαση στην εφαρμογή."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By accessing or using our application, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the application."
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By accessing or using our application, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the application."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By accessing or using our application, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the application."
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By accessing or using our application, you agree to be bound by these Terms. If you disagree with any part of the terms, you may not access the application."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al acceder o utilizar nuestra aplicación, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de los términos, no podrá acceder a la aplicación."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al acceder o utilizar nuestra aplicación, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de los términos, no podrá acceder a la aplicación."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al acceder o utilizar nuestra aplicación, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de los términos, no podrá acceder a la aplicación."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käyttämällä sovellustamme sitoudut noudattamaan näitä ehtoja. Jos et hyväksy mitään osaa ehdoista, et saa käyttää sovellusta."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En accédant ou en utilisant notre application, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec une partie des conditions, vous ne pouvez pas accéder à l'application."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हमारे एप्लिकेशन तक पहुंचकर या उसका उपयोग करके, आप इन शर्तों से बंधे होने पर सहमत होते हैं। यदि आप शर्तों के किसी भी हिस्से से असहमत हैं, तो आप एप्लिकेशन तक पहुंच नहीं सकते हैं।"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Az alkalmazásunk elérésével vagy használatával Ön elfogadja, hogy ezek a Feltételek kötelezik. Ha nem ért egyet a feltételek bármely részével, nem férhet hozzá az alkalmazáshoz."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan mengakses atau menggunakan aplikasi kami, Anda setuju untuk terikat oleh Ketentuan ini. Jika Anda tidak setuju dengan bagian apa pun dari ketentuan, Anda tidak boleh mengakses aplikasi."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accedendo o utilizzando la nostra applicazione, accetti di essere vincolato da questi Termini. Se non sei d'accordo con qualsiasi parte dei termini, non puoi accedere all'applicazione."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当アプリケーションにアクセスまたは使用することにより、あなたはこれらの利用規約に拘束されることに同意したものとみなします。利用規約のいずれかの部分に同意できない場合は、アプリケーションにアクセスすることはできません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "애플리케이션에 접속하거나 사용함으로써 귀하는 이 약관에 구속되는 것에 동의합니다. 약관의 어느 부분에든 동의하지 않으시면 애플리케이션에 접속하실 수 없습니다."
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bi gihîştina an bikaranîna sepana me, hûn qebûl dikin ku hûn bi van Şertan ve girêdayî ne. Eger hûn bi her parçeyek ji şertan re ne razî bin, hûn nikarin bigihîjin sepanê."
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bi gihîştina an bikaranîna sepana me, hûn qebûl dikin ku hûn bi van Şertan ve girêdayî ne. Eger hûn bi her parçeyek ji şertan re ne razî bin, hûn nikarin bigihîjin sepanê."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan mengakses atau menggunakan aplikasi kami, anda bersetuju untuk terikat dengan Syarat-syarat ini. Jika anda tidak bersetuju dengan mana-mana bahagian syarat, anda tidak boleh mengakses aplikasi."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Door toegang te krijgen tot of gebruik te maken van onze applicatie, gaat u ermee akkoord gebonden te zijn aan deze Voorwaarden. Als u het niet eens bent met enig deel van de voorwaarden, mag u geen toegang hebben tot de applicatie."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uzyskując dostęp do naszej aplikacji lub korzystając z niej, zgadzasz się przestrzegać niniejszych Warunków. Jeśli nie zgadzasz się z jakąkolwiek częścią warunków, nie możesz korzystać z aplikacji."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao aceder ou utilizar a nossa aplicação, concorda em ficar vinculado a estes Termos. Se discordar de qualquer parte dos termos, não poderá aceder à aplicação."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao acessar ou usar nosso aplicativo, você concorda em estar vinculado a estes Termos. Se você discordar de qualquer parte dos termos, você não poderá acessar o aplicativo."
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao aceder ou utilizar a nossa aplicação, concorda em ficar vinculado a estes Termos. Se discordar de qualquer parte dos termos, não poderá aceder à aplicação."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prin accesarea sau utilizarea aplicației noastre, sunteți de acord să fiți obligat de acești Termeni. Dacă nu sunteți de acord cu orice parte a termenilor, nu puteți accesa aplicația."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получая доступ к нашему приложению или используя его, вы соглашаетесь соблюдать настоящие Условия. Если вы не согласны с какой-либо частью условий, вы не можете получить доступ к приложению."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การเข้าถึงหรือใช้แอปพลิเคชันของเรา หมายถึงคุณยอมรับที่จะผูกพันตามข้อกำหนดเหล่านี้ หากคุณไม่เห็นด้วยกับส่วนใดส่วนหนึ่งของข้อกำหนด คุณไม่สามารถเข้าถึงแอปพลิเคชันได้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamamıza erişerek veya kullanarak, bu Şartlara bağlı kalmayı kabul etmiş olursunuz. Şartların herhangi bir kısmına katılmıyorsanız, uygulamaya erişemezsiniz."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bằng việc truy cập hoặc sử dụng ứng dụng của chúng tôi, bạn đồng ý bị ràng buộc bởi các Điều khoản này. Nếu bạn không đồng ý với bất kỳ phần nào của điều khoản, bạn không được phép truy cập ứng dụng."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "访问或使用我们的应用程序，即表示您同意受这些条款的约束。如果您不同意条款的任何部分，则不得访问该应用程序。"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "透過存取或使用我們的應用程式，即表示您同意受這些條款的約束。如果您不同意條款的任何部分，則不得存取該應用程式。"
+          }
+        }
+      }
     },
     "Cancel" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kanselleer"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kanselleer"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kanselleer"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ləğv et"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuller"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακύρωση"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruuta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "रद्द करें"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mégse"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betal bike"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betal bike"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuleren"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anuluj"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anulează"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยกเลิก"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
     },
     "Contact Us" : {
 
     },
     "Continue" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaan voort"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaan voort"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gaan voort"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "متابعة"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Davam edin"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsæt"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortfahren"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνέχεια"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jatka"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuer"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जारी रखें"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folytatás"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continua"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "続ける"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계속"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bidomîne"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bidomîne"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teruskan"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doorgaan"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontynuuj"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuă"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжить"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดำเนินการต่อ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Devam"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "继续"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繼續"
+          }
+        }
+      }
     },
     "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan jy asseblief jou ligging deel sodat ons gebedsye met presisie kan bereken en godsdienstige inligting spesifiek vir jou area kan verskaf?"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan jy asseblief jou ligging deel sodat ons gebedsye met presisie kan bereken en godsdienstige inligting spesifiek vir jou area kan verskaf?"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kan jy asseblief jou ligging deel sodat ons gebedsye met presisie kan bereken en godsdienstige inligting spesifiek vir jou area kan verskaf?"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يمكنك مشاركة موقعك حتى نتمكن من حساب أوقات الصلاة بدقة وتقديم معلومات دينية خاصة بمنطقتك؟"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يمكنك مشاركة موقعك حتى نتمكن من حساب أوقات الصلاة بدقة وتقديم معلومات دينية خاصة بمنطقتك؟"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يمكنك مشاركة موقعك حتى نتمكن من حساب أوقات الصلاة بدقة وتقديم معلومات دينية خاصة بمنطقتك؟"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يمكنك مشاركة موقعك حتى نتمكن من حساب أوقات الصلاة بدقة وتقديم معلومات دينية خاصة بمنطقتك؟"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يمكنك مشاركة موقعك حتى نتمكن من حساب أوقات الصلاة بدقة وتقديم معلومات دينية خاصة بمنطقتك؟"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل يمكنك مشاركة موقعك حتى نتمكن من حساب أوقات الصلاة بدقة وتقديم معلومات دينية خاصة بمنطقتك؟"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namaz vaxtlarını dəqiqliklə hesablaya bilməyimiz və ərazinizə xüsusi dini məlumatlar təqdim edə bilməyimiz üçün məkanınızı paylaşa bilərsinizmi?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vil du venligst dele din placering, så vi kan beregne bønnestider med præcision og give religiøs information specifik for dit område?"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Würden Sie bitte Ihren Standort teilen, damit wir Gebetszeiten präzise berechnen und religiöse Informationen speziell für Ihre Region bereitstellen können?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Θα μπορούσατε να μοιραστείτε την τοποθεσία σας ώστε να μπορούμε να υπολογίσουμε τους χρόνους προσευχής με ακρίβεια και να παρέχουμε θρησκευτικές πληροφορίες ειδικά για την περιοχή σας;"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could you please share your location so that we can calculate prayer times with precision and provide religious information specific to your area?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Podría compartir su ubicación para que podamos calcular los horarios de oración con precisión y proporcionar información religiosa específica para su área?"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Podría compartir su ubicación para que podamos calcular los horarios de oración con precisión y proporcionar información religiosa específica para su área?"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Podría compartir su ubicación para que podamos calcular los horarios de oración con precisión y proporcionar información religiosa específica para su área?"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voisitko jakaa sijaintisi, jotta voimme laskea rukousajat tarkasti ja tarjota uskonnollista tietoa juuri sinun alueellesi?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pourriez-vous partager votre emplacement afin que nous puissions calculer les heures de prière avec précision et fournir des informations religieuses spécifiques à votre région ?"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्या आप कृपया अपना स्थान साझा कर सकते हैं ताकि हम सटीकता के साथ नमाज़ के समय की गणना कर सकें और आपके क्षेत्र के लिए विशिष्ट धार्मिक जानकारी प्रदान कर सकें?"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Megosztaná a tartózkodási helyét, hogy pontosan kiszámíthassuk az imaidőket és az Ön területére vonatkozó vallási információkat nyújthassunk?"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkah Anda berbagi lokasi Anda sehingga kami dapat menghitung waktu shalat dengan tepat dan memberikan informasi keagamaan khusus untuk daerah Anda?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potresti condividere la tua posizione in modo che possiamo calcolare gli orari di preghiera con precisione e fornire informazioni religiose specifiche per la tua zona?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正確な礼拝時間を計算し、あなたの地域に特化した宗教情報を提供するために、位置情報を共有していただけませんか？"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정확한 기도 시간을 계산하고 지역에 맞는 종교 정보를 제공할 수 있도록 위치를 공유해 주시겠습니까?"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ji kerema xwe hûn dikarin cîhê xwe parve bikin da ku em bikaribin demên nimêjê bi rastî hesab bikin û agahiyên olî yên taybetî ji bo herêma we peyda bikin?"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ji kerema xwe hûn dikarin cîhê xwe parve bikin da ku em bikaribin demên nimêjê bi rastî hesab bikin û agahiyên olî yên taybetî ji bo herêma we peyda bikin?"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bolehkah anda berkongsi lokasi anda supaya kami dapat mengira waktu solat dengan tepat dan menyediakan maklumat agama khusus untuk kawasan anda?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zou u uw locatie willen delen zodat we gebedsijden nauwkeurig kunnen berekenen en religieuze informatie kunnen bieden die specifiek is voor uw omgeving?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Czy mógłbyś udostępnić swoją lokalizację, abyśmy mogli dokładnie obliczyć czasy modlitw i dostarczyć informacje religijne specyficzne dla Twojego obszaru?"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poderia partilhar a sua localização para que possamos calcular os horários de oração com precisão e fornecer informações religiosas específicas para a sua área?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você poderia compartilhar sua localização para que possamos calcular os horários de oração com precisão e fornecer informações religiosas específicas para sua área?"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poderia partilhar a sua localização para que possamos calcular os horários de oração com precisão e fornecer informações religiosas específicas para a sua área?"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ați putea să vă împărtășiți locația pentru a putea calcula orele de rugăciune cu precizie și a oferi informații religioase specifice zonei dumneavoastră?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не могли бы вы поделиться своим местоположением, чтобы мы могли точно рассчитать время молитв и предоставить религиозную информацию, специфичную для вашего региона?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กรุณาแชร์ตำแหน่งที่ตั้งของคุณเพื่อให้เราสามารถคำนวณเวลาละหมาดได้อย่างแม่นยำและให้ข้อมูลทางศาสนาเฉพาะสำหรับพื้นที่ของคุณ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namaz vakitlerini hassas bir şekilde hesaplayabilmemiz ve bölgenize özel dini bilgiler sunabilmemiz için konumunuzu paylaşır mısınız?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có thể chia sẻ vị trí của mình để chúng tôi có thể tính toán chính xác thời gian cầu nguyện và cung cấp thông tin tôn giáo phù hợp với khu vực của bạn không?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您能否分享您的位置，以便我们能够精确计算祈祷时间并提供适合您所在地区的宗教信息？"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您能否分享您的位置，以便我們能夠精確計算祈禱時間並提供適合您所在地區的宗教資訊？"
+          }
+        }
+      }
     },
     "Count: %lld" : {
-
+        "localizations" : {
+            "af" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Telling: %lld"
+                }
+            },
+            "af-NA" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Telling: %lld"
+                }
+            },
+            "af-ZA" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Telling: %lld"
+                }
+            },
+            "ar" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "العدد: %lld"
+                }
+            },
+            "ar-BH" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "العدد: %lld"
+                }
+            },
+            "ar-DZ" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "العدد: %lld"
+                }
+            },
+            "ar-KM" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "العدد: %lld"
+                }
+            },
+            "ar-TD" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "العدد: %lld"
+                }
+            },
+            "arz" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "العدد: %lld"
+                }
+            },
+            "az" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Say: %lld"
+                }
+            },
+            "da" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Antal: %lld"
+                }
+            },
+            "de" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Anzahl: %lld"
+                }
+            },
+            "el" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Πλήθος: %lld"
+                }
+            },
+            "en" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Count: %lld"
+                }
+            },
+            "en-AU" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Count: %lld"
+                }
+            },
+            "en-GB" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Count: %lld"
+                }
+            },
+            "en-IN" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Count: %lld"
+                }
+            },
+            "es" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Contador: %lld"
+                }
+            },
+            "es-419" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Contador: %lld"
+                }
+            },
+            "es-US" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Contador: %lld"
+                }
+            },
+            "fi" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Määrä: %lld"
+                }
+            },
+            "fr" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Compteur : %lld"
+                }
+            },
+            "hi" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "गिनती: %lld"
+                }
+            },
+            "hu" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Számláló: %lld"
+                }
+            },
+            "id" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Hitungan: %lld"
+                }
+            },
+            "it" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Conteggio: %lld"
+                }
+            },
+            "ja" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "カウント: %lld"
+                }
+            },
+            "ko" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "횟수: %lld"
+                }
+            },
+            "ku" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Hejmar: %lld"
+                }
+            },
+            "ku-TR" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Hejmar: %lld"
+                }
+            },
+            "ms" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Kiraan: %lld"
+                }
+            },
+            "nl" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Telling: %lld"
+                }
+            },
+            "pl" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Licznik: %lld"
+                }
+            },
+            "pt" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Contagem: %lld"
+                }
+            },
+            "pt-BR" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Contagem: %lld"
+                }
+            },
+            "pt-PT" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Contagem: %lld"
+                }
+            },
+            "ro" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Numărătoare: %lld"
+                }
+            },
+            "ru" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Счёт: %lld"
+                }
+            },
+            "th" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "จำนวน: %lld"
+                }
+            },
+            "tr" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Sayaç: %lld"
+                }
+            },
+            "vi" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "Đếm: %lld"
+                }
+            },
+            "zh-Hans" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "计数：%lld"
+                }
+            },
+            "zh-HK" : {
+                "stringUnit" : {
+                    "state" : "translated",
+                    "value" : "計數：%lld"
+                }
+            }
+        }
     },
     "Current Location" : {
 

@@ -122,61 +122,21 @@ private extension TodayHadisView {
         let isContain: Bool = isLikedPray
         
         return HStack {
-            makeButtonView {
-                ImageHandler.getIcon(salah, image: isContain ? .heartFill : .heart)
-                    .scaledToFit()
-                    .foregroundStyle(
-                        ColorHandler.getColor(salah, for: .light)
-                    )
-                    .padding(10)
-            } action: {
+            CircleButtonView(.init(isContain ? .heartFill : .heart, action: {
                 if isContain {
                     isLikedPray = false
                 } else {
                     isLikedPray = true
                 }
-            }
+            }))
 
             Spacer()
-            makeButtonView({
-                ImageHandler.getIcon(salah, image: .share)
-                    .scaledToFit()
-                    .foregroundStyle(
-                        ColorHandler.getColor(salah, for: .light)
-                    )
-                    .padding(10)
-            }, action: {
+            CircleButtonView(.init(.share, action: {
                 PrayShareManager.shared.sharePrayer(model)
-                            
-            })
+
+            }))
                 
         }
     }
-    
-    
-    
-}
-//MARK: Helper Views
-private extension TodayHadisView {
-    private func makeButtonView(_ view: () -> some View, action: @escaping () -> ()) -> some View {
-        ZStack {
-            Circle()
-                .stroke(ColorHandler.getColor(salah, for: .gold))
-            Circle()
-                .fill(ColorHandler.getColor(salah, for: .islamicAlt))
-            view()
-        }
-        .frame(width: dw(0.1))
-        .onTapGesture {
-            HapticManager.shared.tabSelection()
-            withAnimation {
-                action()
-            }
-        }
-            
-    }
 }
 
-private extension TodayHadisView {
-    
-}
