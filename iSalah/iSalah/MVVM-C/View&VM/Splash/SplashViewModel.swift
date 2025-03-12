@@ -58,9 +58,9 @@ extension SplashViewModel {
         model.appInfo = await FirebaseFirestoreManager.shared.getAppInfo(userId: userId)
         
         /// Info
-//        let premiumStatus = await RevenueCatManager.shared.checkSubscriptionStatus()
-//        model.info.isPremium = premiumStatus.hasSubscription
-//        model.info.premiumType = premiumStatus.premiumType
+        let premiumStatus = await RevenueCatManager.shared.checkSubscriptionStatus()
+        model.info.isPremium = premiumStatus.hasSubscription
+        model.info.premiumType = premiumStatus.premiumType
         
         return model
     }
