@@ -3699,16 +3699,1052 @@
         }
     },
     "Current Location" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huidige Ligging"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huidige Ligging"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huidige Ligging"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموقع الحالي"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموقع الحالي"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموقع الحالي"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموقع الحالي"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموقع الحالي"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الموقع الحالي"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari Məkan"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuværende Placering"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktueller Standort"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τρέχουσα Τοποθεσία"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Location"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Location"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Location"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Location"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación Actual"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación Actual"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubicación Actual"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nykyinen Sijainti"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emplacement Actuel"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वर्तमान स्थान"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jelenlegi Hely"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokasi Saat Ini"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Posizione Attuale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在地"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "현재 위치"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cîhê Niha"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cîhê Niha"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lokasi Semasa"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huidige Locatie"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obecna Lokalizacja"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Localização Atual"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Localização Atual"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Localização Atual"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Locația Curentă"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текущее Местоположение"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตำแหน่งปัจจุบัน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mevcut Konum"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vị Trí Hiện Tại"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当前位置"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目前位置"
+          }
+        }
+      }
     },
     "Day of Ashura" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag van Ashura"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag van Ashura"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag van Ashura"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم عاشوراء"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم عاشوراء"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم عاشوراء"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم عاشوراء"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم عاشوراء"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يوم عاشوراء"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşura Günü"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ashura-dagen"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag von Aschura"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ημέρα της Ασούρα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Day of Ashura"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Day of Ashura"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Day of Ashura"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Day of Ashura"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Día de Ashura"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Día de Ashura"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Día de Ashura"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aašuuran päivä"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jour d'Achoura"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "आशूरा का दिन"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ásúra napja"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Asyura"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giorno di Ashura"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アーシューラーの日"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아슈라의 날"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roja Aşûrê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roja Aşûrê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Asyura"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dag van Asjoera"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dzień Aszury"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dia de Ashura"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dia de Ashura"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dia de Ashura"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ziua de Ashura"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "День Ашура"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันอาชูรอ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşure Günü"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngày Ashura"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "阿舒拉日"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "阿舒拉日"
+          }
+        }
+      }
     },
     "Dhikr Name" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Naam"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Naam"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Naam"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم الذكر"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم الذكر"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم الذكر"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم الذكر"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم الذكر"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسم الذكر"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zikr Adı"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Navn"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Name"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όνομα Dhikr"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Name"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Name"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Name"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Name"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre del Dhikr"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre del Dhikr"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre del Dhikr"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Nimi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom du Dhikr"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ज़िक्र का नाम"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Név"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama Dzikir"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome del Dhikr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ジクル名"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "디크르 이름"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navê Zikrê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navê Zikrê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama Zikir"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dhikr Naam"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nazwa Dhikr"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome do Dhikr"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome do Dhikr"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome do Dhikr"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nume Dhikr"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название Зикра"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชื่อซิกร์"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zikir Adı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tên Dhikr"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "记念词名称"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記念詞名稱"
+          }
+        }
+      }
     },
     "Dubai Bold" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Vetdruk"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Vetdruk"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Vetdruk"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دبي غامق"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دبي غامق"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دبي غامق"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دبي غامق"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دبي غامق"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دبي غامق"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Qalın"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Fed"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Fett"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Έντονη"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Bold"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Bold"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Bold"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Bold"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Negrita"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Negrita"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Negrita"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Lihavoitu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Gras"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "दुबई बोल्ड"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Félkövér"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Tebal"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Grassetto"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドバイ ボールド"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "두바이 볼드"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Qalind"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Qalind"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Tebal"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Vet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Pogrubiona"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Negrito"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Negrito"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Negrito"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Îngroșat"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дубай Жирный"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ดูไบ ตัวหนา"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Kalın"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dubai Đậm"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "迪拜粗体"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "杜拜粗體"
+          }
+        }
+      }
     },
     "Dubai Font Tests" : {
 
@@ -3723,49 +4759,3934 @@
 
     },
     "Eid al-Adha" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qurban Bayramı"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Άντχα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Adha"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-अज़हा"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Adha"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝アドハー"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알아드하"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidiladha"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Adha"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курбан-байрам"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดอัฎฮา"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurban Bayramı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲节"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲節"
+          }
+        }
+      }
     },
     "Eid al-Adha (Day 1)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 1)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 1)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 1)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 1)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 1)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 1)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 1)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 1)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 1)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qurban Bayramı (1-ci gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 1)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Tag 1)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Άντχα (Ημέρα 1)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 1)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 1)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 1)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 1)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 1)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 1)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 1)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Päivä 1)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Adha (Jour 1)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-अज़हा (दिन 1)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (1. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Adha (Hari 1)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Giorno 1)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝アドハー (1日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알아드하 (1일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 1)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 1)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidiladha (Hari 1)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 1)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Adha (Dzień 1)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 1)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 1)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 1)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ziua 1)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курбан-байрам (День 1)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดอัฎฮา (วันที่ 1)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurban Bayramı (1. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ngày 1)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲节 (第1天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲節 (第1天)"
+          }
+        }
+      }
     },
     "Eid al-Adha (Day 2)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 2)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 2)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 2)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 2)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 2)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 2)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 2)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 2)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 2)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qurban Bayramı (2-ci gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 2)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Tag 2)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Άντχα (Ημέρα 2)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 2)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 2)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 2)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 2)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 2)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 2)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 2)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Päivä 2)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Adha (Jour 2)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-अज़हा (दिन 2)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (2. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Adha (Hari 2)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Giorno 2)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝アドハー (2日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알아드하 (2일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 2)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 2)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidiladha (Hari 2)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 2)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Adha (Dzień 2)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 2)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 2)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 2)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ziua 2)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курбан-байрам (День 2)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดอัฎฮา (วันที่ 2)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurban Bayramı (2. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ngày 2)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲节 (第2天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲節 (第2天)"
+          }
+        }
+      }
     },
     "Eid al-Adha (Day 3)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 3)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 3)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 3)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 3)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 3)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 3)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 3)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 3)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 3)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qurban Bayramı (3-cü gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 3)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Tag 3)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Άντχα (Ημέρα 3)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 3)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 3)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 3)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 3)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 3)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 3)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 3)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Päivä 3)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Adha (Jour 3)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-अज़हा (दिन 3)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (3. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Adha (Hari 3)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Giorno 3)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝アドハー (3日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알아드하 (3일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 3)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 3)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidiladha (Hari 3)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 3)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Adha (Dzień 3)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 3)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 3)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 3)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ziua 3)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курбан-байрам (День 3)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดอัฎฮา (วันที่ 3)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurban Bayramı (3. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ngày 3)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲节 (第3天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲節 (第3天)"
+          }
+        }
+      }
     },
     "Eid al-Adha (Day 4)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 4)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 4)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 4)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 4)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 4)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 4)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 4)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 4)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الأضحى (اليوم 4)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qurban Bayramı (4-cü gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 4)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Tag 4)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Άντχα (Ημέρα 4)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 4)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 4)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 4)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Day 4)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 4)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 4)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Día 4)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Päivä 4)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Adha (Jour 4)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-अज़हा (दिन 4)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (4. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Adha (Hari 4)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Giorno 4)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝アドハー (4日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알아드하 (4일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 4)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Qurbanê (Roja 4)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidiladha (Hari 4)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dag 4)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Adha (Dzień 4)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 4)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 4)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Dia 4)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ziua 4)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курбан-байрам (День 4)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดอัฎฮา (วันที่ 4)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurban Bayramı (4. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha (Ngày 4)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲节 (第4天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲節 (第4天)"
+          }
+        }
+      }
     },
     "Eid al-Fitr" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Φιτρ"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Fitr"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-फितर"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Fitri"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝フィトル"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알피트르"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidilfitri"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Fitr"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ураза-байрам"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดิลฟิตริ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开斋节"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開齋節"
+          }
+        }
+      }
     },
     "Eid al-Fitr (Day 1)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 1)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 1)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 1)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 1)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 1)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 1)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 1)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 1)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 1)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı (1-ci gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 1)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Tag 1)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Φιτρ (Ημέρα 1)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 1)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 1)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 1)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 1)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 1)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 1)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 1)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Päivä 1)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Fitr (Jour 1)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-फितर (दिन 1)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (1. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Fitri (Hari 1)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Giorno 1)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝フィトル (1日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알피트르 (1일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê (Roja 1)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê (Roja 1)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidilfitri (Hari 1)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 1)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Fitr (Dzień 1)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 1)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 1)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 1)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Ziua 1)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ураза-байрам (День 1)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดิลฟิตริ (วันที่ 1)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı (1. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Ngày 1)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开斋节 (第1天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開齋節 (第1天)"
+          }
+        }
+      }
     },
     "Eid al-Fitr (Day 2)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 2)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 2)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 2)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 2)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 2)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 2)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 2)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 2)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 2)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı (2-ci gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 2)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Tag 2)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Φιτρ (Ημέρα 2)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 2)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 2)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 2)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 2)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 2)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 2)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 2)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Päivä 2)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Fitr (Jour 2)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-फितर (दिन 2)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (2. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Fitri (Hari 2)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Giorno 2)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝フィトル (2日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알피트르 (2일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê (Roja 2)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê (Roja 2)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidilfitri (Hari 2)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 2)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Fitr (Dzień 2)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 2)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 2)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 2)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Ziua 2)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ураза-байрам (День 2)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดิลฟิตริ (วันที่ 2)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı (2. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Ngày 2)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开斋节 (第2天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開齋節 (第2天)"
+          }
+        }
+      }
     },
     "Eid al-Fitr (Day 3)" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 3)"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 3)"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 3)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 3)"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 3)"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 3)"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 3)"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 3)"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عيد الفطر (اليوم 3)"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı (3-cü gün)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 3)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Tag 3)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid αλ-Φιτρ (Ημέρα 3)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 3)"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 3)"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 3)"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Day 3)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 3)"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 3)"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Día 3)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Päivä 3)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aïd al-Fitr (Jour 3)"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-फितर (दिन 3)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (3. nap)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idul Fitri (Hari 3)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Giorno 3)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝フィトル (3日目)"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알피트르 (3일차)"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê (Roja 3)"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cejna Remezanê (Roja 3)"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hari Raya Aidilfitri (Hari 3)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dag 3)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Id al-Fitr (Dzień 3)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 3)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 3)"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Dia 3)"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Ziua 3)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ураза-байрам (День 3)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อีดิลฟิตริ (วันที่ 3)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı (3. Gün)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr (Ngày 3)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开斋节 (第3天)"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開齋節 (第3天)"
+          }
+        }
+      }
     },
     "Enter the name of the dhikr you want to count" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer die naam in van die dhikr wat jy wil tel"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer die naam in van die dhikr wat jy wil tel"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer die naam in van die dhikr wat jy wil tel"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل اسم الذكر الذي تريد عده"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل اسم الذكر الذي تريد عده"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل اسم الذكر الذي تريد عده"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل اسم الذكر الذي تريد عده"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل اسم الذكر الذي تريد عده"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدخل اسم الذكر الذي تريد عده"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saymaq istədiyiniz zikrin adını daxil edin"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indtast navnet på den dhikr, du vil tælle"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geben Sie den Namen des Dhikr ein, den Sie zählen möchten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εισαγάγετε το όνομα του dhikr που θέλετε να μετρήσετε"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the name of the dhikr you want to count"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the name of the dhikr you want to count"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the name of the dhikr you want to count"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the name of the dhikr you want to count"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduzca el nombre del dhikr que desea contar"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el nombre del dhikr que desea contar"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingrese el nombre del dhikr que desea contar"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Syötä laskettavan dhikrin nimi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez le nom du dhikr que vous souhaitez compter"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उस ज़िक्र का नाम दर्ज करें जिसे आप गिनना चाहते हैं"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Írja be a dhikr nevét, amelyet számolni szeretne"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan nama dzikir yang ingin Anda hitung"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci il nome del dhikr che vuoi contare"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カウントしたいジクルの名前を入力してください"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "세고 싶은 디크르의 이름을 입력하세요"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navê zikrê ku hûn dixwazin bijmêrin binivîsin"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Navê zikrê ku hûn dixwazin bijmêrin binivîsin"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Masukkan nama zikir yang anda ingin kira"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer de naam in van de dhikr die u wilt tellen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wprowadź nazwę dhikr, które chcesz liczyć"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduza o nome do dhikr que pretende contar"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digite o nome do dhikr que você deseja contar"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduza o nome do dhikr que pretende contar"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introduceți numele dhikr-ului pe care doriți să-l numărați"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите название зикра, который вы хотите считать"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ป้อนชื่อซิกร์ที่คุณต้องการนับ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saymak istediğiniz zikrin adını girin"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập tên của dhikr bạn muốn đếm"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入您想要计数的记念词名称"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輸入您想要計數的記念詞名稱"
+          }
+        }
+      }
     },
     "Eve of Eid al-Adha" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooraand van Eid al-Adha"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooraand van Eid al-Adha"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooraand van Eid al-Adha"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الأضحى"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الأضحى"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الأضحى"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الأضحى"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الأضحى"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الأضحى"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qurban Bayramı Ərəfəsi"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aftenen før Eid al-Adha"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorabend von Eid al-Adha"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παραμονή του Eid αλ-Άντχα"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Adha"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Adha"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Adha"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Adha"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Víspera de Eid al-Adha"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Víspera de Eid al-Adha"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Víspera de Eid al-Adha"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha aatto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veille de l'Aïd al-Adha"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-अज़हा की पूर्वसंध्या"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Adha előestéje"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malam Idul Adha"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vigilia di Eid al-Adha"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝アドハーの前夜"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알아드하 전야"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şeva Cejna Qurbanê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şeva Cejna Qurbanê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malam Hari Raya Aidiladha"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooravond van Eid al-Adha"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wigilia Id al-Adha"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véspera do Eid al-Adha"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véspera do Eid al-Adha"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véspera do Eid al-Adha"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajunul Eid al-Adha"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Канун Курбан-байрама"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันก่อนอีดอัฎฮา"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurban Bayramı Arifesi"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đêm trước Eid al-Adha"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲节前夕"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宰牲節前夕"
+          }
+        }
+      }
     },
     "Eve of Eid al-Fitr" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooraand van Eid al-Fitr"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooraand van Eid al-Fitr"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooraand van Eid al-Fitr"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الفطر"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الفطر"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الفطر"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الفطر"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الفطر"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عشية عيد الفطر"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı Ərəfəsi"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aftenen før Eid al-Fitr"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorabend von Eid al-Fitr"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παραμονή του Eid αλ-Φιτρ"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Fitr"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Fitr"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Fitr"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eve of Eid al-Fitr"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Víspera de Eid al-Fitr"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Víspera de Eid al-Fitr"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Víspera de Eid al-Fitr"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr aatto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veille de l'Aïd al-Fitr"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ईद-उल-फितर की पूर्वसंध्या"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eid al-Fitr előestéje"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malam Idul Fitri"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vigilia di Eid al-Fitr"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イード・アル＝フィトルの前夜"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이드 알피트르 전야"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şeva Cejna Remezanê"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şeva Cejna Remezanê"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Malam Hari Raya Aidilfitri"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vooravond van Eid al-Fitr"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wigilia Id al-Fitr"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véspera do Eid al-Fitr"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véspera do Eid al-Fitr"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Véspera do Eid al-Fitr"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajunul Eid al-Fitr"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Канун Ураза-байрам"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันก่อนอีดิลฟิตริ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ramazan Bayramı Arifesi"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đêm trước Eid al-Fitr"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开斋节前夕"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開齋節前夕"
+          }
+        }
+      }
     },
     "Find My Location" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vind My Ligging"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vind My Ligging"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vind My Ligging"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديد موقعي"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديد موقعي"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديد موقعي"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديد موقعي"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديد موقعي"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحديد موقعي"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Məkanımı Tap"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find Min Placering"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meinen Standort Finden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εύρεση Τοποθεσίας Μου"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find My Location"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find My Location"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find My Location"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find My Location"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontrar Mi Ubicación"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontrar Mi Ubicación"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontrar Mi Ubicación"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etsi Sijaintini"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trouver Ma Position"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मेरा स्थान खोजें"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saját Helyem Megkeresése"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temukan Lokasi Saya"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trova La Mia Posizione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在地を検索"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "내 위치 찾기"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cîhê Min Bibîne"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cîhê Min Bibîne"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari Lokasi Saya"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mijn Locatie Zoeken"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Znajdź Moją Lokalizację"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontrar A Minha Localização"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontrar Minha Localização"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encontrar A Minha Localização"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Găsește Locația Mea"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Найти Мое Местоположение"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ค้นหาตำแหน่งของฉัน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konumumu Bul"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm Vị Trí Của Tôi"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查找我的位置"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "查找我的位置"
+          }
+        }
+      }
     },
     "For the purposes of this Privacy Policy:" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vir die doeleindes van hierdie Privaatheidsbeleid:"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vir die doeleindes van hierdie Privaatheidsbeleid:"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vir die doeleindes van hierdie Privaatheidsbeleid:"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأغراض سياسة الخصوصية هذه:"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأغراض سياسة الخصوصية هذه:"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأغراض سياسة الخصوصية هذه:"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأغراض سياسة الخصوصية هذه:"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأغراض سياسة الخصوصية هذه:"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأغراض سياسة الخصوصية هذه:"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Məxfilik Siyasətinin məqsədləri üçün:"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I forbindelse med denne Privatlivspolitik:"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für die Zwecke dieser Datenschutzrichtlinie:"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για τους σκοπούς αυτής της Πολιτικής Απορρήτου:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For the purposes of this Privacy Policy:"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For the purposes of this Privacy Policy:"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For the purposes of this Privacy Policy:"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For the purposes of this Privacy Policy:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para los fines de esta Política de Privacidad:"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para los fines de esta Política de Privacidad:"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para los fines de esta Política de Privacidad:"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tämän tietosuojakäytännön tarkoituksia varten:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aux fins de la présente Politique de Confidentialité :"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इस गोपनीयता नीति के उद्देश्यों के लिए:"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ezen Adatvédelmi Szabályzat alkalmazásában:"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk tujuan Kebijakan Privasi ini:"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ai fini della presente Informativa sulla Privacy:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本プライバシーポリシーの目的のために："
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "본 개인정보 보호정책의 목적상:"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ji bo armancên vê Polîtîkaya Nepeniyê:"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ji bo armancên vê Polîtîkaya Nepeniyê:"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk tujuan Dasar Privasi ini:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voor de doeleinden van dit Privacybeleid:"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dla celów niniejszej Polityki Prywatności:"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para os fins desta Política de Privacidade:"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para os fins desta Política de Privacidade:"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para os fins desta Política de Privacidade:"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "În scopurile acestei Politici de Confidențialitate:"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для целей настоящей Политики конфиденциальности:"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพื่อวัตถุประสงค์ของนโยบายความเป็นส่วนตัวนี้:"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Gizlilik Politikasının amaçları doğrultusunda:"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cho mục đích của Chính sách Bảo mật này:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就本隐私政策而言："
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就本私隱政策而言："
+          }
+        }
+      }
     },
     "Gender" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geslag"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geslag"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geslag"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الجنس"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinsiyyət"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Køn"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geschlecht"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φύλο"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gender"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gender"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gender"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gender"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sukupuoli"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genre"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लिंग"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nem"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jenis Kelamin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性別"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "성별"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zayend"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zayend"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jantina"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geslacht"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Płeć"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gênero"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Género"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пол"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพศ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinsiyet"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giới tính"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性别"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "性別"
+          }
+        }
+      }
     },
     "Get Premium" : {
 
