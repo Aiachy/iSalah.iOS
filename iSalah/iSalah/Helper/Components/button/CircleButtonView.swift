@@ -22,7 +22,12 @@ struct CircleButtonView: View {
         ZStack {
             backgroundView
             ImageHandler.getIcon(salah, image: model.image)
+                .scaledToFit()
+                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+                .padding(10)
         }
+        .frame(width: dw(model.size))
+
         .onTapGesture {
             HapticManager.shared.tabSelection()
 
@@ -36,7 +41,7 @@ struct CircleButtonView: View {
 #Preview {
     ZStack {
         BackgroundView()
-        CircleButtonView(.init(.plusCircle, action: {
+        CircleButtonView(.init(.heart, action: {
             
         }))
     }
@@ -52,9 +57,8 @@ private extension CircleButtonView {
                 .fill(ColorHandler.getColor(salah, for: .islamicAlt))
             /// Stroke
             Circle()
-                .stroke(ColorHandler.getColor(salah, for: .light))
+                .stroke(ColorHandler.getColor(salah, for: .light), lineWidth: 0.5)
         }
-        .frame(width: dw(model.size))
 
     }
     

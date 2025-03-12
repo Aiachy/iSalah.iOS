@@ -22,16 +22,21 @@ struct TasbeehView: View {
             VStack {
                 SettingsHeaderView("Tasbeeh", back: vm.makeBackButton)
                 if vm.tasbeehs.isEmpty {
-                    emptyDhikrView
+                   Spacer()
                 } else {
                     tasbeehListView
                 }
             }
         }
+        .overlay(content: {
+            if vm.tasbeehs.isEmpty {
+                emptyDhikrView
+            }
+        })
         .overlay(alignment: .bottomTrailing) {
             addButtonView
                 .padding(.trailing)
-                .offset(y: dw(-0.1))
+                .offset(x: dw(-0.04),y: dw(-0.15))
         }
         .fullScreenCover(isPresented: $vm.isOpenPaywall) {
             PaywallView($vm.isOpenPaywall)

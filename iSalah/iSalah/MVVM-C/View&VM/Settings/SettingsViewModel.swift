@@ -13,7 +13,7 @@ class SettingsViewModel: ObservableObject {
     @Published var isOpenPrivacyAndTerms: Bool
     
     let coordinator: SettingsCoordinatorPresenter
-    
+    let rateManager = RateUsManager.shared
     init(isOpenPaywall: Bool = false,
          isOpenPrivacyAndTerms: Bool = false,
          coordinator: SettingsCoordinatorPresenter) {
@@ -25,6 +25,10 @@ class SettingsViewModel: ObservableObject {
 }
 
 extension SettingsViewModel {
+    
+    func navigationToCompass() {
+        
+    }
     
     func openPaywall() {
         isOpenPaywall.toggle()
@@ -85,4 +89,8 @@ extension SettingsViewModel {
                 UIApplication.shared.open(mailtoURL, options: [:], completionHandler: nil)
             }
         }
+    
+    func rateUs() {
+        rateManager.promptForReviewNow()
+    }
 }

@@ -2910,7 +2910,266 @@
       }
     },
     "Contact Us" : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontak Ons"
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontak Ons"
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontak Ons"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اتصل بنا"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bizimlə Əlaqə"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt Os"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontaktieren Sie Uns"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικοινωνήστε Μαζί Μας"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact Us"
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact Us"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact Us"
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact Us"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contáctenos"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contáctanos"
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contáctenos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ota Yhteyttä"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contactez-Nous"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "संपर्क करें"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapcsolat"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungi Kami"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contattaci"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "お問い合わせ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "문의하기"
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bi Me Re Têkilî Daynin"
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bi Me Re Têkilî Daynin"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungi Kami"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neem Contact Op"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contate-Nos"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fale Conosco"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contacte-Nos"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contactați-Ne"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Связаться с Нами"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ติดต่อเรา"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bize Ulaşın"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liên Hệ Với Chúng Tôi"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "联系我们"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聯絡我們"
+          }
+        }
+      }
     },
     "Continue" : {
       "localizations" : {
@@ -17060,6 +17319,9 @@
         }
       }
     },
+    "Rate Us" : {
+
+    },
     "Reading: %@" : {
       "localizations" : {
         "af" : {
@@ -21515,10 +21777,528 @@
       }
     },
     "The Service and its original content, features, and functionality are and will remain the exclusive property of AISalah and its licensors. The Service is protected by copyright, trademark, and other laws." : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Diens en sy oorspronklike inhoud, kenmerke en funksionaliteit is en sal die eksklusiewe eiendom van AISalah en sy lisensiegewers bly. Die Diens word beskerm deur kopiereg, handelsmerk en ander wette."
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Diens en sy oorspronklike inhoud, kenmerke en funksionaliteit is en sal die eksklusiewe eiendom van AISalah en sy lisensiegewers bly. Die Diens word beskerm deur kopiereg, handelsmerk en ander wette."
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Diens en sy oorspronklike inhoud, kenmerke en funksionaliteit is en sal die eksklusiewe eiendom van AISalah en sy lisensiegewers bly. Die Diens word beskerm deur kopiereg, handelsmerk en ander wette."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخدمة ومحتواها الأصلي وميزاتها ووظائفها هي وستظل الملكية الحصرية لـ AISalah ومانحي التراخيص التابعين لها. الخدمة محمية بموجب حقوق النشر والعلامات التجارية وقوانين أخرى."
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخدمة ومحتواها الأصلي وميزاتها ووظائفها هي وستظل الملكية الحصرية لـ AISalah ومانحي التراخيص التابعين لها. الخدمة محمية بموجب حقوق النشر والعلامات التجارية وقوانين أخرى."
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخدمة ومحتواها الأصلي وميزاتها ووظائفها هي وستظل الملكية الحصرية لـ AISalah ومانحي التراخيص التابعين لها. الخدمة محمية بموجب حقوق النشر والعلامات التجارية وقوانين أخرى."
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخدمة ومحتواها الأصلي وميزاتها ووظائفها هي وستظل الملكية الحصرية لـ AISalah ومانحي التراخيص التابعين لها. الخدمة محمية بموجب حقوق النشر والعلامات التجارية وقوانين أخرى."
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخدمة ومحتواها الأصلي وميزاتها ووظائفها هي وستظل الملكية الحصرية لـ AISalah ومانحي التراخيص التابعين لها. الخدمة محمية بموجب حقوق النشر والعلامات التجارية وقوانين أخرى."
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخدمة ومحتواها الأصلي وميزاتها ووظائفها هي وستظل الملكية الحصرية لـ AISalah ومانحي التراخيص التابعين لها. الخدمة محمية بموجب حقوق النشر والعلامات التجارية وقوانين أخرى."
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xidmət və onun orijinal məzmunu, xüsusiyyətləri və funksionallığı AISalah və onun lisenziya verənlərinin müstəsna mülkiyyətidir və belə də qalacaqdır. Xidmət müəllif hüququ, ticarət nişanı və digər qanunlarla qorunur."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tjenesten og dens originale indhold, funktioner og funktionalitet er og vil forblive AISalah og dets licensgiveres eksklusive ejendom. Tjenesten er beskyttet af ophavsret, varemærke og andre love."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Dienst und seine ursprünglichen Inhalte, Funktionen und Funktionalitäten sind und bleiben das ausschließliche Eigentum von AISalah und seinen Lizenzgebern. Der Dienst ist durch Urheberrechte, Markenrechte und andere Gesetze geschützt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η Υπηρεσία και το πρωτότυπο περιεχόμενο, οι λειτουργίες και η λειτουργικότητά της είναι και θα παραμείνουν αποκλειστική ιδιοκτησία της AISalah και των αδειοδοτών της. Η Υπηρεσία προστατεύεται από πνευματικά δικαιώματα, εμπορικά σήματα και άλλους νόμους."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Service and its original content, features, and functionality are and will remain the exclusive property of AISalah and its licensors. The Service is protected by copyright, trademark, and other laws."
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Service and its original content, features, and functionality are and will remain the exclusive property of AISalah and its licensors. The Service is protected by copyright, trademark, and other laws."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Service and its original content, features, and functionality are and will remain the exclusive property of AISalah and its licensors. The Service is protected by copyright, trademark, and other laws."
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Service and its original content, features, and functionality are and will remain the exclusive property of AISalah and its licensors. The Service is protected by copyright, trademark, and other laws."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El Servicio y su contenido original, características y funcionalidad son y seguirán siendo propiedad exclusiva de AISalah y sus licenciantes. El Servicio está protegido por derechos de autor, marcas comerciales y otras leyes."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El Servicio y su contenido original, características y funcionalidad son y seguirán siendo propiedad exclusiva de AISalah y sus licenciantes. El Servicio está protegido por derechos de autor, marcas comerciales y otras leyes."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El Servicio y su contenido original, características y funcionalidad son y seguirán siendo propiedad exclusiva de AISalah y sus licenciantes. El Servicio está protegido por derechos de autor, marcas comerciales y otras leyes."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Palvelu ja sen alkuperäinen sisältö, ominaisuudet ja toiminnallisuus ovat ja pysyvät AISalahin ja sen lisenssinantajien yksinomaisena omaisuutena. Palvelua suojaavat tekijänoikeus-, tavaramerkki- ja muut lait."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Service et son contenu original, ses fonctionnalités et ses caractéristiques sont et resteront la propriété exclusive d'AISalah et de ses concédants. Le Service est protégé par le droit d'auteur, les marques commerciales et d'autres lois."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेवा और इसकी मूल सामग्री, विशेषताएं और कार्यक्षमता AISalah और इसके लाइसेंसदाताओं की अनन्य संपत्ति हैं और रहेंगी। सेवा कॉपीराइट, ट्रेडमार्क और अन्य कानूनों द्वारा संरक्षित है।"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Szolgáltatás és annak eredeti tartalma, jellemzői és funkcionalitása az AISalah és licencadói kizárólagos tulajdona, és az is marad. A Szolgáltatást szerzői jog, védjegy és egyéb törvények védik."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layanan dan konten asli, fitur, dan fungsionalitasnya adalah dan akan tetap menjadi properti eksklusif AISalah dan pemberi lisensinya. Layanan dilindungi oleh hak cipta, merek dagang, dan undang-undang lainnya."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il Servizio e i suoi contenuti originali, caratteristiche e funzionalità sono e rimarranno di proprietà esclusiva di AISalah e dei suoi licenziatari. Il Servizio è protetto da copyright, marchi e altre leggi."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本サービスおよびその元のコンテンツ、機能、および機能性は、AISalahとそのライセンサーの独占的な財産であり、今後もそうあり続けます。本サービスは、著作権、商標、およびその他の法律によって保護されています。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "서비스와 그 원본 콘텐츠, 기능 및 기능성은 AISalah와 그 라이선스 제공자의 독점 재산이며 앞으로도 그렇게 유지될 것입니다. 서비스는 저작권, 상표권 및 기타 법률에 의해 보호됩니다."
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xizmet û naveroka wê ya orîjînal, taybetmendî û fonksîyonên wê milkê taybetî yê AISalah û lîsanskerên wê ne û dê wusa bimînin. Xizmet bi mafên çapkirinê, markayê û qanûnên din tê parastin."
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xizmet û naveroka wê ya orîjînal, taybetmendî û fonksîyonên wê milkê taybetî yê AISalah û lîsanskerên wê ne û dê wusa bimînin. Xizmet bi mafên çapkirinê, markayê û qanûnên din tê parastin."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkhidmatan dan kandungan asli, ciri-ciri, dan fungsinya adalah dan akan kekal sebagai harta eksklusif AISalah dan pemberi lesennya. Perkhidmatan ini dilindungi oleh hak cipta, tanda dagangan, dan undang-undang lain."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De Dienst en de originele inhoud, functies en functionaliteit ervan zijn en blijven het exclusieve eigendom van AISalah en haar licentiegevers. De Dienst wordt beschermd door auteursrecht, handelsmerk en andere wetten."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usługa oraz jej oryginalna zawartość, funkcje i funkcjonalność są i pozostaną wyłączną własnością AISalah i jej licencjodawców. Usługa jest chroniona prawami autorskimi, znakami towarowymi i innymi przepisami."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Serviço e seu conteúdo original, recursos e funcionalidade são e permanecerão propriedade exclusiva da AISalah e seus licenciadores. O Serviço é protegido por direitos autorais, marcas registradas e outras leis."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Serviço e seu conteúdo original, recursos e funcionalidade são e permanecerão propriedade exclusiva da AISalah e seus licenciadores. O Serviço é protegido por direitos autorais, marcas registradas e outras leis."
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Serviço e o seu conteúdo original, funcionalidades e características são e permanecerão propriedade exclusiva da AISalah e dos seus licenciadores. O Serviço é protegido por direitos de autor, marca registada e outras leis."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serviciul și conținutul său original, caracteristicile și funcționalitatea sunt și vor rămâne proprietatea exclusivă a AISalah și a licențiatorilor săi. Serviciul este protejat de drepturi de autor, mărci comerciale și alte legi."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сервис и его оригинальный контент, функции и функциональность являются и останутся исключительной собственностью AISalah и ее лицензиаров. Сервис защищен авторским правом, товарными знаками и другими законами."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บริการและเนื้อหาต้นฉบับ คุณสมบัติ และฟังก์ชันการทำงานของบริการเป็นและจะยังคงเป็นทรัพย์สินแต่เพียงผู้เดียวของ AISalah และผู้ให้อนุญาตของบริษัท บริการนี้ได้รับการคุ้มครองโดยลิขสิทธิ์ เครื่องหมายการค้า และกฎหมายอื่นๆ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hizmet ve orijinal içeriği, özellikleri ve işlevselliği AISalah ve lisans verenlerin münhasır mülkiyetindedir ve öyle kalacaktır. Hizmet, telif hakkı, ticari marka ve diğer yasalarla korunmaktadır."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dịch vụ và nội dung gốc, tính năng và chức năng của nó là và sẽ vẫn là tài sản độc quyền của AISalah và các bên cấp phép. Dịch vụ được bảo vệ bởi bản quyền, thương hiệu và các luật khác."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本服务及其原创内容、功能和特性是并将继续是AISalah及其许可方的专有财产。本服务受版权、商标和其他法律保护。"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "本服務及其原創內容、功能和特性是並將繼續是AISalah及其許可方的專有財產。本服務受版權、商標和其他法律保護。"
+          }
+        }
+      }
     },
     "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural." : {
-
+      "localizations" : {
+        "af" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die woorde waarvan die eerste letter met 'n hoofletter geskryf is, het betekenisse wat onder die volgende voorwaardes gedefinieer word. Die volgende definisies sal dieselfde betekenis hê, ongeag of hulle in enkelvoud of in meervoud verskyn."
+          }
+        },
+        "af-NA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die woorde waarvan die eerste letter met 'n hoofletter geskryf is, het betekenisse wat onder die volgende voorwaardes gedefinieer word. Die volgende definisies sal dieselfde betekenis hê, ongeag of hulle in enkelvoud of in meervoud verskyn."
+          }
+        },
+        "af-ZA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die woorde waarvan die eerste letter met 'n hoofletter geskryf is, het betekenisse wat onder die volgende voorwaardes gedefinieer word. Die volgende definisies sal dieselfde betekenis hê, ongeag of hulle in enkelvoud of in meervoud verskyn."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمات التي تبدأ بحرف كبير لها معاني محددة ضمن الشروط التالية. يكون للتعريفات التالية نفس المعنى بغض النظر عما إذا كانت تظهر بصيغة المفرد أو الجمع."
+          }
+        },
+        "ar-BH" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمات التي تبدأ بحرف كبير لها معاني محددة ضمن الشروط التالية. يكون للتعريفات التالية نفس المعنى بغض النظر عما إذا كانت تظهر بصيغة المفرد أو الجمع."
+          }
+        },
+        "ar-DZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمات التي تبدأ بحرف كبير لها معاني محددة ضمن الشروط التالية. يكون للتعريفات التالية نفس المعنى بغض النظر عما إذا كانت تظهر بصيغة المفرد أو الجمع."
+          }
+        },
+        "ar-KM" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمات التي تبدأ بحرف كبير لها معاني محددة ضمن الشروط التالية. يكون للتعريفات التالية نفس المعنى بغض النظر عما إذا كانت تظهر بصيغة المفرد أو الجمع."
+          }
+        },
+        "ar-TD" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمات التي تبدأ بحرف كبير لها معاني محددة ضمن الشروط التالية. يكون للتعريفات التالية نفس المعنى بغض النظر عما إذا كانت تظهر بصيغة المفرد أو الجمع."
+          }
+        },
+        "arz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكلمات التي تبدأ بحرف كبير لها معاني محددة ضمن الشروط التالية. يكون للتعريفات التالية نفس المعنى بغض النظر عما إذا كانت تظهر بصيغة المفرد أو الجمع."
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İlk hərfi böyük hərflə yazılmış sözlərin aşağıdakı şərtlər altında müəyyən edilmiş mənaları vardır. Aşağıdakı təriflər tək və ya cəm halında olmasından asılı olmayaraq eyni mənanı daşıyacaq."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ord, hvor det første bogstav er skrevet med stort, har betydninger defineret under følgende betingelser. Følgende definitioner skal have samme betydning, uanset om de forekommer i ental eller flertal."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Wörter, deren Anfangsbuchstabe großgeschrieben ist, haben unter den folgenden Bedingungen definierte Bedeutungen. Die folgenden Definitionen haben die gleiche Bedeutung, unabhängig davon, ob sie im Singular oder im Plural erscheinen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι λέξεις των οποίων το αρχικό γράμμα είναι κεφαλαίο έχουν σημασίες που ορίζονται υπό τις ακόλουθες προϋποθέσεις. Οι ακόλουθοι ορισμοί θα έχουν την ίδια σημασία ανεξάρτητα από το αν εμφανίζονται σε ενικό ή σε πληθυντικό αριθμό."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+          }
+        },
+        "en-AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+          }
+        },
+        "en-IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las palabras cuya letra inicial está en mayúscula tienen significados definidos bajo las siguientes condiciones. Las siguientes definiciones tendrán el mismo significado independientemente de si aparecen en singular o en plural."
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las palabras cuya letra inicial está en mayúscula tienen significados definidos bajo las siguientes condiciones. Las siguientes definiciones tendrán el mismo significado independientemente de si aparecen en singular o en plural."
+          }
+        },
+        "es-US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las palabras cuya letra inicial está en mayúscula tienen significados definidos bajo las siguientes condiciones. Las siguientes definiciones tendrán el mismo significado independientemente de si aparecen en singular o en plural."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sanat, joiden alkukirjain on kirjoitettu isolla, ovat määritelty seuraavien ehtojen mukaisesti. Seuraavilla määritelmillä on sama merkitys riippumatta siitä, esiintyvätkö ne yksikössä vai monikossa."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les mots dont la lettre initiale est en majuscule ont des significations définies dans les conditions suivantes. Les définitions suivantes auront la même signification, qu'elles apparaissent au singulier ou au pluriel."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जिन शब्दों का प्रारंभिक अक्षर बड़े अक्षर में है, उनके अर्थ निम्नलिखित शर्तों के अंतर्गत परिभाषित हैं। निम्नलिखित परिभाषाओं का एक ही अर्थ होगा, चाहे वे एकवचन में हों या बहुवचन में।"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A nagybetűvel kezdődő szavaknak a következő feltételek mellett meghatározott jelentésük van. A következő meghatározások ugyanazzal a jelentéssel bírnak, függetlenül attól, hogy egyes vagy többes számban szerepelnek."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kata-kata yang huruf awalnya dikapitalisasi memiliki arti yang didefinisikan dalam kondisi berikut. Definisi berikut harus memiliki arti yang sama terlepas dari apakah mereka muncul dalam bentuk tunggal atau jamak."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le parole la cui lettera iniziale è maiuscola hanno significati definiti nelle seguenti condizioni. Le seguenti definizioni avranno lo stesso significato indipendentemente dal fatto che appaiano al singolare o al plurale."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最初の文字が大文字になっている単語は、以下の条件で定義されている意味を持ちます。以下の定義は、単数形で表示されるか複数形で表示されるかにかかわらず、同じ意味を持つものとします。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "첫 글자가 대문자로 표기된 단어는 다음 조건 하에 정의된 의미를 갖습니다. 다음 정의는 단수형이나 복수형으로 표시되는지 여부에 관계없이 동일한 의미를 가집니다."
+          }
+        },
+        "ku" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peyvên ku tîpa wan a destpêkê bi tîpa mezin e, di bin şertên jêrîn de wateyên wan hatine diyarkirin. Pênaseyên jêrîn dê heman wateyê bidin, bêyî ku ew di yekhejmar an pirhejmar de xuya bikin."
+          }
+        },
+        "ku-TR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peyvên ku tîpa wan a destpêkê bi tîpa mezin e, di bin şertên jêrîn de wateyên wan hatine diyarkirin. Pênaseyên jêrîn dê heman wateyê bidin, bêyî ku ew di yekhejmar an pirhejmar de xuya bikin."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perkataan yang huruf awalnya dihuruf besar mempunyai makna yang ditakrifkan di bawah syarat-syarat berikut. Takrifan berikut hendaklah mempunyai makna yang sama tanpa mengira sama ada ia muncul dalam bentuk tunggal atau jamak."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De woorden waarvan de eerste letter met een hoofdletter is geschreven, hebben betekenissen zoals gedefinieerd onder de volgende voorwaarden. De volgende definities hebben dezelfde betekenis, ongeacht of ze in enkelvoud of in meervoud verschijnen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Słowa, których pierwsza litera jest pisana wielką literą, mają znaczenia zdefiniowane w następujących warunkach. Poniższe definicje mają to samo znaczenie niezależnie od tego, czy występują w liczbie pojedynczej czy mnogiej."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As palavras cuja letra inicial está em maiúscula têm significados definidos nas seguintes condições. As seguintes definições terão o mesmo significado independentemente de aparecerem no singular ou no plural."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As palavras cuja letra inicial está em maiúscula têm significados definidos nas seguintes condições. As seguintes definições terão o mesmo significado independentemente de aparecerem no singular ou no plural."
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As palavras cuja letra inicial está em maiúscula têm significados definidos nas seguintes condições. As seguintes definições terão o mesmo significado independentemente de aparecerem no singular ou no plural."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuvintele ale căror litere inițiale sunt majuscule au semnificații definite în următoarele condiții. Următoarele definiții vor avea același înțeles indiferent dacă apar la singular sau la plural."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слова, начальная буква которых написана с прописной буквы, имеют значения, определенные при следующих условиях. Следующие определения имеют одинаковое значение независимо от того, употребляются ли они в единственном или множественном числе."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คำที่ตัวอักษรตัวแรกเป็นตัวพิมพ์ใหญ่มีความหมายที่กำหนดภายใต้เงื่อนไขต่อไปนี้ คำนิยามต่อไปนี้จะมีความหมายเดียวกันไม่ว่าจะปรากฏในรูปเอกพจน์หรือพหูพจน์"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baş harfi büyük yazılan kelimelerin anlamları aşağıdaki koşullar altında tanımlanmıştır. Aşağıdaki tanımlar, tekil veya çoğul olarak görünmelerine bakılmaksızın aynı anlama sahip olacaktır."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những từ có chữ cái đầu tiên được viết hoa có ý nghĩa được định nghĩa trong các điều kiện sau. Các định nghĩa sau đây sẽ có cùng một ý nghĩa bất kể chúng xuất hiện ở dạng số ít hay số nhiều."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首字母大写的词语在以下条件下具有定义的含义。以下定义无论是以单数还是复数形式出现，其含义均相同。"
+          }
+        },
+        "zh-HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首字母大寫的詞語在以下條件下具有定義的含義。以下定義無論是以單數還是複數形式出現，其含義均相同。"
+          }
+        }
+      }
     },
     "Themes" : {
       "localizations" : {
@@ -22565,9 +23345,9 @@
             "state" : "translated",
             "value" : "嘗試搜索其他位置"
           }
-        },
         }
-      },
+      }
+    },
     "Type to search" : {
       "localizations" : {
         "af" : {

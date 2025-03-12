@@ -19,26 +19,43 @@ struct SettingsView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack(spacing: 20) {
-                if !salah.user.checkIsPremium() {
-                    makeSettingsButton("Subscribe", icon: .subscribe, action: vm.openPaywall)
+            VStack(spacing: 5) {
+                MainHeaderView(
+                    .constant(true),
+                    navToCompass: vm.navigationToCompass
+                )
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 15) {
+                        /// Subscribe
+                        if !salah.user.checkIsPremium() {
+                            makeSettingsButton("Subscribe", icon: .subscribe, action: vm.openPaywall)
+                        }
+                        /// Profile
+                        makeSettingsButton("Profile", icon: .profile, action: vm.navToProfile)
+                        /// Themes
+                        makeSettingsButton("Themes", icon: .theme, action: vm.navToTheme)
+                        /// Accessi
+                        makeSettingsButton("Accessibility", icon: .accessibility, action: vm.navToAccessibility)
+                        /// Terms of privacy
+                        makeSettingsButton("Terms of Use and Privacy Policy", icon: .privacyAndTerms, action: vm.openTermsAndPrivacy)
+                        /// Notify
+                        makeSettingsButton("Notifications", icon: .notification, action: vm.navToNotifications)
+                        /// Contact
+                        makeSettingsButton("Contact Us", icon: .contact, action: {
+                            vm.makeMail(salah.user)
+                        })
+                        /// Rate Us
+                        if !vm.rateManager.hasUserReviewed() {
+                            makeSettingsButton("Rate Us", icon: .star, action: vm.rateUs)
+                        }
+                        
+                        makeSettingsButton("Rate Us", icon: .star, action: vm.rateUs)
+                            .opacity(0.001)
+                            .disabled(true)
+                    }
+                    .padding(.top)
                 }
-                makeSettingsButton("Profile", icon: .profile, action: vm.navToProfile)
-                
-                makeSettingsButton("Themes", icon: .theme, action: vm.navToTheme)
-                
-                makeSettingsButton("Accessibility", icon: .accessibility, action: vm.navToAccessibility)
-                
-                makeSettingsButton("Terms of Use and Privacy Policy", icon: .privacyAndTerms, action: vm.openTermsAndPrivacy)
-                
-                makeSettingsButton("Notifications", icon: .notification, action: vm.navToNotifications)
-                
-                makeSettingsButton("Contact Us", icon: .contact, action: {
-                    vm.makeMail(salah.user)
-                })
-                Spacer()
             }
-            .padding(.top)
         }
         .sheet(isPresented: $vm.isOpenPrivacyAndTerms) {
             PrivacyAndPolicyView()
@@ -71,7 +88,7 @@ private extension SettingsView {
                 /// Icon
                 ImageHandler.getIcon(salah, image: icon)
                     .scaledToFit()
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .gold))
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
                     .frame(width: dw(0.05))
                 /// Title
                 Text(title)
@@ -81,7 +98,7 @@ private extension SettingsView {
             }
             .padding(.horizontal)
         }
-        .frame(width: size9, height: dh(0.08))
+        .frame(width: size9, height: dh(0.084))
         .onTapGesture {
             withAnimation(.linear) {
                 action()

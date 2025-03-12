@@ -31,6 +31,13 @@ struct MainHeaderView: View {
                 .opacity(version ? 1 : 0)
             compassView
         }
+        .background {
+            ColorHandler.getColor(salah, for: .islamicAlt)
+                .padding(.horizontal, dw(-0.05))
+                .padding(.top, dh(-0.1))
+                .animation(.easeInOut, value: version)
+                .opacity(version ? 1 : 0)
+        }
         .sheet(isPresented: $isSheetPresented, content: {
             SearchLocationView { location in
                 salah.user.location = location

@@ -23,9 +23,11 @@ enum SettingsCoordinators {
 class SettingsCoordinatorPresenter: ObservableObject, SettingsProtocol {
     
     @Published var currentView: SettingsCoordinators
+    let parent: GeneralCoordinatorPresenter
     
-    init() {
+    init(parent: GeneralCoordinatorPresenter = .init()) {
         self.currentView = .settings
+        self.parent = parent
     }
     
     func navigate(to destination: SettingsCoordinators) {
@@ -34,17 +36,20 @@ class SettingsCoordinatorPresenter: ObservableObject, SettingsProtocol {
         }
     }
     
+    
+    
 }
 //MARK: SettingsCoordinator
 struct SettingsCoordinator: View {
     
     @EnvironmentObject var salah: iSalahState
-    @StateObject var coordinator = SettingsCoordinatorPresenter()
+    @StateObject var coordinator: SettingsCoordinatorPresenter
     let parentCoordinates: GeneralCoordinatorPresenter
     
     init(
         parent parentCoordinates: GeneralCoordinatorPresenter
     ) {
+        _coordinator = StateObject(wrappedValue: SettingsCoordinatorPresenter(parent: parentCoordinates))
         self.parentCoordinates = parentCoordinates
     }
     
