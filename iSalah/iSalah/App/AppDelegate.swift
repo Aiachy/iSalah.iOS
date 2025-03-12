@@ -64,7 +64,7 @@ extension AppDelegate {
         // Initialize the Google Mobile Ads SDK with app ID
         MobileAds.shared.start { status in
             print(
-                "Google Mobile Ads initialization completed with status: \(status)"
+                "Google Mobile Ads initialization completed with status: \(status.description)"
             )
         }
     }

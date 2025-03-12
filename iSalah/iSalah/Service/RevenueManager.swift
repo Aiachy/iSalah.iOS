@@ -18,7 +18,7 @@ final class RevenueCatManager: NSObject {
     // Özel başlatıcı
     private override init() {
         super.init()
-        print("🔶RevenueCatManager: RevenueCat Starting")
+        print("🔶 RevenueCatManager: RevenueCat Starting")
         setupRevenueCat()
     }
     
@@ -32,21 +32,27 @@ final class RevenueCatManager: NSObject {
 
 // MARK: - Subs Handling
 extension RevenueCatManager {
-    func checkSubscriptionStatus(result: @escaping (Bool) -> Void) {
-        print("🔶 RevenueCatManager: Checking subscription status")
-        
-        Task {
-            do {
-                let customerInfo = try await Purchases.shared.customerInfo()
-                
-                let isPremium = customerInfo.entitlements["premium"]?.isActive == true
-                print("🔶 RevenueCatManager: Premium status: \(isPremium ? "Active" : "Passive")")
-            } catch {
-                print("🔶 RevenueCatManager: Error: \(error.localizedDescription)")
-            }
-        }
-    }
-
+    func checkSubscriptionStatus() async -> (hasSubscription: Bool, premiumType: String?) {
+          do {
+              let customerInfo = try await Purchases.shared.customerInfo()
+              let hasActiveSubscription = customerInfo.entitlements.active.count > 0
+              
+              // Get the premium type from the first active entitlement (if any)
+              var premiumType: String? = nil
+              if hasActiveSubscription, let firstEntitlement = customerInfo.entitlements.active.first {
+                  premiumType = firstEntitlement.key
+              }
+              
+              await MainActor.run {
+                  print("🔶 RevenueCatManager: Subscription status: \(hasActiveSubscription ? "Active" : "Not active"), Type: \(premiumType ?? "None")")
+              }
+              
+              return (hasActiveSubscription, premiumType)
+          } catch {
+              print("🔶 RevenueCatManager: Failed to check subscription status: \(error.localizedDescription)")
+              return (false, nil)
+          }
+      }
 }
 
 // MARK: - Paket İşlemleri
@@ -143,32 +149,59 @@ extension RevenueCatManager {
 
 // MARK: - Satın Alma İşlemleri
 extension RevenueCatManager {
-    // Paket satın alma (zaman aşımı korumalı)
-    func purchase(_ package: SubscriptionPackage) async throws {
-        print("🔶 Paket satın alınıyor: \(package.title)")
+  
+    func purchase(_ package: SubscriptionPackage) async throws -> CustomerInfo {
+        print("🔶 RevenueCatManager: Purchasing package: \(package.title)")
         
-        // Önceki çalışan işlemi iptal et
+        // Cancel any previous running task
         currentTask?.cancel()
         
-        // Zaman aşımı ile satın alma işlemi
-        return try await withTimeout(seconds: timeoutDuration) {
-            guard let offering = try await Purchases.shared.offerings().current,
-                  let rcPackage = offering.package(identifier: package.id) else {
-                print("🔶 Paket bulunamadı")
-                throw NSError(domain: "RevenueCatManager", code: 0, userInfo: [NSLocalizedDescriptionKey: "Paket bulunamadı"])
+        
+        // Purchase operation with timeout
+        do {
+            return try await withTimeout(seconds: timeoutDuration) {
+                guard let offering = try await Purchases.shared.offerings().current,
+                      let rcPackage = offering.package(identifier: package.id) else {
+                    print("🔶 RevenueCatManager: Package not found")
+                    throw NSError(domain: "RevenueCatManager", code: 0, userInfo: [NSLocalizedDescriptionKey: "Package not found"])
+                }
+                
+                print("🔶 RevenueCatManager: Starting purchase transaction...")
+                let purchaseResult = try await Purchases.shared.purchase(package: rcPackage)
+                
+                await MainActor.run {
+                    print("🔶 RevenueCatManager: Purchase successful, active subscriptions: \(purchaseResult.customerInfo.entitlements.active.count)")
+                }
+                
+                return purchaseResult.customerInfo
             }
+        } catch {
+            print("🔶 RevenueCatManager: Purchase failed with error: \(error.localizedDescription)")
             
-            let result = try await Purchases.shared.purchase(package: rcPackage)
-            
-            await MainActor.run {
-                print("🔶 Satın alma başarılı")
+            // Enhance error message for common issues
+            let enhancedError: Error
+            if (error as NSError).code == 408 {
+                // Already a timeout error, pass through
+                enhancedError = error
+            } else if (error as NSError).domain == "SKErrorDomain" {
+                // App Store specific error
+                enhancedError = NSError(
+                    domain: "RevenueCatManager",
+                    code: (error as NSError).code,
+                    userInfo: [NSLocalizedDescriptionKey: "App Store error: \(error.localizedDescription). Please try again later."]
+                )
+            } else {
+                // Generic error
+                enhancedError = NSError(
+                    domain: "RevenueCatManager",
+                    code: (error as NSError).code,
+                    userInfo: [NSLocalizedDescriptionKey: "Purchase failed: \(error.localizedDescription)"]
+                )
             }
-            
-            return
+            throw enhancedError
         }
     }
     
-    // Satın alımları geri yükle (zaman aşımı korumalı)
     func restorePurchases() async throws {
         print("🔶 Satın alımlar geri yükleniyor")
         
@@ -189,10 +222,12 @@ extension RevenueCatManager {
 
 // MARK: - Yardımcı Metotlar
 extension RevenueCatManager {
-    // Zaman aşımı ile asenkron işlev çalıştırma
     private func withTimeout<T>(seconds: Double, operation: @escaping () async throws -> T) async throws -> T {
+        // Increase timeout duration
+        let timeoutDuration: Double = 15.0 // Increased from 5.0 to 15.0 seconds
+        
         return try await withCheckedThrowingContinuation { continuation in
-            // İşlemi gerçekleştir
+            // Execute the operation
             currentTask = Task {
                 do {
                     let result = try await operation()
@@ -206,22 +241,13 @@ extension RevenueCatManager {
                 }
             }
             
-            // Zaman aşımı için ayrı bir görev
+            // Separate task for timeout
             Task {
-                try? await Task.sleep(nanoseconds: UInt64(seconds * 1_000_000_000))
+                try? await Task.sleep(nanoseconds: UInt64(timeoutDuration * 1_000_000_000))
                 
                 if !Task.isCancelled && currentTask != nil && !currentTask!.isCancelled {
                     currentTask?.cancel()
                     
-                    // Ana thread'de zaman aşımı hatası bildir
-                    await MainActor.run {
-                        print("🔶 İşlem zaman aşımına uğradı")
-                        continuation.resume(throwing: NSError(
-                            domain: "RevenueCatManager",
-                            code: 408,
-                            userInfo: [NSLocalizedDescriptionKey: "İşlem zaman aşımına uğradı, lütfen tekrar deneyin"]
-                        ))
-                    }
                 }
             }
         }

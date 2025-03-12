@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RevenueCat
 import SwiftUI
 
 class PaywallViewModel: ObservableObject {
@@ -69,23 +70,69 @@ extension PaywallViewModel {
     
     func purchasePackage(result: @escaping (Bool) -> ()) {
         guard let package = currentPackage else {
+            print("🔶 PaywallViewModel: No package selected")
+            result(false)
             return
         }
         
         self.isLoading = true
+        print("🔶 PaywallViewModel: Starting purchase process...")
         
         Task {
             do {
-                try await manager.purchase(package)
-                await MainActor.run {
-                    self.isLoading = false
-                    print("🔶 Paket satın alma başarılı")
-                    result(true)
+                // Perform the purchase with retry mechanism
+                var retryCount = 0
+                var customerInfo: CustomerInfo? = nil
+                var lastError: Error? = nil
+                
+                // Try up to 2 times (initial attempt + 1 retry)
+                while retryCount < 2 && customerInfo == nil {
+                    do {
+                        if retryCount > 0 {
+                            print("🔶 PaywallViewModel: Retrying purchase (attempt \(retryCount + 1))")
+                            // Small delay before retry
+                            try await Task.sleep(nanoseconds: 1_000_000_000) // 1 second
+                        }
+                        
+                        customerInfo = try await manager.purchase(package)
+                    } catch {
+                        lastError = error
+                        print("🔶 PaywallViewModel: Purchase attempt \(retryCount + 1) failed: \(error.localizedDescription)")
+                        
+                        // Only retry on timeout or network errors
+                        let nsError = error as NSError
+                        if nsError.code != 408 && nsError.localizedDescription.lowercased().contains("network") == false {
+                            break // Don't retry for other errors
+                        }
+                    }
+                    
+                    retryCount += 1
+                }
+                
+                // Check if we successfully got customer info
+                if let customerInfo = customerInfo {
+                    let hasActiveSubscription = customerInfo.entitlements.active.count > 0
+                    
+                    await MainActor.run {
+                        self.isLoading = false
+                        print("🔶 PaywallViewModel: Purchase completed, Premium status: \(hasActiveSubscription)")
+                        
+                        // Return true if there's an active subscription, false otherwise
+                        result(hasActiveSubscription)
+                    }
+                } else {
+                    // We failed after all attempts
+                    await MainActor.run {
+                        self.isLoading = false
+                        let errorMessage = lastError?.localizedDescription ?? "Unknown error"
+                        print("🔶 PaywallViewModel: Purchase failed after \(retryCount) attempts: \(errorMessage)")
+                        result(false)
+                    }
                 }
             } catch {
                 await MainActor.run {
                     self.isLoading = false
-                    print("🔶 Satın alma hatası: \(error.localizedDescription)")
+                    print("🔶 PaywallViewModel: Purchase error: \(error.localizedDescription)")
                     result(false)
                 }
             }

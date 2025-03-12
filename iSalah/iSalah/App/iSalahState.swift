@@ -16,7 +16,6 @@ class iSalahState: ObservableObject {
     init(user: UserModel = .init()) {
         self.user = user
         
-        checkSubs()
         allListeners()
     }
     
@@ -25,12 +24,6 @@ class iSalahState: ObservableObject {
 
 //MARK: Handlers
 private extension iSalahState {
-    
-    private func checkSubs() {
-        RevenueCatManager.shared.checkSubscriptionStatus { isSubs in
-            self.user.info.isPremium = isSubs
-        }
-    }
     
     private func allListeners() {
         let userId = user.wrappedId

@@ -87,7 +87,6 @@ private extension PaywallView {
             vm.purchasePackage { isPurchasing in
                 if isPurchasing {
                     salah.user.info.isPremium = true
-                    isAppear = false
                     dismiss()
                 }
             }

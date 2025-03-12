@@ -7,15 +7,18 @@
 
 import SwiftUI
 
-struct SettingsHeaderView: View {
+struct SettingsHeaderView<T:View>: View {
     
     @EnvironmentObject var salah: iSalahState
     let title: LocalizedStringKey
+    let content: T
     let back: () -> ()
     
     init(_ title: LocalizedStringKey,
+         @ViewBuilder content: @escaping () -> T = { Text("")},
          back: @escaping () -> Void) {
         self.title = title
+        self.content = content()
         self.back = back
     }
     
@@ -44,26 +47,26 @@ struct SettingsHeaderView: View {
 private extension SettingsHeaderView {
     
     var backButtonView: some View {
-        
-        RoundedRectangle(cornerRadius: 50)
-            .stroke(ColorHandler.getColor(salah, for: .light), lineWidth: 0.5)
-            .frame(width: dw(0.2), height: dh(0.035))
-            .overlay {
-                HStack {
-                    ImageHandler.getIcon(salah, image: .back)
-                        .scaledToFit()
-                        .frame(width: dw(0.02))
-                    
-                    Text("Back")
-                        .font(FontHandler.setDubaiFont(weight: .bold, size: .xs))
-                }
-                .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                .padding(.horizontal)
-            }
-            .onTapGesture {
-                back()
-            }
-        
+        HStack(spacing: 5) {
+            /// Icon
+            ImageHandler.getIcon(salah, image: .back)
+                .scaledToFit()
+                .frame(width: dw(0.025), height: dh(0.036))
+                
+            /// Title
+            Text("Back")
+                .font( FontHandler.setDubaiFont(weight: .bold, size: .xs) )
+                
+        }
+        .foregroundStyle(ColorHandler.getColor(salah, for: .light))
+        .background {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke( ColorHandler.getColor(salah, for: .light), lineWidth: 0.5 )
+                .padding(-4)
+                .padding(.horizontal, -8)
+        }
+        .onTapGesture { withAnimation(.linear) { back() } }
+        .padding(.horizontal,12)
     }
     
 }
