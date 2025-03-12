@@ -90,70 +90,70 @@ struct FontHandler {
 struct FontTester: View {
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                Text("Dubai Font Tests")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .padding(.top, 20)
-                
-                // Dubai font tests
-                Group {
-                    Text("Dubai Regular")
-                        .font(FontHandler.setDubaiFont(weight: .regular, size: .l))
-                    
-                    Text("Dubai Medium")
-                        .font(FontHandler.setDubaiFont(weight: .medium, size: .l))
-                    
-                    Text("Dubai Light")
-                        .font(FontHandler.setDubaiFont(weight: .light, size: .l))
-                    
-                    Text("Dubai Bold")
-                        .font(FontHandler.setDubaiFont(weight: .bold, size: .l))
-                }
-                
-                Divider()
-                
-                Text("NewYork Font Tests (System Serif)")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .padding(.top, 10)
-                
-                // NewYork font tests (using system serif)
-                Group {
-                    Text("New York Regular")
-                        .font(FontHandler.setNewYorkFont(weight: .regular, size: .l))
-                    
-                    Text("New York Medium")
-                        .font(FontHandler.setNewYorkFont(weight: .medium, size: .l))
-                    
-                    Text("New York SemiBold")
-                        .font(FontHandler.setNewYorkFont(weight: .semibold, size: .l))
-                    
-                    Text("New York Bold")
-                        .font(FontHandler.setNewYorkFont(weight: .bold, size: .l))
-                    
-                    Text("New York Heavy")
-                        .font(FontHandler.setNewYorkFont(weight: .heavy, size: .l))
-                    
-                    Text("New York Black")
-                        .font(FontHandler.setNewYorkFont(weight: .black, size: .l))
-                    
-                    Text("New York Italic")
-                        .font(FontHandler.setNewYorkFont(weight: .regularItalic, size: .l))
-                }
-                
-                Divider()
-                
-                Button("Print Available Fonts") {
-                    FontHandler.printAvailableFonts()
-                }
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(8)
-                .padding(.bottom, 20)
-            }
-            .padding()
+//            VStack(alignment: .leading, spacing: 20) {
+//                Text("Dubai Font Tests")
+//                    .font(.title)
+//                    .fontWeight(.bold)
+//                    .padding(.top, 20)
+//                
+//                // Dubai font tests
+//                Group {
+//                    Text("Dubai Regular")
+//                        .font(FontHandler.setDubaiFont(weight: .regular, size: .l))
+//                    
+//                    Text("Dubai Medium")
+//                        .font(FontHandler.setDubaiFont(weight: .medium, size: .l))
+//                    
+//                    Text("Dubai Light")
+//                        .font(FontHandler.setDubaiFont(weight: .light, size: .l))
+//                    
+//                    Text("Dubai Bold")
+//                        .font(FontHandler.setDubaiFont(weight: .bold, size: .l))
+//                }
+//                
+//                Divider()
+//                
+//                Text("NewYork Font Tests (System Serif)")
+//                    .font(.title)
+//                    .fontWeight(.bold)
+//                    .padding(.top, 10)
+//                
+//                // NewYork font tests (using system serif)
+//                Group {
+//                    Text("New York Regular")
+//                        .font(FontHandler.setNewYorkFont(weight: .regular, size: .l))
+//                    
+//                    Text("New York Medium")
+//                        .font(FontHandler.setNewYorkFont(weight: .medium, size: .l))
+//                    
+//                    Text("New York SemiBold")
+//                        .font(FontHandler.setNewYorkFont(weight: .semibold, size: .l))
+//                    
+//                    Text("New York Bold")
+//                        .font(FontHandler.setNewYorkFont(weight: .bold, size: .l))
+//                    
+//                    Text("New York Heavy")
+//                        .font(FontHandler.setNewYorkFont(weight: .heavy, size: .l))
+//                    
+//                    Text("New York Black")
+//                        .font(FontHandler.setNewYorkFont(weight: .black, size: .l))
+//                    
+//                    Text("New York Italic")
+//                        .font(FontHandler.setNewYorkFont(weight: .regularItalic, size: .l))
+//                }
+//                
+//                Divider()
+//                
+//                Button("Print Available Fonts") {
+//                    FontHandler.printAvailableFonts()
+//                }
+//                .padding()
+//                .background(Color.blue)
+//                .foregroundColor(.white)
+//                .cornerRadius(8)
+//                .padding(.bottom, 20)
+//            }
+//            .padding()
         }
     }
 }

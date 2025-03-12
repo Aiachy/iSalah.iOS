@@ -28,6 +28,7 @@ struct AccessibilityView: View {
                 ScrollView(.vertical) {
                     /// Sub Title
                     SettingsSubTittleView("Used by Application")
+                        .frame(width: dw(0.9))
                     locationRowView
                 }
               
@@ -51,7 +52,7 @@ struct AccessibilityView: View {
 private extension AccessibilityView {
     var locationRowView: some View {
         HStack {
-            Text("Lokasyon")
+            Text("Location")
             Spacer()
             Text(salah.user.getLocationString())
         }
