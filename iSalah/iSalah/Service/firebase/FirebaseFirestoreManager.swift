@@ -9,14 +9,6 @@ class FirebaseFirestoreManager {
     private let db = Firestore.firestore()
     private let backgroundQueue = DispatchQueue(label: "com.isalah.firebaseFirestore", qos: .background)
     
-    // MARK: - Constants
-    private struct CollectionPath {
-        static let users = "users"
-        static let core = "Core"
-        static let harvest = "Harvest"
-        static let appInfo = "AppInfo"
-    }
-    
     // MARK: - Initialization
     private init() {
         let settings = FirestoreSettings()
@@ -311,7 +303,6 @@ extension FirebaseFirestoreManager {
 extension FirebaseFirestoreManager {
     // MARK: - AppInfo Methods
     func saveAppInfo(_ appInfo: AppInfoModel, userId: String? = nil) {
-        // Arka planda işlem yap
         backgroundQueue.async { [weak self] in
             guard let self = self else {
                 print("FirebaseFirestoreManager: saveAppInfo ⚠️ Self weak reference nil!")

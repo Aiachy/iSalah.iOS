@@ -74,7 +74,7 @@ private extension TasbeehView {
     var tasbeehListView: some View {
         List {
             ForEach(vm.tasbeehs) { tasbeeh in
-                tasbeehCard(tasbeeh)
+                CardTasbeehView(tasbeeh) { vm.incrementCounter(for: tasbeeh) }
                     .listRowInsets(EdgeInsets())
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
@@ -85,60 +85,9 @@ private extension TasbeehView {
         .listStyle(PlainListStyle())
         .padding(.horizontal)
     }
+
+   
     
-    
-    func tasbeehCard(_ tasbeeh: TasbeehModel) -> some View {
-        ZStack {
-            /// backgrounds
-            cardBackgroundView
-            HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(tasbeeh.name)
-                        .font(FontHandler.setNewYorkFont(weight: .bold, size: .m))
-                        .foregroundStyle(ColorHandler.getColor(salah, for: .horizon))
-                    
-                    Text("Count: \(tasbeeh.pressed)")
-                        .font(FontHandler.setNewYorkFont(weight: .semibold, size: .xs))
-                        .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                }
-                Spacer()
-                tasbeehButtonView { vm.incrementCounter(for: tasbeeh) }
-            }
-            .padding()
-        }
-        .frame(width: size9, height: dh(0.1))
-    }
-    
-    func tasbeehButtonView(_ action: @escaping () -> Void ) -> some View {
-        Button {
-            withAnimation(.linear) {
-                action()
-            }
-        } label: {
-            ZStack {
-                Circle()
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-                    .shadow(color: ColorHandler.getColor(salah, for: .light).opacity(0.25), radius: 5)
-                Circle()
-                    .stroke(ColorHandler.getColor(salah, for: .shadow),lineWidth: 0.5)
-                ImageHandler.getIcon(salah, image: .plus)
-                    .scaledToFit()
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
-                    .padding(13)
-            }
-            .frame(width: dw(0.12), height: dw(0.12))
-        }
-    }
-    
-    var cardBackgroundView: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 12)
-                .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
-                .shadow(color: ColorHandler.getColor(salah, for: .dark).opacity(0.25), radius: 4, y: 4)
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(ColorHandler.getColor(salah, for: .islam))
-        }
-    }
 }
 
 private extension TasbeehView {

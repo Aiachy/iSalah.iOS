@@ -32,7 +32,7 @@ struct FontHelper {
     }
     
     enum Size: CGFloat {
-        case xxs = 10, xs = 12, s = 14, m = 16, l = 18, xl = 20, xxl = 24, xxxl = 28
+        case xxs = 10, xs = 12, xS = 13, s = 14, S = 15, m = 16, l = 18, xl = 20, xxl = 24, xxxl = 28
         case h1 = 32, h2 = 36, h2_5 = 40, h3 = 42, h4 = 48
     }
 }

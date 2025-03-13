@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//MARK: View
 struct SplashView: View {
     
     @EnvironmentObject var salah: iSalahState
@@ -27,12 +27,12 @@ struct SplashView: View {
         .environmentObject(salah)
     }
 }
-
+//MARK: Preview
 #Preview {
     SplashView()
         .environmentObject(mockSalah)
 }
-
+//MARK: Views
 private extension SplashView {
     
     var splashView: some View {
@@ -43,13 +43,12 @@ private extension SplashView {
                     .scaledToFit()
             }
             .ignoresSafeArea()
-            VStack {
-                Spacer()
-                Text("\n\(salah.user.harvest.appVersion) (\(salah.user.harvest.buildNumber))")
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-            }
+            
         }
+        .fullScreenCover(isPresented: $vm.isAppUpdateRequired, content: {
+            UpdateRequiredView()
+        })
+        
         .onAppear {
             vm.createUser(salah.user) { user in
                 DispatchQueue.main.async {

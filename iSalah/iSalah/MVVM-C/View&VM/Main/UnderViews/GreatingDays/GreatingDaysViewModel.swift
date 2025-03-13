@@ -12,13 +12,15 @@ class GreatingDaysViewModel: ObservableObject {
     
     let coordinator: MainCoordinatorPresenter
     
-    // Data storage
     @Published var daysByYear: [Int: [GreatingDaysModel]] = [:]
     @Published var availableYears: [Int] = []
     @Published var selectedYear: Int = Calendar.current.component(.year, from: Date())
+    @Published var isHidingBeforeDays: Bool
     
-    init(coordinator: MainCoordinatorPresenter) {
+    init(coordinator: MainCoordinatorPresenter,
+         isHidingBeforeDays: Bool = true) {
         self.coordinator = coordinator
+        self.isHidingBeforeDays = isHidingBeforeDays
     }
     
     /// Load all greeting days data

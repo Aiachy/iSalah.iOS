@@ -1,13 +1,13 @@
 //
-//  GreatingDaysCardView.swift
+//  CardGreatingDaysView.swift
 //  iSalah
 //
 //  Created by Mert Türedü on 9.03.2025.
 //
 
 import SwiftUI
-
-struct GreatingDaysCardView: View {
+//MARK: View
+struct CardGreatingDaysView: View {
     
     @EnvironmentObject var salah: iSalahState
     
@@ -32,34 +32,39 @@ struct GreatingDaysCardView: View {
                             ForEach(models, id: \.id) { model in
                                 makeCards(model)
                             }
-                            
                         }
                         .padding(.leading)
                     }
                 }
             }
-            .onTapGesture {
-                action()
-            }
+            .onTapGesture { action() }
     }
 }
-
+//MARK: Preview
 #Preview {
     ZStack {
-        let x =  Calendar.current.date(from: DateComponents(year: 2025, month: 2, day: 30))!
+        let x =  Calendar.current.date(
+            from: DateComponents(year: 2025, month: 2, day: 30)
+        )!
 
         BackgroundView()
-        GreatingDaysCardView(GreatingDaysData.getDaysFor2025()){ }
+        CardGreatingDaysView(GreatingDaysData.getDaysFor2025()){ }
     }
     .environmentObject(mockSalah)
 }
-
-private extension GreatingDaysCardView  {
+//MARK: Views
+private extension CardGreatingDaysView  {
     
     var backgroundView: some View {
-        RoundedRectangle(cornerRadius: 16)
-            .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
-            .frame(width: size9, height: dh(0.18))
+        let corner = 8.0
+        
+        return ZStack {
+            RoundedRectangle(cornerRadius: corner)
+                .foregroundStyle(ColorHandler.getColor(salah, for: .islamicAlt))
+            RoundedRectangle(cornerRadius: corner)
+                .stroke(ColorHandler.getColor(salah, for: .islam))
+        }
+            .frame(width: size9, height: dh(0.2))
     }
     
     var headerView: some View {
@@ -73,29 +78,29 @@ private extension GreatingDaysCardView  {
         }
         .foregroundStyle(ColorHandler.getColor(salah, for: .light))
         .padding(.horizontal)
+        
     }
     
     func makeCards(_ model: GreatingDaysModel) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
                 .foregroundStyle(ColorHandler.getColor(salah, for: .light))
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 10) {
+                /// Titles
                 Text(model.name)
-                    .font(FontHandler.setNewYorkFont(weight: .bold, size: .m))
+                    .font(FontHandler.setNewYorkFont(weight: .bold, size: .S))
+                    .lineLimit(2)
+                    .scaledToFill()
+                
+                /// Date
+                Text(model.date.toFormatted("dd MMMM yyyy"))
+                    .font(FontHandler.setNewYorkFont(weight: .bold, size: .xS))
+                    .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
                 Spacer()
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text(model.date.toFormatted("dd MMMM yyyy"))
-                        Text(model.date.toFormattedHijri())
-                    }
-                    Spacer()
-                        
-                }
             }
-            .font(FontHandler.setNewYorkFont(weight: .bold, size: .xs))
-            .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
             .frame(width: dw(0.46),alignment: .leading)
+            .padding(.vertical,5)
         }
-        .frame(width: dw(0.49), height: dh(0.115), alignment: .leading)
+        .frame(width: dw(0.49), height: dh(0.13), alignment: .leading)
     }
 }

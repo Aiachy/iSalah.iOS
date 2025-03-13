@@ -38,7 +38,7 @@ extension BackgroundView {
     }
     
     private var elaborationView: some View {
-        ImageHandler.getMassive(salah, image: [.bg1, .bg2, .bg3].randomElement() ?? .bg1)
+        ImageHandler.getMassive(salah, image: [.bg1, .bg2, .bg3, .bg4].randomElement() ?? .bg1)
             .opacity(0.02)
     }
     

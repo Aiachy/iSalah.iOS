@@ -30,7 +30,7 @@ struct GreatingDaysView: View {
                     VStack(spacing: 16) {
                         if let selectedYearDays = vm.daysByYear[vm.selectedYear] {
                             ForEach(selectedYearDays) { day in
-                                GreatingDayInsightColumnView(day)
+                                GreatingDayInsightColumnView(day, isNeedHide: vm.isHidingBeforeDays)
                             }
                         } else {
                             noDataView

@@ -94,11 +94,9 @@ final class GoogleAdManager: NSObject, ObservableObject {
     
     /// Determines which ad unit IDs to use based on build configuration
     private func getAdUnitID(for adType: String) -> String {
-        #if DEBUG
-        return testAdUnitIDs[adType] ?? ""
-        #else
+      
         return productionAdUnitIDs[adType] ?? ""
-        #endif
+      
     }
     
     /// Checks if enough time has passed since the last ad was shown

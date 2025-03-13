@@ -57,6 +57,7 @@ struct ImageHelper {
         case bg1 = "bg1"
         case bg2 = "bg2"
         case bg3 = "bg3"
+        case bg4 = "bg4"
         
         case mosque1 = "mosque1"
         case mosque2 = "mosque2"

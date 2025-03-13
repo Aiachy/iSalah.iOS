@@ -4,16 +4,6 @@
     "" : {
 
     },
-    "\n%@ (%@)" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\n%1$@ (%2$@)"
-          }
-        }
-      }
-    },
     "%@, %@, %@" : {
       "localizations" : {
         "en" : {
@@ -25,6 +15,9 @@
       }
     },
     "•" : {
+
+    },
+    "A new version of the AISalah app is available. We recommend you update it for a better experience." : {
 
     },
     "Accessibility" : {
@@ -290,6 +283,7 @@
       }
     },
     "Add Item" : {
+      "extractionState" : "stale",
       "localizations" : {
         "af" : {
           "stringUnit" : {
@@ -4744,6 +4738,7 @@
       }
     },
     "Eid al-Adha" : {
+      "extractionState" : "stale",
       "localizations" : {
         "af" : {
           "stringUnit" : {
@@ -6054,6 +6049,7 @@
       }
     },
     "Eid al-Fitr" : {
+      "extractionState" : "stale",
       "localizations" : {
         "af" : {
           "stringUnit" : {
@@ -10773,6 +10769,7 @@
       }
     },
     "Item at %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "af" : {
           "stringUnit" : {
@@ -12343,6 +12340,9 @@
           }
         }
       }
+    },
+    "New Version Available" : {
+
     },
     "Night of Ascension" : {
       "localizations" : {
@@ -19684,6 +19684,7 @@
       }
     },
     "Select an item" : {
+      "extractionState" : "stale",
       "localizations" : {
         "af" : {
           "stringUnit" : {
@@ -23612,6 +23613,9 @@
           }
         }
       }
+    },
+    "Update on App Store" : {
+
     },
     "Usage Data is collected automatically when using the Service." : {
       "localizations" : {

@@ -76,7 +76,7 @@ struct MainView: View {
                         .padding(.horizontal)
                         .padding(.vertical,8)
                         /// Greating Days
-                        GreatingDaysCardView(
+                        CardGreatingDaysView(
                             GreatingDaysData.getDaysFor2025(),
                             action: vm.navigationToGreating
                         )

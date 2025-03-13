@@ -11,23 +11,28 @@ struct GreatingDayInsightColumnView: View {
     
     @EnvironmentObject var salah: iSalahState
     let model: GreatingDaysModel
+    var isNeedHide: Bool
     
-    init(_ model: GreatingDaysModel) {
+    init(_ model: GreatingDaysModel,
+         isNeedHide: Bool) {
         self.model = model
+        self.isNeedHide = isNeedHide
     }
     
     var body: some View {
-        backgroundView
-            .overlay(alignment: .center) {
-                VStack(alignment: .center) {
-                    titleView
-                    dateAndHicriDateView
-                    Spacer()
-                    counterTimeView
+        if !(model.IsPastTime && isNeedHide) {
+            backgroundView
+                .overlay(alignment: .center) {
+                    VStack(alignment: .center) {
+                        titleView
+                        dateAndHicriDateView
+                        Spacer()
+                        counterTimeView
+                    }
+                    .padding(.vertical,5)
                 }
-                .padding(.vertical,5)
-            }
-            .opacity(model.date.daysUntil() < 0 ? 0.7 : 1)
+                .opacity(model.IsPastTime ? 0.5 : 1)
+        }
     }
 }
 
@@ -36,7 +41,8 @@ struct GreatingDayInsightColumnView: View {
     let x =  Calendar.current.date(from: DateComponents(year: 2025, month: 2, day: 30))!
         BackgroundView()
         GreatingDayInsightColumnView(
-            .init(id: 1, name: "Ramadan Greating", date: x)
+            .init(id: 1, name: "Ramadan Greating", date: x),
+            isNeedHide: false
         )
     }
     .environmentObject(mockSalah)
@@ -85,10 +91,7 @@ extension GreatingDayInsightColumnView {
     }
     
     private var counterTimeView: some View {
-        let untilDays = model.date.daysUntil()
-        let isNegative = untilDays < 0
-        
-        return Text(abs(untilDays).description + " " + "Day \(isNegative ? "Before" : "After")")
+        Text(model.untilDay + " " + "Day \(model.IsPastTime ? "Before" : "After")")
             .foregroundStyle(ColorHandler.getColor(salah, for: .shadow))
             .font(FontHandler.setNewYorkFont(weight: .medium, size: .xs))
     }

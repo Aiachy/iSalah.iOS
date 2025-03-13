@@ -13,6 +13,14 @@ let userIDKey = "firebase_user_id"
 
 let themeIdKey = "theme_id"
 
+struct CollectionPath {
+    static let users = "users"
+    static let core = "Core"
+    static let harvest = "Harvest"
+    static let appInfo = "AppInfo"
+    static let system = "system"
+}
+
 //MARK: DB Key
 let dbKeyUsers = "users"
 
